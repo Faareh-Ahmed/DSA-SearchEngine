@@ -3,15 +3,17 @@ import hashlib
 import nltk
 from nltk.stem import SnowballStemmer
 from nltk.corpus import stopwords
+
 nltk.download("stopwords")
 
 nltk.download("punkt")
 # nltk is a library to process natural language data for understandable by computer
 from nltk.tokenize import word_tokenize, sent_tokenize
+
 # Initialize the SnowballStemmer
-stemmer = SnowballStemmer(language='english')
+stemmer = SnowballStemmer(language="english")
 # Get the set of English stop words
-stop_words = set(stopwords.words('english'))
+stop_words = set(stopwords.words("english"))
 # ******************* Printing the URLs from the documents *******************
 
 # Specify the path to your JSON file
@@ -23,8 +25,6 @@ with open(json_file_path, "r") as file:
 
 # Parse the JSON data
 data = json.loads(json_data)
-
-
 
 
 # *********** Forward index of First Document ***********
@@ -52,25 +52,34 @@ for i, article in enumerate(data[:1], 1):
     print(f" {i}.{article['title']}")
     document_title = article["url"]
     doc_id = generate_doc_id(document_title)
-   # Tokenize the content
-    content = article["content"] + article["title"]
+    # Tokenize the content
+    content = article["title"] + " " + article["content"]
     tokens = [word_tokenize(content)]
     # Remove stop words and punctuation, and stem the remaining words
-    stemmed_words = [stemmer.stem(token) for sentence_tokens in tokens for token in sentence_tokens if token.isalnum() and token.lower() not in stop_words]
+    stemmed_words = [
+        stemmer.stem(token)
+        for sentence_tokens in tokens
+        for token in sentence_tokens
+        if token.isalnum() and token.lower() not in stop_words
+    ]
 
     # Store tokens in the dictionary
     tokens_dict[i] = stemmed_words
-
 
     # Calculate token frequency
     # Flatten the list of lists (tokens)
     flat_tokens = [token for sentence_tokens in tokens for token in sentence_tokens]
 
     # Calculate token frequency using stemmed tokens
-    token_frequency = {token: stemmed_words.count(token) for token in set(stemmed_words)}
+    token_frequency = {
+        token: stemmed_words.count(token) for token in set(stemmed_words)
+    }
 
     # Calculate token positions using stemmed tokens
-    token_positions = {token: [i + 1 for i, word in enumerate(stemmed_words) if word == token] for token in set(stemmed_words)}
+    token_positions = {
+        token: [i + 1 for i, word in enumerate(stemmed_words) if word == token]
+        for token in set(stemmed_words)
+    }
 
     # Create the forward index entry for the document
     forward_index[doc_id] = {
