@@ -50,10 +50,10 @@ print("Trying Forward INdex")
 
 for i, article in enumerate(data[:1], 1):
     print(f" {i}.{article['title']}")
-    document_title = article["id"]
+    document_title = article["url"]
     doc_id = generate_doc_id(document_title)
    # Tokenize the content
-    content = article["content"]
+    content = article["content"] + article["title"]
     tokens = [word_tokenize(content)]
     # Remove stop words and punctuation, and stem the remaining words
     stemmed_words = [stemmer.stem(token) for sentence_tokens in tokens for token in sentence_tokens if token.isalnum() and token.lower() not in stop_words]

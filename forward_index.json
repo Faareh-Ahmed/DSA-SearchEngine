@@ -1,6 +1,6 @@
 {
-  "63770189367667000588875493207569815916263351699943498237890920226058248548171": {
-    "doc_id": 63770189367667000588875493207569815916263351699943498237890920226058248548171,
+  "12591096413430844315713386245056817616297106928521405217325282704928721580156": {
+    "doc_id": 12591096413430844315713386245056817616297106928521405217325282704928721580156,
     "stemmed_tokens": [
       "hundr",
       "colorado",
@@ -561,393 +561,1289 @@
       "environment",
       "coverag",
       "visit",
-      "https"
+      "https",
+      "fire",
+      "victim",
+      "begin",
+      "new",
+      "year",
+      "survey",
+      "destruct"
     ],
     "token_frequency": {
-      "practic": 1,
-      "coverag": 2,
-      "pair": 1,
-      "home": 14,
-      "emerg": 1,
-      "wagon": 1,
-      "tower": 1,
-      "wind": 1,
-      "subsid": 1,
-      "stori": 1,
-      "line": 2,
-      "program": 1,
-      "salvag": 2,
-      "front": 2,
-      "len": 1,
-      "associ": 4,
-      "nieberg": 1,
-      "engulf": 1,
-      "mani": 3,
-      "sky": 1,
-      "visit": 1,
-      "return": 1,
-      "neighborhood": 4,
-      "right": 1,
-      "pell": 1,
-      "get": 1,
-      "gut": 1,
-      "left": 1,
-      "whether": 1,
-      "hanger": 1,
-      "stand": 3,
-      "land": 1,
-      "amid": 2,
-      "sure": 1,
-      "sinc": 2,
-      "place": 2,
-      "hold": 1,
-      "hand": 1,
-      "twist": 1,
-      "broke": 3,
-      "corp": 1,
-      "never": 1,
-      "tore": 2,
-      "also": 1,
-      "ap": 2,
+      "known": 1,
+      "ten": 1,
       "road": 1,
-      "sheriff": 3,
-      "memori": 1,
-      "david": 1,
-      "hillsid": 2,
-      "brian": 1,
-      "immedi": 1,
-      "person": 2,
-      "sidewalk": 1,
-      "space": 1,
-      "mark": 1,
-      "said": 13,
-      "rest": 1,
-      "mountain": 1,
-      "util": 1,
-      "firefight": 1,
-      "boulder": 2,
-      "ask": 1,
-      "climat": 1,
-      "stood": 2,
-      "year": 6,
-      "york": 1,
-      "least": 3,
-      "held": 1,
-      "writer": 2,
-      "look": 2,
-      "superior": 4,
-      "retriev": 1,
-      "happen": 2,
-      "freez": 1,
-      "around": 2,
-      "water": 2,
-      "fli": 1,
-      "eric": 1,
-      "peipert": 1,
-      "aid": 1,
-      "own": 1,
+      "forc": 1,
+      "counti": 2,
+      "amid": 2,
+      "son": 1,
+      "thalia": 1,
+      "like": 1,
+      "victim": 1,
+      "corp": 1,
+      "damag": 1,
+      "place": 2,
+      "global": 1,
+      "nineti": 1,
+      "northwest": 1,
+      "day": 1,
+      "foundat": 1,
+      "bradi": 1,
+      "governor": 1,
+      "beati": 1,
       "neighbor": 2,
+      "stood": 2,
+      "thursday": 1,
+      "salvag": 2,
+      "hold": 1,
+      "stand": 3,
+      "area": 1,
+      "would": 1,
+      "row": 1,
+      "gut": 1,
+      "crack": 1,
+      "combin": 1,
+      "prevent": 1,
+      "writer": 2,
+      "binocular": 1,
+      "program": 1,
+      "ad": 1,
+      "util": 1,
+      "quick": 1,
+      "lit": 1,
+      "stori": 1,
+      "janda": 1,
+      "everyth": 1,
+      "return": 1,
+      "caus": 1,
+      "mccomb": 1,
+      "ask": 1,
+      "complet": 1,
+      "need": 1,
+      "support": 1,
+      "thousand": 1,
+      "rest": 1,
+      "neill": 1,
+      "america": 1,
+      "tore": 2,
+      "carri": 1,
+      "door": 2,
+      "firefight": 1,
+      "pile": 1,
+      "kilomet": 1,
+      "tri": 4,
+      "consecut": 1,
+      "shop": 1,
+      "assess": 1,
+      "air": 1,
+      "held": 1,
+      "us": 1,
+      "remain": 2,
+      "new": 5,
+      "ground": 2,
+      "find": 1,
+      "way": 1,
+      "caught": 1,
+      "soon": 1,
+      "pandem": 1,
+      "mountain": 1,
+      "univers": 1,
+      "wait": 1,
+      "10": 1,
+      "1998": 1,
+      "rick": 1,
+      "backpack": 1,
+      "note": 1,
+      "https": 1,
+      "instead": 2,
+      "start": 2,
+      "immedi": 1,
+      "might": 2,
+      "sheriff": 3,
+      "thought": 1,
+      "broke": 3,
+      "superior": 4,
+      "climat": 1,
+      "pair": 1,
+      "nieberg": 1,
+      "set": 1,
+      "destruct": 2,
+      "front": 2,
+      "father": 1,
+      "na": 1,
+      "polici": 1,
+      "hanger": 1,
+      "wife": 1,
+      "happen": 2,
+      "burn": 4,
+      "aid": 1,
+      "disast": 1,
+      "camera": 1,
+      "street": 1,
+      "close": 2,
+      "nation": 1,
+      "winter": 1,
+      "cloth": 2,
+      "friday": 6,
+      "emerg": 1,
+      "flee": 2,
+      "beauti": 1,
+      "joe": 2,
+      "report": 3,
+      "ok": 1,
+      "death": 1,
+      "contain": 1,
+      "felt": 1,
+      "order": 2,
+      "unscath": 1,
+      "tell": 1,
+      "rainfal": 1,
+      "david": 1,
+      "wagon": 1,
+      "neighborhood": 4,
+      "journalist": 1,
+      "pell": 1,
+      "own": 1,
+      "hand": 1,
+      "watch": 1,
+      "center": 1,
+      "longer": 1,
+      "frequent": 1,
       "fear": 2,
       "drought": 1,
-      "biden": 1,
-      "environment": 2,
-      "press": 3,
-      "janda": 1,
-      "foundat": 1,
-      "news": 1,
-      "son": 1,
-      "guest": 1,
-      "beati": 1,
-      "expect": 2,
-      "support": 1,
-      "new": 4,
-      "disast": 1,
-      "park": 1,
-      "father": 1,
-      "unusu": 1,
-      "debri": 1,
-      "china": 1,
-      "would": 1,
-      "next": 1,
-      "erupt": 1,
-      "order": 2,
-      "fallen": 1,
-      "offici": 1,
-      "one": 2,
-      "walk": 4,
-      "na": 1,
-      "hard": 1,
-      "subdivis": 1,
-      "sever": 1,
-      "issu": 1,
-      "save": 1,
-      "24": 1,
-      "rebuild": 2,
-      "take": 1,
-      "flee": 2,
-      "jare": 1,
-      "tell": 1,
-      "turn": 1,
-      "school": 1,
-      "patchwork": 1,
-      "made": 1,
-      "anyon": 1,
-      "suitcas": 1,
-      "pile": 1,
-      "close": 2,
-      "swept": 1,
-      "might": 2,
-      "evacu": 1,
-      "urg": 1,
-      "air": 1,
-      "everyth": 1,
-      "task": 1,
-      "35": 1,
-      "devast": 3,
-      "night": 1,
-      "10": 1,
-      "felt": 1,
-      "ground": 2,
-      "contain": 1,
-      "thoma": 1,
-      "burn": 4,
-      "nineti": 1,
-      "chang": 1,
-      "receiv": 1,
-      "back": 5,
-      "combin": 1,
-      "gon": 1,
-      "binocular": 1,
-      "fill": 1,
-      "remain": 2,
-      "wildfir": 6,
-      "suburb": 2,
-      "note": 1,
-      "most": 1,
-      "northwest": 1,
-      "view": 1,
-      "threat": 1,
-      "camera": 1,
-      "america": 1,
-      "communiti": 2,
-      "way": 1,
-      "last": 1,
-      "sole": 1,
-      "miss": 2,
-      "knit": 1,
-      "devoid": 1,
-      "governor": 1,
-      "ok": 1,
-      "storm": 1,
-      "thalia": 1,
-      "die": 1,
-      "pipe": 1,
-      "ten": 1,
-      "got": 2,
-      "follow": 1,
-      "stuff": 1,
-      "lit": 1,
-      "cloth": 2,
-      "find": 1,
-      "frequent": 1,
-      "caus": 1,
-      "friday": 6,
-      "salt": 1,
-      "homeown": 1,
-      "street": 1,
-      "neill": 1,
-      "economi": 1,
-      "global": 1,
-      "major": 1,
-      "pandem": 1,
-      "center": 1,
-      "three": 1,
-      "popul": 1,
-      "suppli": 1,
-      "littl": 1,
-      "us": 1,
-      "danger": 1,
-      "blaze": 2,
-      "beauti": 1,
-      "local": 1,
-      "start": 2,
-      "percent": 1,
-      "investig": 1,
-      "report": 3,
-      "found": 3,
-      "anyth": 1,
-      "husband": 1,
-      "brought": 1,
-      "propel": 1,
-      "time": 1,
-      "tear": 1,
-      "death": 1,
-      "colorado": 4,
-      "denver": 4,
-      "alarm": 1,
-      "small": 1,
-      "prevent": 1,
-      "mean": 1,
-      "despit": 1,
-      "fire": 4,
-      "light": 2,
-      "row": 1,
-      "hole": 2,
-      "25": 1,
-      "bradi": 1,
-      "snow": 3,
-      "https": 1,
-      "poli": 1,
-      "longer": 1,
-      "like": 1,
-      "area": 1,
       "first": 1,
-      "saw": 2,
-      "intend": 1,
-      "near": 1,
-      "began": 1,
-      "lake": 1,
-      "seen": 2,
-      "crew": 1,
-      "wife": 1,
-      "thursday": 1,
-      "medicin": 1,
-      "still": 5,
-      "thought": 1,
-      "roof": 1,
-      "crack": 1,
-      "newsroom": 1,
-      "know": 1,
-      "miracl": 1,
-      "author": 1,
-      "go": 1,
-      "day": 1,
-      "famili": 2,
-      "smoke": 2,
-      "caught": 1,
-      "member": 1,
-      "hundr": 2,
-      "remark": 1,
-      "sad": 1,
-      "destruct": 1,
-      "instead": 2,
-      "carri": 1,
-      "journalist": 1,
-      "1998": 1,
-      "declar": 1,
-      "cathi": 1,
-      "scientist": 1,
-      "list": 1,
-      "friend": 1,
-      "down": 1,
-      "assess": 1,
-      "gov": 1,
       "say": 1,
-      "natur": 1,
-      "100": 1,
-      "winter": 1,
-      "mailbox": 1,
-      "counti": 2,
-      "glaab": 2,
-      "loss": 1,
-      "build": 1,
-      "shortag": 1,
-      "minut": 1,
-      "mccomb": 1,
-      "smile": 1,
-      "dri": 1,
-      "univers": 1,
-      "louisvill": 5,
-      "pull": 1,
-      "joe": 2,
-      "sculptur": 1,
-      "kilomet": 1,
-      "content": 1,
-      "fall": 2,
-      "complet": 1,
-      "tri": 4,
-      "snowfal": 1,
-      "mile": 1,
-      "love": 2,
+      "save": 1,
+      "chang": 1,
+      "gape": 1,
+      "storm": 1,
+      "economi": 1,
+      "feder": 1,
+      "snow": 3,
+      "hillsid": 2,
+      "wildfir": 6,
+      "water": 2,
+      "next": 1,
+      "follow": 1,
+      "sad": 1,
       "servic": 1,
-      "contribut": 2,
-      "500": 2,
-      "injur": 1,
-      "2022": 2,
-      "probabl": 1,
-      "see": 6,
-      "lost": 3,
-      "speed": 1,
-      "extrem": 3,
-      "record": 1,
+      "mailbox": 1,
+      "sever": 1,
+      "night": 1,
+      "walk": 4,
+      "one": 2,
+      "view": 1,
+      "news": 1,
+      "still": 5,
+      "wind": 1,
+      "left": 1,
+      "retriev": 1,
+      "get": 1,
       "fenc": 1,
+      "three": 1,
+      "see": 6,
+      "pull": 1,
+      "35": 1,
+      "ring": 2,
+      "mile": 1,
+      "squar": 2,
+      "fill": 1,
+      "york": 1,
+      "year": 7,
+      "light": 2,
+      "thoma": 1,
+      "associ": 4,
+      "down": 1,
       "power": 2,
-      "presid": 1,
-      "known": 1,
+      "person": 2,
+      "also": 1,
+      "homeown": 1,
+      "receiv": 1,
+      "unbeliev": 1,
+      "biden": 1,
+      "member": 1,
+      "loss": 1,
+      "24": 1,
+      "warn": 1,
+      "citi": 1,
+      "nonprofit": 1,
+      "despit": 1,
+      "last": 1,
+      "memori": 1,
+      "denver": 4,
+      "dixon": 3,
+      "remark": 1,
+      "len": 1,
+      "dri": 1,
+      "hole": 2,
+      "hous": 8,
+      "intend": 1,
+      "pad": 1,
+      "expect": 2,
+      "difficult": 1,
+      "issu": 1,
+      "communiti": 2,
+      "blaze": 2,
+      "avail": 1,
+      "lost": 3,
+      "small": 1,
+      "environment": 2,
+      "evacu": 1,
+      "coverag": 2,
+      "space": 1,
+      "engulf": 1,
+      "urg": 1,
+      "knit": 1,
+      "guest": 1,
+      "sinc": 2,
+      "patchwork": 1,
+      "around": 2,
+      "mark": 1,
+      "major": 1,
+      "anyon": 1,
+      "visit": 1,
+      "fire": 5,
+      "seven": 2,
+      "ap": 2,
+      "make": 1,
+      "shortag": 1,
+      "late": 1,
+      "friend": 1,
+      "sidewalk": 1,
+      "sure": 1,
+      "tower": 1,
+      "alarm": 1,
+      "cathi": 1,
+      "salt": 1,
+      "build": 1,
+      "ruin": 1,
+      "contribut": 2,
+      "press": 3,
+      "threat": 1,
+      "turn": 1,
+      "china": 1,
+      "danger": 1,
+      "smile": 1,
+      "crew": 1,
+      "die": 1,
+      "medicin": 1,
+      "began": 1,
+      "stuff": 1,
+      "home": 14,
+      "brian": 1,
+      "got": 2,
+      "look": 2,
+      "flame": 3,
+      "suitcas": 1,
+      "anyth": 1,
+      "25": 1,
+      "gov": 1,
+      "littl": 1,
+      "line": 2,
       "long": 1,
-      "rainfal": 1,
+      "practic": 1,
+      "probabl": 1,
+      "natur": 1,
+      "back": 5,
+      "seen": 2,
+      "roof": 1,
+      "subsid": 1,
+      "glaab": 2,
+      "near": 1,
+      "miracl": 1,
+      "eric": 1,
+      "love": 2,
+      "percent": 1,
+      "land": 1,
+      "tear": 1,
+      "face": 2,
+      "boulder": 2,
+      "saw": 2,
+      "500": 2,
+      "walton": 1,
+      "go": 1,
+      "know": 1,
+      "mean": 1,
+      "least": 3,
+      "substanti": 1,
+      "newsroom": 1,
+      "scientist": 1,
+      "swept": 1,
+      "minut": 1,
+      "debri": 1,
+      "husband": 1,
+      "list": 1,
+      "investig": 1,
+      "hundr": 2,
+      "sky": 1,
+      "found": 3,
+      "affect": 1,
+      "presid": 1,
+      "famili": 2,
+      "school": 1,
+      "pipe": 1,
+      "bruce": 1,
+      "brought": 1,
+      "far": 1,
+      "miss": 2,
+      "survey": 1,
+      "record": 1,
+      "content": 1,
+      "devast": 3,
+      "park": 1,
+      "gon": 1,
+      "resid": 3,
+      "jare": 1,
+      "fallen": 1,
+      "unusu": 1,
+      "colorado": 4,
+      "local": 1,
+      "sculptur": 1,
+      "popul": 1,
+      "hard": 1,
+      "twist": 1,
+      "take": 1,
+      "without": 1,
+      "poli": 1,
+      "rebuild": 2,
+      "speed": 1,
+      "right": 1,
+      "lake": 1,
+      "consid": 1,
+      "injur": 1,
+      "fall": 2,
+      "freez": 1,
+      "never": 1,
+      "respons": 1,
+      "snowfal": 1,
+      "propel": 1,
+      "declar": 1,
+      "100": 1,
+      "peipert": 1,
+      "2022": 2,
+      "peopl": 3,
+      "weather": 1,
+      "said": 13,
+      "devoid": 1,
+      "louisvill": 5,
+      "most": 1,
+      "made": 1,
+      "sole": 1,
+      "task": 1,
+      "whether": 1,
+      "subdivis": 1,
+      "suppli": 1,
+      "extrem": 3,
+      "smoke": 2,
+      "offici": 1,
+      "belong": 1,
+      "mani": 3,
+      "time": 1,
+      "begin": 1,
+      "erupt": 1,
       "reduc": 1,
       "destroy": 3,
-      "feder": 1,
-      "ruin": 1,
-      "soon": 1,
-      "rick": 1,
-      "respons": 1,
-      "substanti": 1,
-      "watch": 1,
-      "forc": 1,
-      "thousand": 1,
-      "flame": 3,
-      "dixon": 3,
-      "wait": 1,
-      "squar": 2,
-      "damag": 1,
-      "make": 1,
-      "set": 1,
-      "face": 2,
-      "polici": 1,
-      "citi": 1,
-      "ring": 2,
-      "without": 1,
-      "pad": 1,
-      "late": 1,
-      "ad": 1,
-      "nonprofit": 1,
-      "consecut": 1,
-      "need": 1,
-      "resid": 3,
-      "unbeliev": 1,
-      "quick": 1,
-      "nation": 1,
-      "door": 2,
-      "seven": 2,
-      "affect": 1,
-      "backpack": 1,
-      "hous": 8,
-      "far": 1,
-      "weather": 1,
-      "walton": 1,
-      "warn": 1,
-      "consid": 1,
-      "avail": 1,
-      "peopl": 3,
-      "gape": 1,
-      "belong": 1,
-      "difficult": 1,
-      "bruce": 1,
-      "unscath": 1,
-      "shop": 1
+      "fli": 1,
+      "author": 1,
+      "suburb": 2
     },
     "token_positions": {
-      "practic": [
-        55
+      "known": [
+        397
+      ],
+      "ten": [
+        218
+      ],
+      "road": [
+        237
+      ],
+      "forc": [
+        39
+      ],
+      "counti": [
+        382,
+        451
+      ],
+      "amid": [
+        105,
+        375
+      ],
+      "son": [
+        184
+      ],
+      "thalia": [
+        510
+      ],
+      "like": [
+        491
+      ],
+      "victim": [
+        562
+      ],
+      "corp": [
+        517
+      ],
+      "damag": [
+        400
+      ],
+      "place": [
+        278,
+        525
+      ],
+      "global": [
+        106
+      ],
+      "nineti": [
+        448
+      ],
+      "northwest": [
+        92
+      ],
+      "day": [
+        463
+      ],
+      "foundat": [
+        547
+      ],
+      "bradi": [
+        534
+      ],
+      "governor": [
+        391
+      ],
+      "beati": [
+        511
+      ],
+      "neighbor": [
+        91,
+        273
+      ],
+      "stood": [
+        52,
+        265
+      ],
+      "thursday": [
+        87
+      ],
+      "salvag": [
+        13,
+        32
+      ],
+      "hold": [
+        342
+      ],
+      "stand": [
+        71,
+        142,
+        192
+      ],
+      "area": [
+        359
+      ],
+      "would": [
+        173
+      ],
+      "row": [
+        139
+      ],
+      "gut": [
+        187
+      ],
+      "crack": [
+        146
+      ],
+      "combin": [
+        94
+      ],
+      "prevent": [
+        250
+      ],
+      "writer": [
+        505,
+        533
+      ],
+      "binocular": [
+        268
+      ],
+      "program": [
+        524
+      ],
+      "ad": [
+        149
+      ],
+      "util": [
+        228
+      ],
+      "quick": [
+        298
+      ],
+      "lit": [
+        314
+      ],
+      "stori": [
+        537
+      ],
+      "janda": [
+        475
+      ],
+      "everyth": [
+        195
+      ],
+      "return": [
+        44
+      ],
+      "caus": [
+        222
+      ],
+      "mccomb": [
+        535
+      ],
+      "ask": [
+        121
+      ],
+      "complet": [
+        293
+      ],
+      "need": [
+        485
+      ],
+      "support": [
+        544
+      ],
+      "thousand": [
+        219
+      ],
+      "rest": [
+        488
+      ],
+      "neill": [
+        123
+      ],
+      "america": [
+        520
+      ],
+      "tore": [
+        16,
+        35
+      ],
+      "carri": [
+        257
+      ],
+      "door": [
+        62,
+        74
+      ],
+      "firefight": [
+        175
+      ],
+      "pile": [
+        207
+      ],
+      "kilomet": [
+        332
+      ],
+      "tri": [
+        12,
+        31,
+        145,
+        176
+      ],
+      "consecut": [
+        462
+      ],
+      "shop": [
+        431
+      ],
+      "assess": [
+        399
+      ],
+      "air": [
+        306
+      ],
+      "held": [
+        197
+      ],
+      "us": [
+        502
+      ],
+      "remain": [
+        14,
+        33
+      ],
+      "new": [
+        10,
+        29,
+        338,
+        512,
+        564
+      ],
+      "ground": [
+        128,
+        416
+      ],
+      "find": [
+        47
+      ],
+      "way": [
+        111
+      ],
+      "caught": [
+        307
+      ],
+      "soon": [
+        322
+      ],
+      "pandem": [
+        110
+      ],
+      "mountain": [
+        168
+      ],
+      "univers": [
+        436
+      ],
+      "wait": [
+        419
+      ],
+      "10": [
+        469
+      ],
+      "1998": [
+        161
+      ],
+      "rick": [
+        170
+      ],
+      "backpack": [
+        258
+      ],
+      "note": [
+        347
+      ],
+      "https": [
+        560
+      ],
+      "instead": [
+        8,
+        27
+      ],
+      "start": [
+        9,
+        28
+      ],
+      "immedi": [
+        335
+      ],
+      "might": [
+        337,
+        395
+      ],
+      "sheriff": [
+        383,
+        408,
+        410
+      ],
+      "thought": [
+        193
+      ],
+      "broke": [
+        236,
+        367,
+        473
+      ],
+      "superior": [
+        19,
+        90,
+        133,
+        427
+      ],
+      "climat": [
+        440
+      ],
+      "pair": [
+        267
+      ],
+      "nieberg": [
+        516
+      ],
+      "set": [
+        460
+      ],
+      "destruct": [
+        447,
+        567
+      ],
+      "front": [
+        61,
+        73
+      ],
+      "father": [
+        206
+      ],
+      "na": [
+        116
+      ],
+      "polici": [
+        551
+      ],
+      "hanger": [
+        210
+      ],
+      "wife": [
+        183
+      ],
+      "happen": [
+        297,
+        501
+      ],
+      "burn": [
+        127,
+        178,
+        289,
+        326
+      ],
+      "aid": [
+        362
+      ],
+      "disast": [
+        358
+      ],
+      "camera": [
+        269
+      ],
+      "street": [
+        496
+      ],
+      "close": [
+        239,
+        493
+      ],
+      "nation": [
+        522
+      ],
+      "winter": [
+        376
+      ],
+      "cloth": [
+        208,
+        246
+      ],
+      "friday": [
+        46,
+        181,
+        240,
+        311,
+        355,
+        483
+      ],
+      "emerg": [
+        225
+      ],
+      "flee": [
+        40,
+        221
+      ],
+      "beauti": [
+        64
+      ],
+      "joe": [
+        353,
+        384
+      ],
+      "report": [
+        81,
+        515,
+        529
+      ],
+      "ok": [
+        279
+      ],
+      "death": [
+        82
+      ],
+      "contain": [
+        200
+      ],
+      "felt": [
+        484
+      ],
+      "order": [
+        220,
+        360
+      ],
+      "unscath": [
+        56
+      ],
+      "tell": [
+        275
+      ],
+      "rainfal": [
+        457
+      ],
+      "david": [
+        263
+      ],
+      "wagon": [
+        261
+      ],
+      "neighborhood": [
+        45,
+        213,
+        288,
+        489
+      ],
+      "journalist": [
+        526
+      ],
+      "pell": [
+        385
+      ],
+      "own": [
+        124
+      ],
+      "hand": [
+        341
+      ],
+      "watch": [
+        286
+      ],
+      "center": [
+        432
+      ],
+      "longer": [
+        333
+      ],
+      "frequent": [
+        446
+      ],
+      "fear": [
+        98,
+        172
+      ],
+      "drought": [
+        454
+      ],
+      "first": [
+        309
+      ],
+      "say": [
+        439
+      ],
+      "save": [
+        177
+      ],
+      "chang": [
+        441
+      ],
+      "gape": [
+        188
+      ],
+      "storm": [
+        468
+      ],
+      "economi": [
+        112
+      ],
+      "feder": [
+        361
+      ],
+      "snow": [
+        321,
+        379,
+        465
+      ],
+      "hillsid": [
+        266,
+        287
+      ],
+      "wildfir": [
+        15,
+        34,
+        85,
+        366,
+        445,
+        472
+      ],
+      "water": [
+        249,
+        549
+      ],
+      "next": [
+        53
+      ],
+      "follow": [
+        371
+      ],
+      "sad": [
+        150
+      ],
+      "servic": [
+        523
+      ],
+      "mailbox": [
+        141
+      ],
+      "sever": [
+        452
+      ],
+      "night": [
+        315
+      ],
+      "walk": [
+        60,
+        69,
+        72,
+        242
+      ],
+      "one": [
+        54,
+        136
+      ],
+      "view": [
+        167
+      ],
+      "news": [
+        180
+      ],
+      "still": [
+        191,
+        209,
+        238,
+        254,
+        274
+      ],
+      "wind": [
+        318
+      ],
+      "left": [
+        256
+      ],
+      "retriev": [
+        202
+      ],
+      "get": [
+        245
+      ],
+      "fenc": [
+        303
+      ],
+      "three": [
+        282
+      ],
+      "see": [
+        75,
+        253,
+        271,
+        486,
+        487,
+        500
+      ],
+      "pull": [
+        259
+      ],
+      "35": [
+        58
+      ],
+      "ring": [
+        5,
+        24
+      ],
+      "mile": [
+        329
+      ],
+      "squar": [
+        328,
+        331
+      ],
+      "fill": [
+        429
+      ],
+      "york": [
+        513
+      ],
+      "year": [
+        11,
+        30,
+        59,
+        339,
+        370,
+        481,
+        565
+      ],
+      "light": [
+        310,
+        320
+      ],
+      "thoma": [
+        506
+      ],
+      "associ": [
+        503,
+        519,
+        531,
+        541
+      ],
+      "down": [
+        231
+      ],
+      "power": [
+        232,
+        425
+      ],
+      "person": [
+        407,
+        482
+      ],
+      "also": [
+        201
+      ],
+      "homeown": [
+        100
+      ],
+      "receiv": [
+        543
+      ],
+      "unbeliev": [
+        401
+      ],
+      "biden": [
+        354
+      ],
+      "member": [
+        518
+      ],
+      "loss": [
+        477
+      ],
+      "24": [
+        330
+      ],
+      "warn": [
+        43
+      ],
+      "citi": [
+        540
+      ],
+      "nonprofit": [
+        521
+      ],
+      "despit": [
+        153
+      ],
+      "last": [
+        470
+      ],
+      "memori": [
+        152
+      ],
+      "denver": [
+        17,
+        36,
+        93,
+        459
+      ],
+      "dixon": [
+        171,
+        182,
+        205
+      ],
+      "remark": [
+        80
+      ],
+      "len": [
+        270
+      ],
+      "dri": [
+        373
+      ],
+      "hole": [
+        189,
+        415
+      ],
+      "hous": [
+        67,
+        119,
+        138,
+        158,
+        255,
+        272,
+        292,
+        302
+      ],
+      "intend": [
+        156
+      ],
+      "pad": [
+        199
+      ],
+      "expect": [
+        4,
+        23
+      ],
+      "difficult": [
+        102
+      ],
+      "issu": [
+        530
+      ],
+      "communiti": [
+        412,
+        495
+      ],
+      "blaze": [
+        223,
+        325
+      ],
+      "avail": [
+        364
+      ],
+      "lost": [
+        194,
+        284,
+        396
+      ],
+      "small": [
+        467
+      ],
+      "environment": [
+        550,
+        557
+      ],
+      "evacu": [
+        351
       ],
       "coverag": [
         548,
         558
       ],
-      "pair": [
-        267
+      "space": [
+        166
+      ],
+      "engulf": [
+        294
+      ],
+      "urg": [
+        417
+      ],
+      "knit": [
+        494
+      ],
+      "guest": [
+        217
+      ],
+      "sinc": [
+        160,
+        458
+      ],
+      "patchwork": [
+        48
+      ],
+      "around": [
+        88,
+        234
+      ],
+      "mark": [
+        264
+      ],
+      "major": [
+        357
+      ],
+      "anyon": [
+        83
+      ],
+      "visit": [
+        559
+      ],
+      "fire": [
+        57,
+        235,
+        308,
+        423,
+        561
+      ],
+      "seven": [
+        77,
+        137
+      ],
+      "ap": [
+        552,
+        556
+      ],
+      "make": [
+        442
+      ],
+      "shortag": [
+        107
+      ],
+      "late": [
+        369
+      ],
+      "friend": [
+        283
+      ],
+      "sidewalk": [
+        262
+      ],
+      "sure": [
+        276
+      ],
+      "tower": [
+        312
+      ],
+      "alarm": [
+        214
+      ],
+      "cathi": [
+        129
+      ],
+      "salt": [
+        538
+      ],
+      "build": [
+        118
+      ],
+      "ruin": [
+        51
+      ],
+      "contribut": [
+        514,
+        536
+      ],
+      "press": [
+        504,
+        532,
+        542
+      ],
+      "threat": [
+        336
+      ],
+      "turn": [
+        248
+      ],
+      "china": [
+        198
+      ],
+      "danger": [
+        422
+      ],
+      "smile": [
+        147
+      ],
+      "crew": [
+        398
+      ],
+      "die": [
+        319
+      ],
+      "medicin": [
+        247
+      ],
+      "began": [
+        323
+      ],
+      "stuff": [
+        304
       ],
       "home": [
         7,
@@ -965,185 +1861,319 @@
         435,
         479
       ],
-      "emerg": [
-        225
+      "brian": [
+        122
       ],
-      "wagon": [
-        261
+      "got": [
+        291,
+        466
       ],
-      "tower": [
-        312
+      "look": [
+        402,
+        490
       ],
-      "wind": [
-        318
+      "flame": [
+        41,
+        211,
+        313
       ],
-      "subsid": [
-        317
+      "suitcas": [
+        260
       ],
-      "stori": [
-        537
+      "anyth": [
+        301
+      ],
+      "25": [
+        480
+      ],
+      "gov": [
+        343
+      ],
+      "littl": [
+        42
       ],
       "line": [
         233,
         426
       ],
-      "program": [
-        524
+      "long": [
+        114
       ],
-      "salvag": [
-        13,
-        32
+      "practic": [
+        55
       ],
-      "front": [
-        61,
-        73
+      "probabl": [
+        389
       ],
-      "len": [
-        270
+      "natur": [
+        165
       ],
-      "associ": [
-        503,
-        519,
-        531,
-        541
+      "back": [
+        120,
+        164,
+        169,
+        243,
+        421
       ],
-      "nieberg": [
-        516
+      "seen": [
+        300,
+        455
       ],
-      "engulf": [
-        294
+      "roof": [
+        190
       ],
-      "mani": [
-        151,
-        348,
-        393
+      "subsid": [
+        317
       ],
-      "sky": [
-        316
+      "glaab": [
+        130,
+        143
       ],
-      "visit": [
-        559
+      "near": [
+        377
       ],
-      "return": [
-        44
+      "miracl": [
+        340
       ],
-      "neighborhood": [
-        45,
-        213,
-        288,
-        489
+      "eric": [
+        66
       ],
-      "right": [
-        113
+      "love": [
+        162,
+        498
       ],
-      "pell": [
-        385
-      ],
-      "get": [
-        245
-      ],
-      "gut": [
-        187
-      ],
-      "left": [
-        256
-      ],
-      "whether": [
-        277
-      ],
-      "hanger": [
-        210
-      ],
-      "stand": [
-        71,
-        142,
-        192
+      "percent": [
+        449
       ],
       "land": [
         163
       ],
-      "amid": [
-        105,
-        375
+      "tear": [
+        148
       ],
-      "sure": [
-        276
+      "face": [
+        101,
+        476
       ],
-      "sinc": [
-        160,
-        458
+      "boulder": [
+        381,
+        450
       ],
-      "place": [
-        278,
-        525
+      "saw": [
+        63,
+        174
       ],
-      "hold": [
-        342
+      "500": [
+        96,
+        387
       ],
-      "hand": [
-        341
+      "walton": [
+        545
+      ],
+      "go": [
+        420
+      ],
+      "know": [
+        497
+      ],
+      "mean": [
+        296
+      ],
+      "least": [
+        76,
+        281,
+        327
+      ],
+      "substanti": [
+        456
+      ],
+      "newsroom": [
+        528
+      ],
+      "scientist": [
+        438
+      ],
+      "swept": [
+        212
+      ],
+      "minut": [
+        350
+      ],
+      "debri": [
+        135
+      ],
+      "husband": [
+        159
+      ],
+      "list": [
+        404
+      ],
+      "investig": [
+        224
+      ],
+      "hundr": [
+        1,
+        20
+      ],
+      "sky": [
+        316
+      ],
+      "found": [
+        131,
+        185,
+        230
+      ],
+      "affect": [
+        365
+      ],
+      "presid": [
+        352
+      ],
+      "famili": [
+        38,
+        546
+      ],
+      "school": [
+        434
+      ],
+      "pipe": [
+        251
+      ],
+      "bruce": [
+        474
+      ],
+      "brought": [
+        109
+      ],
+      "far": [
+        380
+      ],
+      "miss": [
+        84,
+        406
+      ],
+      "survey": [
+        566
+      ],
+      "record": [
+        461
+      ],
+      "content": [
+        555
+      ],
+      "devast": [
+        49,
+        154,
+        403
+      ],
+      "park": [
+        433
+      ],
+      "gon": [
+        115
+      ],
+      "resid": [
+        3,
+        22,
+        418
+      ],
+      "jare": [
+        344
+      ],
+      "fallen": [
+        424
+      ],
+      "unusu": [
+        368
+      ],
+      "colorado": [
+        2,
+        21,
+        437,
+        509
+      ],
+      "local": [
+        527
+      ],
+      "sculptur": [
+        203
+      ],
+      "popul": [
+        95
+      ],
+      "hard": [
+        499
       ],
       "twist": [
         134
       ],
-      "broke": [
-        236,
-        367,
-        473
+      "take": [
+        117
       ],
-      "corp": [
-        517
+      "without": [
+        464
+      ],
+      "poli": [
+        345
+      ],
+      "rebuild": [
+        104,
+        157
+      ],
+      "speed": [
+        215
+      ],
+      "right": [
+        113
+      ],
+      "lake": [
+        539
+      ],
+      "consid": [
+        334
+      ],
+      "injur": [
+        79
+      ],
+      "fall": [
+        324,
+        374
+      ],
+      "freez": [
+        252
       ],
       "never": [
         299
       ],
-      "tore": [
-        16,
-        35
+      "respons": [
+        554
       ],
-      "also": [
-        201
+      "snowfal": [
+        471
       ],
-      "ap": [
-        552,
-        556
+      "propel": [
+        216
       ],
-      "road": [
-        237
+      "declar": [
+        356
       ],
-      "sheriff": [
-        383,
-        408,
-        410
+      "100": [
+        405
       ],
-      "memori": [
-        152
+      "peipert": [
+        507
       ],
-      "david": [
-        263
+      "2022": [
+        6,
+        25
       ],
-      "hillsid": [
-        266,
-        287
+      "peopl": [
+        78,
+        241,
+        349
       ],
-      "brian": [
-        122
-      ],
-      "immedi": [
-        335
-      ],
-      "person": [
-        407,
-        482
-      ],
-      "sidewalk": [
-        262
-      ],
-      "space": [
-        166
-      ],
-      "mark": [
-        264
+      "weather": [
+        443
       ],
       "said": [
         68,
@@ -1160,805 +2190,8 @@
         411,
         492
       ],
-      "rest": [
-        488
-      ],
-      "mountain": [
-        168
-      ],
-      "util": [
-        228
-      ],
-      "firefight": [
-        175
-      ],
-      "boulder": [
-        381,
-        450
-      ],
-      "ask": [
-        121
-      ],
-      "climat": [
-        440
-      ],
-      "stood": [
-        52,
-        265
-      ],
-      "year": [
-        11,
-        30,
-        59,
-        339,
-        370,
-        481
-      ],
-      "york": [
-        513
-      ],
-      "least": [
-        76,
-        281,
-        327
-      ],
-      "held": [
-        197
-      ],
-      "writer": [
-        505,
-        533
-      ],
-      "look": [
-        402,
-        490
-      ],
-      "superior": [
-        19,
-        90,
-        133,
-        427
-      ],
-      "retriev": [
-        202
-      ],
-      "happen": [
-        297,
-        501
-      ],
-      "freez": [
-        252
-      ],
-      "around": [
-        88,
-        234
-      ],
-      "water": [
-        249,
-        549
-      ],
-      "fli": [
-        305
-      ],
-      "eric": [
-        66
-      ],
-      "peipert": [
-        507
-      ],
-      "aid": [
-        362
-      ],
-      "own": [
-        124
-      ],
-      "neighbor": [
-        91,
-        273
-      ],
-      "fear": [
-        98,
-        172
-      ],
-      "drought": [
-        454
-      ],
-      "biden": [
-        354
-      ],
-      "environment": [
-        550,
-        557
-      ],
-      "press": [
-        504,
-        532,
-        542
-      ],
-      "janda": [
-        475
-      ],
-      "foundat": [
-        547
-      ],
-      "news": [
-        180
-      ],
-      "son": [
-        184
-      ],
-      "guest": [
-        217
-      ],
-      "beati": [
-        511
-      ],
-      "expect": [
-        4,
-        23
-      ],
-      "support": [
-        544
-      ],
-      "new": [
-        10,
-        29,
-        338,
-        512
-      ],
-      "disast": [
-        358
-      ],
-      "park": [
-        433
-      ],
-      "father": [
-        206
-      ],
-      "unusu": [
-        368
-      ],
-      "debri": [
-        135
-      ],
-      "china": [
-        198
-      ],
-      "would": [
-        173
-      ],
-      "next": [
-        53
-      ],
-      "erupt": [
-        86
-      ],
-      "order": [
-        220,
-        360
-      ],
-      "fallen": [
-        424
-      ],
-      "offici": [
-        229
-      ],
-      "one": [
-        54,
-        136
-      ],
-      "walk": [
-        60,
-        69,
-        72,
-        242
-      ],
-      "na": [
-        116
-      ],
-      "hard": [
-        499
-      ],
-      "subdivis": [
-        430
-      ],
-      "sever": [
-        452
-      ],
-      "issu": [
-        530
-      ],
-      "save": [
-        177
-      ],
-      "24": [
-        330
-      ],
-      "rebuild": [
-        104,
-        157
-      ],
-      "take": [
-        117
-      ],
-      "flee": [
-        40,
-        221
-      ],
-      "jare": [
-        344
-      ],
-      "tell": [
-        275
-      ],
-      "turn": [
-        248
-      ],
-      "school": [
-        434
-      ],
-      "patchwork": [
-        48
-      ],
-      "made": [
-        363
-      ],
-      "anyon": [
-        83
-      ],
-      "suitcas": [
-        260
-      ],
-      "pile": [
-        207
-      ],
-      "close": [
-        239,
-        493
-      ],
-      "swept": [
-        212
-      ],
-      "might": [
-        337,
-        395
-      ],
-      "evacu": [
-        351
-      ],
-      "urg": [
-        417
-      ],
-      "air": [
-        306
-      ],
-      "everyth": [
-        195
-      ],
-      "task": [
-        103
-      ],
-      "35": [
-        58
-      ],
-      "devast": [
-        49,
-        154,
-        403
-      ],
-      "night": [
-        315
-      ],
-      "10": [
-        469
-      ],
-      "felt": [
-        484
-      ],
-      "ground": [
-        128,
-        416
-      ],
-      "contain": [
-        200
-      ],
-      "thoma": [
-        506
-      ],
-      "burn": [
-        127,
-        178,
-        289,
-        326
-      ],
-      "nineti": [
-        448
-      ],
-      "chang": [
-        441
-      ],
-      "receiv": [
-        543
-      ],
-      "back": [
-        120,
-        164,
-        169,
-        243,
-        421
-      ],
-      "combin": [
-        94
-      ],
-      "gon": [
-        115
-      ],
-      "binocular": [
-        268
-      ],
-      "fill": [
-        429
-      ],
-      "remain": [
-        14,
-        33
-      ],
-      "wildfir": [
-        15,
-        34,
-        85,
-        366,
-        445,
-        472
-      ],
-      "suburb": [
-        18,
-        37
-      ],
-      "note": [
-        347
-      ],
-      "most": [
-        186
-      ],
-      "northwest": [
-        92
-      ],
-      "view": [
-        167
-      ],
-      "threat": [
-        336
-      ],
-      "camera": [
-        269
-      ],
-      "america": [
-        520
-      ],
-      "communiti": [
-        412,
-        495
-      ],
-      "way": [
-        111
-      ],
-      "last": [
-        470
-      ],
-      "sole": [
-        553
-      ],
-      "miss": [
-        84,
-        406
-      ],
-      "knit": [
-        494
-      ],
       "devoid": [
         378
-      ],
-      "governor": [
-        391
-      ],
-      "ok": [
-        279
-      ],
-      "storm": [
-        468
-      ],
-      "thalia": [
-        510
-      ],
-      "die": [
-        319
-      ],
-      "pipe": [
-        251
-      ],
-      "ten": [
-        218
-      ],
-      "got": [
-        291,
-        466
-      ],
-      "follow": [
-        371
-      ],
-      "stuff": [
-        304
-      ],
-      "lit": [
-        314
-      ],
-      "cloth": [
-        208,
-        246
-      ],
-      "find": [
-        47
-      ],
-      "frequent": [
-        446
-      ],
-      "caus": [
-        222
-      ],
-      "friday": [
-        46,
-        181,
-        240,
-        311,
-        355,
-        483
-      ],
-      "salt": [
-        538
-      ],
-      "homeown": [
-        100
-      ],
-      "street": [
-        496
-      ],
-      "neill": [
-        123
-      ],
-      "economi": [
-        112
-      ],
-      "global": [
-        106
-      ],
-      "major": [
-        357
-      ],
-      "pandem": [
-        110
-      ],
-      "center": [
-        432
-      ],
-      "three": [
-        282
-      ],
-      "popul": [
-        95
-      ],
-      "suppli": [
-        108
-      ],
-      "littl": [
-        42
-      ],
-      "us": [
-        502
-      ],
-      "danger": [
-        422
-      ],
-      "blaze": [
-        223,
-        325
-      ],
-      "beauti": [
-        64
-      ],
-      "local": [
-        527
-      ],
-      "start": [
-        9,
-        28
-      ],
-      "percent": [
-        449
-      ],
-      "investig": [
-        224
-      ],
-      "report": [
-        81,
-        515,
-        529
-      ],
-      "found": [
-        131,
-        185,
-        230
-      ],
-      "anyth": [
-        301
-      ],
-      "husband": [
-        159
-      ],
-      "brought": [
-        109
-      ],
-      "propel": [
-        216
-      ],
-      "time": [
-        290
-      ],
-      "tear": [
-        148
-      ],
-      "death": [
-        82
-      ],
-      "colorado": [
-        2,
-        21,
-        437,
-        509
-      ],
-      "denver": [
-        17,
-        36,
-        93,
-        459
-      ],
-      "alarm": [
-        214
-      ],
-      "small": [
-        467
-      ],
-      "prevent": [
-        250
-      ],
-      "mean": [
-        296
-      ],
-      "despit": [
-        153
-      ],
-      "fire": [
-        57,
-        235,
-        308,
-        423
-      ],
-      "light": [
-        310,
-        320
-      ],
-      "row": [
-        139
-      ],
-      "hole": [
-        189,
-        415
-      ],
-      "25": [
-        480
-      ],
-      "bradi": [
-        534
-      ],
-      "snow": [
-        321,
-        379,
-        465
-      ],
-      "https": [
-        560
-      ],
-      "poli": [
-        345
-      ],
-      "longer": [
-        333
-      ],
-      "like": [
-        491
-      ],
-      "area": [
-        359
-      ],
-      "first": [
-        309
-      ],
-      "saw": [
-        63,
-        174
-      ],
-      "intend": [
-        156
-      ],
-      "near": [
-        377
-      ],
-      "began": [
-        323
-      ],
-      "lake": [
-        539
-      ],
-      "seen": [
-        300,
-        455
-      ],
-      "crew": [
-        398
-      ],
-      "wife": [
-        183
-      ],
-      "thursday": [
-        87
-      ],
-      "medicin": [
-        247
-      ],
-      "still": [
-        191,
-        209,
-        238,
-        254,
-        274
-      ],
-      "thought": [
-        193
-      ],
-      "roof": [
-        190
-      ],
-      "crack": [
-        146
-      ],
-      "newsroom": [
-        528
-      ],
-      "know": [
-        497
-      ],
-      "miracl": [
-        340
-      ],
-      "author": [
-        226
-      ],
-      "go": [
-        420
-      ],
-      "day": [
-        463
-      ],
-      "famili": [
-        38,
-        546
-      ],
-      "smoke": [
-        50,
-        414
-      ],
-      "caught": [
-        307
-      ],
-      "member": [
-        518
-      ],
-      "hundr": [
-        1,
-        20
-      ],
-      "remark": [
-        80
-      ],
-      "sad": [
-        150
-      ],
-      "destruct": [
-        447
-      ],
-      "instead": [
-        8,
-        27
-      ],
-      "carri": [
-        257
-      ],
-      "journalist": [
-        526
-      ],
-      "1998": [
-        161
-      ],
-      "declar": [
-        356
-      ],
-      "cathi": [
-        129
-      ],
-      "scientist": [
-        438
-      ],
-      "list": [
-        404
-      ],
-      "friend": [
-        283
-      ],
-      "down": [
-        231
-      ],
-      "assess": [
-        399
-      ],
-      "gov": [
-        343
-      ],
-      "say": [
-        439
-      ],
-      "natur": [
-        165
-      ],
-      "100": [
-        405
-      ],
-      "winter": [
-        376
-      ],
-      "mailbox": [
-        141
-      ],
-      "counti": [
-        382,
-        451
-      ],
-      "glaab": [
-        130,
-        143
-      ],
-      "loss": [
-        477
-      ],
-      "build": [
-        118
-      ],
-      "shortag": [
-        107
-      ],
-      "minut": [
-        350
-      ],
-      "mccomb": [
-        535
-      ],
-      "smile": [
-        147
-      ],
-      "dri": [
-        373
-      ],
-      "univers": [
-        436
       ],
       "louisvill": [
         89,
@@ -1967,108 +2200,55 @@
         478,
         508
       ],
-      "pull": [
-        259
+      "most": [
+        186
       ],
-      "joe": [
-        353,
-        384
+      "made": [
+        363
       ],
-      "sculptur": [
-        203
+      "sole": [
+        553
       ],
-      "kilomet": [
-        332
+      "task": [
+        103
       ],
-      "content": [
-        555
+      "whether": [
+        277
       ],
-      "fall": [
-        324,
-        374
+      "subdivis": [
+        430
       ],
-      "complet": [
-        293
-      ],
-      "tri": [
-        12,
-        31,
-        145,
-        176
-      ],
-      "snowfal": [
-        471
-      ],
-      "mile": [
-        329
-      ],
-      "love": [
-        162,
-        498
-      ],
-      "servic": [
-        523
-      ],
-      "contribut": [
-        514,
-        536
-      ],
-      "500": [
-        96,
-        387
-      ],
-      "injur": [
-        79
-      ],
-      "2022": [
-        6,
-        25
-      ],
-      "probabl": [
-        389
-      ],
-      "see": [
-        75,
-        253,
-        271,
-        486,
-        487,
-        500
-      ],
-      "lost": [
-        194,
-        284,
-        396
-      ],
-      "speed": [
-        215
+      "suppli": [
+        108
       ],
       "extrem": [
         372,
         444,
         453
       ],
-      "record": [
-        461
+      "smoke": [
+        50,
+        414
       ],
-      "fenc": [
-        303
+      "offici": [
+        229
       ],
-      "power": [
-        232,
-        425
+      "belong": [
+        204
       ],
-      "presid": [
-        352
+      "mani": [
+        151,
+        348,
+        393
       ],
-      "known": [
-        397
+      "time": [
+        290
       ],
-      "long": [
-        114
+      "begin": [
+        563
       ],
-      "rainfal": [
-        457
+      "erupt": [
+        86
       ],
       "reduc": [
         413
@@ -2078,172 +2258,15 @@
         140,
         390
       ],
-      "feder": [
-        361
+      "fli": [
+        305
       ],
-      "ruin": [
-        51
+      "author": [
+        226
       ],
-      "soon": [
-        322
-      ],
-      "rick": [
-        170
-      ],
-      "respons": [
-        554
-      ],
-      "substanti": [
-        456
-      ],
-      "watch": [
-        286
-      ],
-      "forc": [
-        39
-      ],
-      "thousand": [
-        219
-      ],
-      "flame": [
-        41,
-        211,
-        313
-      ],
-      "dixon": [
-        171,
-        182,
-        205
-      ],
-      "wait": [
-        419
-      ],
-      "squar": [
-        328,
-        331
-      ],
-      "damag": [
-        400
-      ],
-      "make": [
-        442
-      ],
-      "set": [
-        460
-      ],
-      "face": [
-        101,
-        476
-      ],
-      "polici": [
-        551
-      ],
-      "citi": [
-        540
-      ],
-      "ring": [
-        5,
-        24
-      ],
-      "without": [
-        464
-      ],
-      "pad": [
-        199
-      ],
-      "late": [
-        369
-      ],
-      "ad": [
-        149
-      ],
-      "nonprofit": [
-        521
-      ],
-      "consecut": [
-        462
-      ],
-      "need": [
-        485
-      ],
-      "resid": [
-        3,
-        22,
-        418
-      ],
-      "unbeliev": [
-        401
-      ],
-      "quick": [
-        298
-      ],
-      "nation": [
-        522
-      ],
-      "door": [
-        62,
-        74
-      ],
-      "seven": [
-        77,
-        137
-      ],
-      "affect": [
-        365
-      ],
-      "backpack": [
-        258
-      ],
-      "hous": [
-        67,
-        119,
-        138,
-        158,
-        255,
-        272,
-        292,
-        302
-      ],
-      "far": [
-        380
-      ],
-      "weather": [
-        443
-      ],
-      "walton": [
-        545
-      ],
-      "warn": [
-        43
-      ],
-      "consid": [
-        334
-      ],
-      "avail": [
-        364
-      ],
-      "peopl": [
-        78,
-        241,
-        349
-      ],
-      "gape": [
-        188
-      ],
-      "belong": [
-        204
-      ],
-      "difficult": [
-        102
-      ],
-      "bruce": [
-        474
-      ],
-      "unscath": [
-        56
-      ],
-      "shop": [
-        431
+      "suburb": [
+        18,
+        37
       ]
     },
     "url": "https://abcnews.go.com/US/wireStory/colorado-fire-victims-begin-year-surveying-destruction-82028919",
