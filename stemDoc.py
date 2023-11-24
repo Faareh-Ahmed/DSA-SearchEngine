@@ -2,13 +2,16 @@ import json
 import hashlib
 import nltk
 from nltk.stem import SnowballStemmer
+from nltk.corpus import stopwords
+nltk.download("stopwords")
 
 nltk.download("punkt")
 # nltk is a library to process natural language data for understandable by computer
 from nltk.tokenize import word_tokenize, sent_tokenize
 # Initialize the SnowballStemmer
 stemmer = SnowballStemmer(language='english')
-
+# Get the set of English stop words
+stop_words = set(stopwords.words('english'))
 # ******************* Printing the URLs from the documents *******************
 
 # Specify the path to your JSON file
@@ -52,8 +55,8 @@ for i, article in enumerate(data[:1], 1):
    # Tokenize the content
     content = article["content"]
     tokens = [word_tokenize(content)]
-    stemmed_words = [stemmer.stem(token) for sentence_tokens in tokens for token in sentence_tokens]
-
+    # Remove stop words and punctuation, and stem the remaining words
+    stemmed_words = [stemmer.stem(token) for sentence_tokens in tokens for token in sentence_tokens if token.isalnum() and token.lower() not in stop_words]
 
     # Store tokens in the dictionary
     tokens_dict[i] = stemmed_words
