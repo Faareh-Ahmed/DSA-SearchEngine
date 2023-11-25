@@ -10,7 +10,7 @@ from nltk.tokenize import word_tokenize, sent_tokenize
 # ******************* Printing the URLs from the documents *******************
 
 # Specify the path to your JSON file
-json_file_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\newsdata\\abcnews.json"
+json_file_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\newsdata\\aljazeera.json"
 
 # Read the JSON data from the file
 with open(json_file_path, "r") as file:

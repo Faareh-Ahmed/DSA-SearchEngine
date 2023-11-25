@@ -5,33 +5,33 @@ from nltk.stem import SnowballStemmer
 from nltk.corpus import stopwords
 import os
 
-
 nltk.download("stopwords")
-
 nltk.download("punkt")
+
 # nltk is a library to process natural language data for understandable by computer
 from nltk.tokenize import word_tokenize, sent_tokenize
 
 # Initialize the SnowballStemmer
 stemmer = SnowballStemmer(language="english")
+
 # Get the set of English stop words
 stop_words = set(stopwords.words("english"))
-# ******************* Printing the URLs from the documents *******************
 
 # Specify the path to the folder containing JSON files
 folder_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\newsdata"
+
 # List all files in the specified folder
 json_files = [f for f in os.listdir(folder_path) if f.endswith(".json")]
 
-# *********** Forward index of First Document ***********
+# Initializing a list to store forward index data
+forward_index_data = []
 
-
-# Initialize the forward index dictionary
-forward_index = {}
 # Initializing a dictionary to store tokens
 tokens_dict = {}
+
 # Counter to track the number of documents read
 documents_read = 0
+
 # Maximum number of documents to read
 max_documents = 100000
 
@@ -40,18 +40,16 @@ def generate_doc_id(content):
     hash_object = hashlib.sha256(content.encode("UTF-8"))
     doc_id = hash_object.hexdigest()
     # Convert the hexadecimal string to a long integer
-    doc_id = int(doc_id, 16)
+    doc_id = int(doc_id, 16) 
     return doc_id
 
 def hash_forwardindex(doc_id_hash):
-    # Perform modulo 10 to split the forward index into 10files
+    # Perform modulo 10 to split the forward index into 10 files
     result = doc_id_hash % 10
     return result
 
-
 # Example usage:
-print("Trying Forward INdex")
-
+print("Trying Forward Index")
 
 # Iterate through each JSON file
 for json_file in json_files:
@@ -65,31 +63,36 @@ for json_file in json_files:
     # Parse the JSON data
     data = json.loads(json_data)
 
-    for i, article in enumerate(data[:1], 1):
+    for i, article in enumerate(data, 1):
         # Stop reading once the maximum number of documents is reached
         if documents_read >= max_documents:
-            break  
+            break
 
         print(f"{documents_read}.{article['title']}")
 
         document_title = article["url"]
         doc_id = generate_doc_id(document_title)
-        file_index=hash_forwardindex(doc_id)
+        file_index = hash_forwardindex(doc_id)
 
         # Check if that DocID is already present in that File_index
-
         forward_index_file = f"forward_index_{file_index}.json"
-        with open(forward_index_file, "r") as file:
-            forward_index_data = json.load(file)
+
+        try:
+            with open(forward_index_file, "r") as file:
+                forward_index_data = json.load(file)
 
             # Check if the doc_id is already present in the file
-            if doc_id in forward_index_data:
-                print("\nThis DocID alrady exists\n")
-                break
+            if any(doc["doc_id"] == doc_id for doc in forward_index_data):
+                print("\nThis DocID already exists\n")
+                continue
+
+        except FileNotFoundError:
+            forward_index_data = []
 
         # Tokenize the content
         content = article["title"] + " " + article["content"]
         tokens = [word_tokenize(content)]
+
         # Remove stop words and punctuation, and stem the remaining words
         stemmed_words = [
             stemmer.stem(token)
@@ -117,7 +120,7 @@ for json_file in json_files:
         }
 
         # Create the forward index entry for the document
-        forward_index[doc_id] = {
+        forward_index_data.append({
             "doc_id": doc_id,
             "stemmed_tokens": tokens_dict[i],
             "token_frequency": token_frequency,
@@ -126,14 +129,13 @@ for json_file in json_files:
             "date": article["date"],
             "published_utc": article["published_utc"],
             "collection_utc": article["collection_utc"],
-        }
+        })
+
+        # Write the forward index to a JSON file
+        with open(forward_index_file, "w") as file:
+            json.dump(forward_index_data, file, indent=2)
+
         documents_read += 1
 
-    # Write the forward index to multiple JSON files based on the file index
-        output_file_path = f"forward_index_{file_index}.json"
-        with open(output_file_path, "a") as output_file:
-            json.dump(forward_index, output_file, indent=2)
-            output_file.write("\n")  # Add a newline to separate entries
-
 print("Forward index Stored in Multiple Files")
-
+ 
