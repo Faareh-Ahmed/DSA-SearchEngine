@@ -24,6 +24,7 @@ for test_entry in data:
     frequency = test_entry["token_frequency"]
 
     for position, token in enumerate(stemmed_tokens, start =1):
+        frequency = test_entry["token_frequency"][token]
         if token not in inverted_index:
             inverted_index[token] = {"documents": [], "positions": {}, "frequency": {}}
 
