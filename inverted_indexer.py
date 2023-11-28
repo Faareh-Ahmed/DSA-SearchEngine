@@ -12,7 +12,7 @@ nltk.download("punkt")
 inverted_index = {}
 
 # Path to test file
-json_file_path = "C:\\Users\\Ghouri\\Desktop\\Git\\DSA-SearchEngine\\Test_forward_index.json"
+json_file_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\codeSpace\\inverted_index_test_file.json"
 
 # Opening the file
 with open(json_file_path, "r") as file:
@@ -22,10 +22,10 @@ for test_entry in data:
     doc_id = test_entry["doc_id"]
     stemmed_tokens = test_entry["stemmed_tokens"]
 
-    for token in stemmed_tokens:
+    # for token in stemmed_tokens:
         
 
-inverted_index_test_file = "C:\\Users\\Ghouri\\Desktop\\Git\\DSA-SearchEngine\\inverted_index_test_file.json"
+inverted_index_test_file = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\codeSpace\\inverted_index_test_file.json"
 inverted_index_file = "inverted_index.json"
 with open(inverted_index_test_file, "w") as file:
     json.dump(inverted_index, file, indent=2)
@@ -36,7 +36,7 @@ print("Inverted index stored in 'inverted_index.json'")
 # Initialize the inverted index dictionary
 inverted_index = {}
 
-forward_index_path = "C:\\Users\\Ghouri\\Desktop\\Git\\DSA-SearchEngine\\forward_index_0.json"
+forward_index_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\codeSpace\\forward_index_0.json"
 
 with open(forward_index_path, "r") as file:
      forward_index_data = json.load(file)
