@@ -1,0 +1,3281 @@
+[
+    {
+      "doc_id": 15460231745440721986630480501923224619407026595695553569817991294004857021049,
+      "stemmed_tokens": [
+        "babylon",
+        "bee",
+        "best",
+        "sketch",
+        "2021",
+        "look",
+        "back",
+        "2021",
+        "highlight",
+        "reel",
+        "best",
+        "sketch",
+        "polit",
+        "incorrect",
+        "watch",
+        "pleas",
+        "help",
+        "support",
+        "independ",
+        "media",
+        "platform"
+      ],
+      "token_frequency": {
+        "back": 1,
+        "highlight": 1,
+        "reel": 1,
+        "media": 1,
+        "support": 1,
+        "independ": 1,
+        "look": 1,
+        "babylon": 1,
+        "watch": 1,
+        "pleas": 1,
+        "best": 2,
+        "bee": 1,
+        "polit": 1,
+        "platform": 1,
+        "incorrect": 1,
+        "sketch": 2,
+        "help": 1,
+        "2021": 2
+      },
+      "token_positions": {
+        "back": [
+          7
+        ],
+        "highlight": [
+          9
+        ],
+        "reel": [
+          10
+        ],
+        "media": [
+          20
+        ],
+        "support": [
+          18
+        ],
+        "independ": [
+          19
+        ],
+        "look": [
+          6
+        ],
+        "babylon": [
+          1
+        ],
+        "watch": [
+          15
+        ],
+        "pleas": [
+          16
+        ],
+        "best": [
+          3,
+          11
+        ],
+        "bee": [
+          2
+        ],
+        "polit": [
+          13
+        ],
+        "platform": [
+          21
+        ],
+        "incorrect": [
+          14
+        ],
+        "sketch": [
+          4,
+          12
+        ],
+        "help": [
+          17
+        ],
+        "2021": [
+          5,
+          8
+        ]
+      },
+      "url": "https://21stcenturywire.com/2022/01/01/the-best-babylon-bee-sketches-of-2021/",
+      "date": "2022-01-01",
+      "published_utc": 1641072697,
+      "collection_utc": 1641078005
+    },
+    {
+      "doc_id": 19168175791169071123633031438238803328220279873963395925049167791996744671699,
+      "stemmed_tokens": [
+        "new",
+        "climat",
+        "panic",
+        "among",
+        "new",
+        "climat",
+        "panic",
+        "grip",
+        "profit",
+        "doom",
+        "climat",
+        "scientist",
+        "made",
+        "fame",
+        "fortun",
+        "tell",
+        "us",
+        "world",
+        "toast",
+        "unless",
+        "west",
+        "though",
+        "respons",
+        "fifth",
+        "world",
+        "sin",
+        "emiss",
+        "commit",
+        "econom",
+        "cost",
+        "placat",
+        "climat",
+        "communism",
+        "alreadi",
+        "quadrillion",
+        "howev",
+        "becom",
+        "awar",
+        "offici",
+        "climat",
+        "narrat",
+        "root",
+        "grave",
+        "error",
+        "physic",
+        "error",
+        "elementari",
+        "describ",
+        "much",
+        "warm",
+        "may",
+        "caus",
+        "forgot",
+        "sun",
+        "shine",
+        "1850",
+        "measur",
+        "impact",
+        "global",
+        "temperatur",
+        "direct",
+        "warm",
+        "natur",
+        "occur",
+        "greenhous",
+        "gase",
+        "water",
+        "vapor",
+        "8",
+        "degre",
+        "absolut",
+        "kelvin",
+        "yet",
+        "total",
+        "natur",
+        "greenhous",
+        "effect",
+        "year",
+        "32",
+        "k",
+        "differ",
+        "measur",
+        "global",
+        "temperatur",
+        "287",
+        "k",
+        "emiss",
+        "temperatur",
+        "255",
+        "24",
+        "k",
+        "differ",
+        "8",
+        "k",
+        "direct",
+        "32",
+        "k",
+        "final",
+        "warm",
+        "addit",
+        "warm",
+        "chiefli",
+        "caus",
+        "water",
+        "vapor",
+        "warmer",
+        "air",
+        "thus",
+        "imagin",
+        "factor",
+        "direct",
+        "warm",
+        "feedback",
+        "respons",
+        "multipli",
+        "give",
+        "final",
+        "warm",
+        "includ",
+        "feedback",
+        "respons",
+        "32",
+        "8",
+        "4",
+        "sinc",
+        "direct",
+        "warm",
+        "doubl",
+        "co",
+        "littl",
+        "1",
+        "k",
+        "imagin",
+        "final",
+        "warm",
+        "rough",
+        "equival",
+        "final",
+        "warm",
+        "may",
+        "caus",
+        "throughout",
+        "21st",
+        "centuri",
+        "would",
+        "4",
+        "feedback",
+        "other",
+        "broad",
+        "must",
+        "respond",
+        "direct",
+        "warm",
+        "warm",
+        "also",
+        "sure",
+        "observ",
+        "fact",
+        "sun",
+        "shine",
+        "correct",
+        "take",
+        "account",
+        "feedback",
+        "respons",
+        "255",
+        "k",
+        "sunshin",
+        "temperatur",
+        "would",
+        "subsist",
+        "earth",
+        "greenhous",
+        "gase",
+        "air",
+        "factor",
+        "1850",
+        "32",
+        "8",
+        "4",
+        "imagin",
+        "255",
+        "32",
+        "strike",
+        "simpl",
+        "correct",
+        "allow",
+        "fact",
+        "near",
+        "feedback",
+        "respons",
+        "1850",
+        "respons",
+        "preindustri",
+        "greenhous",
+        "gase",
+        "sunshin",
+        "feedback",
+        "regim",
+        "today",
+        "1850",
+        "expect",
+        "4",
+        "k",
+        "warm",
+        "centuri",
+        "end",
+        "climat",
+        "emerg",
+        "sure",
+        "enough",
+        "rate",
+        "global",
+        "warm",
+        "sinc",
+        "end",
+        "second",
+        "world",
+        "war",
+        "equival",
+        "k",
+        "per",
+        "centuri",
+        "warm",
+        "confid",
+        "predict",
+        "ipcc",
+        "1990",
+        "wide",
+        "unreport",
+        "global",
+        "warm",
+        "approach",
+        "eight",
+        "year",
+        "see",
+        "warm",
+        "decad",
+        "feedback",
+        "strength",
+        "greater",
+        "today",
+        "1850",
+        "influenc",
+        "sun",
+        "domin",
+        "increas",
+        "littl",
+        "1",
+        "feedback",
+        "strength",
+        "compar",
+        "year",
+        "would",
+        "push",
+        "k",
+        "final",
+        "centuri",
+        "250",
+        "offici",
+        "predict",
+        "4",
+        "problem",
+        "jame",
+        "hansen",
+        "agit",
+        "nasa",
+        "first",
+        "publish",
+        "error",
+        "1984",
+        "imagin",
+        "factor",
+        "somewher",
+        "2",
+        "4",
+        "tacit",
+        "admiss",
+        "know",
+        "feedback",
+        "strength",
+        "within",
+        "100",
+        "let",
+        "alon",
+        "1",
+        "uncertainti",
+        "feedback",
+        "strength",
+        "ipcc",
+        "leaden",
+        "prolix",
+        "assess",
+        "report",
+        "still",
+        "greater",
+        "rang",
+        "littl",
+        "zero",
+        "one",
+        "least",
+        "quantiti",
+        "whole",
+        "physic",
+        "mean",
+        "climatolog",
+        "faintest",
+        "idea",
+        "much",
+        "rather",
+        "littl",
+        "global",
+        "warm",
+        "may",
+        "caus",
+        "report",
+        "pure",
+        "guesswork",
+        "littl",
+        "reason",
+        "suppos",
+        "feedback",
+        "regim",
+        "today",
+        "exact",
+        "1850",
+        "error",
+        "aros",
+        "hansen",
+        "copi",
+        "climatologist",
+        "sinc",
+        "borrow",
+        "feedback",
+        "math",
+        "control",
+        "theori",
+        "matur",
+        "branch",
+        "engin",
+        "physic",
+        "without",
+        "understand",
+        "curs",
+        "interdisciplinari",
+        "compartment",
+        "scienc",
+        "correct",
+        "error",
+        "remov",
+        "near",
+        "certainti",
+        "larg",
+        "danger",
+        "anthropogen",
+        "warm",
+        "destroy",
+        "pretext",
+        "shut",
+        "west",
+        "past",
+        "30",
+        "year",
+        "notwithstand",
+        "increas",
+        "hyster",
+        "rhetor",
+        "un",
+        "intermin",
+        "annual",
+        "climat",
+        "gabfest",
+        "anthropogen",
+        "forc",
+        "influenc",
+        "temperatur",
+        "increas",
+        "straight",
+        "line",
+        "unit",
+        "per",
+        "year",
+        "mitig",
+        "increas",
+        "would",
+        "continu",
+        "anoth",
+        "30",
+        "year",
+        "till",
+        "instead",
+        "go",
+        "straight",
+        "line",
+        "emiss",
+        "2050",
+        "half",
+        "1",
+        "unit",
+        "forc",
+        "would",
+        "otherwis",
+        "arisen",
+        "would",
+        "continu",
+        "articl",
+        "american",
+        "thinker",
+        "pleas",
+        "help",
+        "support",
+        "independ",
+        "media",
+        "platform"
+      ],
+      "token_frequency": {
+        "jame": 1,
+        "occur": 1,
+        "sin": 1,
+        "increas": 4,
+        "arisen": 1,
+        "remov": 1,
+        "pleas": 1,
+        "see": 1,
+        "till": 1,
+        "approach": 1,
+        "near": 2,
+        "sure": 2,
+        "offici": 2,
+        "climatologist": 1,
+        "sinc": 3,
+        "compartment": 1,
+        "intermin": 1,
+        "placat": 1,
+        "effect": 1,
+        "feedback": 12,
+        "certainti": 1,
+        "emiss": 3,
+        "fact": 2,
+        "branch": 1,
+        "anthropogen": 2,
+        "hansen": 2,
+        "throughout": 1,
+        "21st": 1,
+        "problem": 1,
+        "help": 1,
+        "annual": 1,
+        "report": 2,
+        "climat": 7,
+        "multipli": 1,
+        "admiss": 1,
+        "pretext": 1,
+        "independ": 1,
+        "grip": 1,
+        "total": 1,
+        "32": 5,
+        "leaden": 1,
+        "global": 5,
+        "math": 1,
+        "commit": 1,
+        "thus": 1,
+        "alon": 1,
+        "elementari": 1,
+        "one": 1,
+        "8": 4,
+        "curs": 1,
+        "theori": 1,
+        "exact": 1,
+        "4": 6,
+        "know": 1,
+        "account": 1,
+        "nasa": 1,
+        "30": 2,
+        "prolix": 1,
+        "allow": 1,
+        "go": 1,
+        "notwithstand": 1,
+        "fortun": 1,
+        "includ": 1,
+        "war": 1,
+        "straight": 2,
+        "within": 1,
+        "strike": 1,
+        "2": 1,
+        "otherwis": 1,
+        "gase": 3,
+        "describ": 1,
+        "255": 3,
+        "scienc": 1,
+        "un": 1,
+        "equival": 2,
+        "made": 1,
+        "air": 2,
+        "expect": 1,
+        "doom": 1,
+        "cost": 1,
+        "greenhous": 4,
+        "toast": 1,
+        "fame": 1,
+        "differ": 2,
+        "yet": 1,
+        "somewher": 1,
+        "destroy": 1,
+        "much": 2,
+        "instead": 1,
+        "end": 2,
+        "interdisciplinari": 1,
+        "may": 3,
+        "decad": 1,
+        "broad": 1,
+        "ipcc": 2,
+        "temperatur": 5,
+        "warmer": 1,
+        "degre": 1,
+        "287": 1,
+        "econom": 1,
+        "1": 4,
+        "physic": 3,
+        "earth": 1,
+        "quadrillion": 1,
+        "wide": 1,
+        "final": 5,
+        "unreport": 1,
+        "climatolog": 1,
+        "suppos": 1,
+        "scientist": 1,
+        "media": 1,
+        "becom": 1,
+        "error": 5,
+        "whole": 1,
+        "faintest": 1,
+        "engin": 1,
+        "strength": 4,
+        "correct": 3,
+        "eight": 1,
+        "half": 1,
+        "idea": 1,
+        "also": 1,
+        "would": 6,
+        "assess": 1,
+        "influenc": 2,
+        "regim": 2,
+        "forgot": 1,
+        "impact": 1,
+        "second": 1,
+        "rhetor": 1,
+        "line": 2,
+        "take": 1,
+        "today": 3,
+        "unless": 1,
+        "thinker": 1,
+        "caus": 4,
+        "measur": 2,
+        "push": 1,
+        "1984": 1,
+        "greater": 2,
+        "rang": 1,
+        "agit": 1,
+        "borrow": 1,
+        "enough": 1,
+        "gabfest": 1,
+        "chiefli": 1,
+        "control": 1,
+        "natur": 2,
+        "1850": 6,
+        "rather": 1,
+        "danger": 1,
+        "emerg": 1,
+        "observ": 1,
+        "per": 2,
+        "must": 1,
+        "doubl": 1,
+        "reason": 1,
+        "hyster": 1,
+        "factor": 3,
+        "let": 1,
+        "mean": 1,
+        "shine": 2,
+        "forc": 2,
+        "simpl": 1,
+        "uncertainti": 1,
+        "aros": 1,
+        "warm": 18,
+        "understand": 1,
+        "addit": 1,
+        "centuri": 4,
+        "anoth": 1,
+        "pure": 1,
+        "among": 1,
+        "co": 1,
+        "respons": 6,
+        "though": 1,
+        "profit": 1,
+        "larg": 1,
+        "direct": 5,
+        "imagin": 4,
+        "panic": 2,
+        "kelvin": 1,
+        "k": 10,
+        "sun": 3,
+        "west": 2,
+        "respond": 1,
+        "1990": 1,
+        "without": 1,
+        "preindustri": 1,
+        "tacit": 1,
+        "domin": 1,
+        "vapor": 2,
+        "subsist": 1,
+        "24": 1,
+        "continu": 2,
+        "water": 2,
+        "articl": 1,
+        "matur": 1,
+        "year": 6,
+        "us": 1,
+        "american": 1,
+        "mitig": 1,
+        "new": 2,
+        "confid": 1,
+        "root": 1,
+        "rate": 1,
+        "howev": 1,
+        "world": 3,
+        "copi": 1,
+        "first": 1,
+        "quantiti": 1,
+        "250": 1,
+        "predict": 2,
+        "absolut": 1,
+        "past": 1,
+        "platform": 1,
+        "publish": 1,
+        "fifth": 1,
+        "communism": 1,
+        "sunshin": 2,
+        "other": 1,
+        "grave": 1,
+        "2050": 1,
+        "guesswork": 1,
+        "unit": 2,
+        "least": 1,
+        "compar": 1,
+        "zero": 1,
+        "support": 1,
+        "still": 1,
+        "rough": 1,
+        "shut": 1,
+        "awar": 1,
+        "give": 1,
+        "100": 1,
+        "narrat": 1,
+        "alreadi": 1,
+        "tell": 1,
+        "littl": 5
+      },
+      "token_positions": {
+        "jame": [
+          264
+        ],
+        "occur": [
+          64
+        ],
+        "sin": [
+          26
+        ],
+        "increas": [
+          247,
+          365,
+          377,
+          384
+        ],
+        "arisen": [
+          403
+        ],
+        "remov": [
+          350
+        ],
+        "pleas": [
+          409
+        ],
+        "see": [
+          236
+        ],
+        "till": [
+          390
+        ],
+        "approach": [
+          233
+        ],
+        "near": [
+          189,
+          351
+        ],
+        "sure": [
+          156,
+          210
+        ],
+        "offici": [
+          39,
+          260
+        ],
+        "climatologist": [
+          331
+        ],
+        "sinc": [
+          125,
+          215,
+          332
+        ],
+        "compartment": [
+          346
+        ],
+        "intermin": [
+          369
+        ],
+        "placat": [
+          31
+        ],
+        "effect": [
+          77
+        ],
+        "feedback": [
+          113,
+          120,
+          147,
+          164,
+          190,
+          198,
+          239,
+          250,
+          280,
+          288,
+          322,
+          334
+        ],
+        "certainti": [
+          352
+        ],
+        "emiss": [
+          27,
+          87,
+          395
+        ],
+        "fact": [
+          158,
+          188
+        ],
+        "branch": [
+          339
+        ],
+        "anthropogen": [
+          355,
+          373
+        ],
+        "hansen": [
+          265,
+          329
+        ],
+        "throughout": [
+          142
+        ],
+        "21st": [
+          143
+        ],
+        "problem": [
+          263
+        ],
+        "help": [
+          410
+        ],
+        "annual": [
+          370
+        ],
+        "report": [
+          294,
+          316
+        ],
+        "climat": [
+          2,
+          6,
+          11,
+          32,
+          40,
+          208,
+          371
+        ],
+        "multipli": [
+          115
+        ],
+        "admiss": [
+          278
+        ],
+        "pretext": [
+          358
+        ],
+        "independ": [
+          412
+        ],
+        "grip": [
+          8
+        ],
+        "total": [
+          74
+        ],
+        "32": [
+          79,
+          96,
+          122,
+          178,
+          183
+        ],
+        "leaden": [
+          291
+        ],
+        "global": [
+          59,
+          83,
+          213,
+          231,
+          312
+        ],
+        "math": [
+          335
+        ],
+        "commit": [
+          28
+        ],
+        "thus": [
+          108
+        ],
+        "alon": [
+          285
+        ],
+        "elementari": [
+          47
+        ],
+        "one": [
+          300
+        ],
+        "8": [
+          69,
+          93,
+          123,
+          179
+        ],
+        "curs": [
+          344
+        ],
+        "theori": [
+          337
+        ],
+        "exact": [
+          325
+        ],
+        "4": [
+          124,
+          146,
+          180,
+          203,
+          262,
+          276
+        ],
+        "know": [
+          279
+        ],
+        "account": [
+          163
+        ],
+        "nasa": [
+          267
+        ],
+        "30": [
+          362,
+          388
+        ],
+        "prolix": [
+          292
+        ],
+        "allow": [
+          187
+        ],
+        "go": [
+          392
+        ],
+        "notwithstand": [
+          364
+        ],
+        "fortun": [
+          15
+        ],
+        "includ": [
+          119
+        ],
+        "war": [
+          219
+        ],
+        "straight": [
+          378,
+          393
+        ],
+        "within": [
+          282
+        ],
+        "strike": [
+          184
+        ],
+        "2": [
+          275
+        ],
+        "otherwis": [
+          402
+        ],
+        "gase": [
+          66,
+          174,
+          196
+        ],
+        "describ": [
+          48
+        ],
+        "255": [
+          89,
+          166,
+          182
+        ],
+        "scienc": [
+          347
+        ],
+        "un": [
+          368
+        ],
+        "equival": [
+          137,
+          220
+        ],
+        "made": [
+          13
+        ],
+        "air": [
+          107,
+          175
+        ],
+        "expect": [
+          202
+        ],
+        "doom": [
+          10
+        ],
+        "cost": [
+          30
+        ],
+        "greenhous": [
+          65,
+          76,
+          173,
+          195
+        ],
+        "toast": [
+          19
+        ],
+        "fame": [
+          14
+        ],
+        "differ": [
+          81,
+          92
+        ],
+        "yet": [
+          73
+        ],
+        "somewher": [
+          274
+        ],
+        "destroy": [
+          357
+        ],
+        "much": [
+          49,
+          309
+        ],
+        "instead": [
+          391
+        ],
+        "end": [
+          207,
+          216
+        ],
+        "interdisciplinari": [
+          345
+        ],
+        "may": [
+          51,
+          140,
+          314
+        ],
+        "decad": [
+          238
+        ],
+        "broad": [
+          149
+        ],
+        "ipcc": [
+          227,
+          290
+        ],
+        "temperatur": [
+          60,
+          84,
+          88,
+          169,
+          376
+        ],
+        "warmer": [
+          106
+        ],
+        "degre": [
+          70
+        ],
+        "287": [
+          85
+        ],
+        "econom": [
+          29
+        ],
+        "1": [
+          131,
+          249,
+          286,
+          398
+        ],
+        "physic": [
+          45,
+          304,
+          341
+        ],
+        "earth": [
+          172
+        ],
+        "quadrillion": [
+          35
+        ],
+        "wide": [
+          229
+        ],
+        "final": [
+          98,
+          117,
+          134,
+          138,
+          257
+        ],
+        "unreport": [
+          230
+        ],
+        "climatolog": [
+          306
+        ],
+        "suppos": [
+          321
+        ],
+        "scientist": [
+          12
+        ],
+        "media": [
+          413
+        ],
+        "becom": [
+          37
+        ],
+        "error": [
+          44,
+          46,
+          270,
+          327,
+          349
+        ],
+        "whole": [
+          303
+        ],
+        "faintest": [
+          307
+        ],
+        "engin": [
+          340
+        ],
+        "strength": [
+          240,
+          251,
+          281,
+          289
+        ],
+        "correct": [
+          161,
+          186,
+          348
+        ],
+        "eight": [
+          234
+        ],
+        "half": [
+          397
+        ],
+        "idea": [
+          308
+        ],
+        "also": [
+          155
+        ],
+        "would": [
+          145,
+          170,
+          254,
+          385,
+          401,
+          404
+        ],
+        "assess": [
+          293
+        ],
+        "influenc": [
+          244,
+          375
+        ],
+        "regim": [
+          199,
+          323
+        ],
+        "forgot": [
+          53
+        ],
+        "impact": [
+          58
+        ],
+        "second": [
+          217
+        ],
+        "rhetor": [
+          367
+        ],
+        "line": [
+          379,
+          394
+        ],
+        "take": [
+          162
+        ],
+        "today": [
+          200,
+          242,
+          324
+        ],
+        "unless": [
+          20
+        ],
+        "thinker": [
+          408
+        ],
+        "caus": [
+          52,
+          103,
+          141,
+          315
+        ],
+        "measur": [
+          57,
+          82
+        ],
+        "push": [
+          255
+        ],
+        "1984": [
+          271
+        ],
+        "greater": [
+          241,
+          296
+        ],
+        "rang": [
+          297
+        ],
+        "agit": [
+          266
+        ],
+        "borrow": [
+          333
+        ],
+        "enough": [
+          211
+        ],
+        "gabfest": [
+          372
+        ],
+        "chiefli": [
+          102
+        ],
+        "control": [
+          336
+        ],
+        "natur": [
+          63,
+          75
+        ],
+        "1850": [
+          56,
+          177,
+          192,
+          201,
+          243,
+          326
+        ],
+        "rather": [
+          310
+        ],
+        "danger": [
+          354
+        ],
+        "emerg": [
+          209
+        ],
+        "observ": [
+          157
+        ],
+        "per": [
+          222,
+          381
+        ],
+        "must": [
+          150
+        ],
+        "doubl": [
+          128
+        ],
+        "reason": [
+          320
+        ],
+        "hyster": [
+          366
+        ],
+        "factor": [
+          110,
+          176,
+          273
+        ],
+        "let": [
+          284
+        ],
+        "mean": [
+          305
+        ],
+        "shine": [
+          55,
+          160
+        ],
+        "forc": [
+          374,
+          400
+        ],
+        "simpl": [
+          185
+        ],
+        "uncertainti": [
+          287
+        ],
+        "aros": [
+          328
+        ],
+        "warm": [
+          50,
+          62,
+          99,
+          101,
+          112,
+          118,
+          127,
+          135,
+          139,
+          153,
+          154,
+          205,
+          214,
+          224,
+          232,
+          237,
+          313,
+          356
+        ],
+        "understand": [
+          343
+        ],
+        "addit": [
+          100
+        ],
+        "centuri": [
+          144,
+          206,
+          223,
+          258
+        ],
+        "anoth": [
+          387
+        ],
+        "pure": [
+          317
+        ],
+        "among": [
+          4
+        ],
+        "co": [
+          129
+        ],
+        "respons": [
+          23,
+          114,
+          121,
+          165,
+          191,
+          193
+        ],
+        "though": [
+          22
+        ],
+        "profit": [
+          9
+        ],
+        "larg": [
+          353
+        ],
+        "direct": [
+          61,
+          95,
+          111,
+          126,
+          152
+        ],
+        "imagin": [
+          109,
+          133,
+          181,
+          272
+        ],
+        "panic": [
+          3,
+          7
+        ],
+        "kelvin": [
+          72
+        ],
+        "k": [
+          80,
+          86,
+          91,
+          94,
+          97,
+          132,
+          167,
+          204,
+          221,
+          256
+        ],
+        "sun": [
+          54,
+          159,
+          245
+        ],
+        "west": [
+          21,
+          360
+        ],
+        "respond": [
+          151
+        ],
+        "1990": [
+          228
+        ],
+        "without": [
+          342
+        ],
+        "preindustri": [
+          194
+        ],
+        "tacit": [
+          277
+        ],
+        "domin": [
+          246
+        ],
+        "vapor": [
+          68,
+          105
+        ],
+        "subsist": [
+          171
+        ],
+        "24": [
+          90
+        ],
+        "continu": [
+          386,
+          405
+        ],
+        "water": [
+          67,
+          104
+        ],
+        "articl": [
+          406
+        ],
+        "matur": [
+          338
+        ],
+        "year": [
+          78,
+          235,
+          253,
+          363,
+          382,
+          389
+        ],
+        "us": [
+          17
+        ],
+        "american": [
+          407
+        ],
+        "mitig": [
+          383
+        ],
+        "new": [
+          1,
+          5
+        ],
+        "confid": [
+          225
+        ],
+        "root": [
+          42
+        ],
+        "rate": [
+          212
+        ],
+        "howev": [
+          36
+        ],
+        "world": [
+          18,
+          25,
+          218
+        ],
+        "copi": [
+          330
+        ],
+        "first": [
+          268
+        ],
+        "quantiti": [
+          302
+        ],
+        "250": [
+          259
+        ],
+        "predict": [
+          226,
+          261
+        ],
+        "absolut": [
+          71
+        ],
+        "past": [
+          361
+        ],
+        "platform": [
+          414
+        ],
+        "publish": [
+          269
+        ],
+        "fifth": [
+          24
+        ],
+        "communism": [
+          33
+        ],
+        "sunshin": [
+          168,
+          197
+        ],
+        "other": [
+          148
+        ],
+        "grave": [
+          43
+        ],
+        "2050": [
+          396
+        ],
+        "guesswork": [
+          318
+        ],
+        "unit": [
+          380,
+          399
+        ],
+        "least": [
+          301
+        ],
+        "compar": [
+          252
+        ],
+        "zero": [
+          299
+        ],
+        "support": [
+          411
+        ],
+        "still": [
+          295
+        ],
+        "rough": [
+          136
+        ],
+        "shut": [
+          359
+        ],
+        "awar": [
+          38
+        ],
+        "give": [
+          116
+        ],
+        "100": [
+          283
+        ],
+        "narrat": [
+          41
+        ],
+        "alreadi": [
+          34
+        ],
+        "tell": [
+          16
+        ],
+        "littl": [
+          130,
+          248,
+          298,
+          311,
+          319
+        ]
+      },
+      "url": "https://21stcenturywire.com/2022/01/05/theres-a-new-climate-of-panic-among-the-panic-mongers/",
+      "date": "2022-01-05",
+      "published_utc": 1641420087,
+      "collection_utc": 1641423607
+    },
+    {
+      "doc_id": 69134134993865436225581990435533027826179192379887468707158547477376268443639,
+      "stemmed_tokens": [
+        "clinton",
+        "brand",
+        "discredit",
+        "time",
+        "reopen",
+        "vinc",
+        "foster",
+        "investig",
+        "vinc",
+        "foster",
+        "highest",
+        "feder",
+        "offici",
+        "die",
+        "sinc",
+        "jfk",
+        "death",
+        "rule",
+        "suicid",
+        "howev",
+        "strong",
+        "evid",
+        "suggest",
+        "murder",
+        "articl",
+        "continu",
+        "cam",
+        "inquiri",
+        "polit",
+        "assassin",
+        "polit",
+        "implic",
+        "also",
+        "continu",
+        "week",
+        "articl",
+        "crime",
+        "bill",
+        "hillari",
+        "clinton",
+        "audac",
+        "advanc",
+        "harsh",
+        "crimin",
+        "justic",
+        "polici",
+        "career",
+        "covert",
+        "action",
+        "short",
+        "6",
+        "juli",
+        "20",
+        "1993",
+        "follow",
+        "two",
+        "911",
+        "call",
+        "vincent",
+        "foster",
+        "white",
+        "hous",
+        "counsel",
+        "bill",
+        "hillari",
+        "clinton",
+        "person",
+        "lawyer",
+        "come",
+        "washington",
+        "work",
+        "close",
+        "hillari",
+        "rose",
+        "law",
+        "firm",
+        "littl",
+        "rock",
+        "arkansa",
+        "foster",
+        "bodi",
+        "found",
+        "lie",
+        "face",
+        "head",
+        "side",
+        "steep",
+        "slope",
+        "fort",
+        "marci",
+        "park",
+        "old",
+        "civil",
+        "war",
+        "structur",
+        "mclean",
+        "8",
+        "minut",
+        "away",
+        "cia",
+        "dirt",
+        "path",
+        "front",
+        "old",
+        "cannon",
+        "colt",
+        "revolv",
+        "suppos",
+        "shot",
+        "thumb",
+        "trap",
+        "trigger",
+        "day",
+        "death",
+        "foster",
+        "left",
+        "offic",
+        "white",
+        "hous",
+        "west",
+        "wing",
+        "1",
+        "eat",
+        "lunch",
+        "suppos",
+        "jump",
+        "honda",
+        "walk",
+        "seclud",
+        "corner",
+        "park",
+        "kill",
+        "strang",
+        "one",
+        "seen",
+        "foster",
+        "moment",
+        "left",
+        "west",
+        "wing",
+        "time",
+        "bodi",
+        "though",
+        "face",
+        "one",
+        "heard",
+        "thunder",
+        "nois",
+        "gunshot",
+        "polic",
+        "investig",
+        "initi",
+        "find",
+        "car",
+        "key",
+        "rais",
+        "question",
+        "got",
+        "park",
+        "vincent",
+        "scalic",
+        "fred",
+        "santucci",
+        "new",
+        "york",
+        "citi",
+        "homicid",
+        "detect",
+        "50",
+        "year",
+        "combin",
+        "experi",
+        "hire",
+        "western",
+        "journal",
+        "center",
+        "investig",
+        "case",
+        "said",
+        "never",
+        "seen",
+        "gun",
+        "suicid",
+        "place",
+        "order",
+        "manner",
+        "ordinari",
+        "circumst",
+        "gun",
+        "away",
+        "person",
+        "fire",
+        "land",
+        "gunshot",
+        "reflex",
+        "action",
+        "victim",
+        "foster",
+        "case",
+        "also",
+        "would",
+        "expect",
+        "huge",
+        "pool",
+        "small",
+        "trickl",
+        "blood",
+        "found",
+        "run",
+        "mouth",
+        "gun",
+        "appear",
+        "wipe",
+        "evid",
+        "crime",
+        "scene",
+        "stage",
+        "sever",
+        "suspici",
+        "thing",
+        "foster",
+        "death",
+        "contradict",
+        "offici",
+        "stori",
+        "includ",
+        "soil",
+        "found",
+        "foster",
+        "shoe",
+        "despit",
+        "alleg",
+        "walk",
+        "path",
+        "soil",
+        "sampl",
+        "shoe",
+        "bullet",
+        "kill",
+        "foster",
+        "could",
+        "locat",
+        "none",
+        "26",
+        "peopl",
+        "view",
+        "foster",
+        "bodi",
+        "autopsi",
+        "saw",
+        "entranc",
+        "exit",
+        "wound",
+        "bullet",
+        "alleg",
+        "kill",
+        "fingerprint",
+        "gun",
+        "gunpowd",
+        "found",
+        "foster",
+        "tongu",
+        "also",
+        "disfigur",
+        "mouth",
+        "chip",
+        "teeth",
+        "usual",
+        "gun",
+        "shot",
+        "mouth",
+        "foster",
+        "famili",
+        "foster",
+        "eyeglass",
+        "found",
+        "19",
+        "feet",
+        "head",
+        "13",
+        "feet",
+        "beyond",
+        "shoe",
+        "indic",
+        "stage",
+        "scene",
+        "gash",
+        "foster",
+        "neck",
+        "wine",
+        "stain",
+        "shirt",
+        "never",
+        "explain",
+        "along",
+        "presenc",
+        "semen",
+        "underp",
+        "first",
+        "wit",
+        "polic",
+        "offic",
+        "scene",
+        "report",
+        "find",
+        "gun",
+        "foster",
+        "hand",
+        "indic",
+        "gun",
+        "may",
+        "place",
+        "next",
+        "independ",
+        "media",
+        "platform"
+      ],
+      "token_frequency": {
+        "crimin": 1,
+        "littl": 1,
+        "20": 1,
+        "hous": 2,
+        "honda": 1,
+        "gash": 1,
+        "audac": 1,
+        "circumst": 1,
+        "moment": 1,
+        "fred": 1,
+        "lawyer": 1,
+        "neck": 1,
+        "park": 3,
+        "offici": 2,
+        "inquiri": 1,
+        "nois": 1,
+        "pool": 1,
+        "teeth": 1,
+        "run": 1,
+        "sinc": 1,
+        "investig": 3,
+        "come": 1,
+        "soil": 2,
+        "none": 1,
+        "wipe": 1,
+        "corner": 1,
+        "said": 1,
+        "thing": 1,
+        "clinton": 3,
+        "bodi": 3,
+        "trap": 1,
+        "offic": 2,
+        "gunpowd": 1,
+        "kill": 3,
+        "report": 1,
+        "ordinari": 1,
+        "alleg": 2,
+        "independ": 1,
+        "manner": 1,
+        "wing": 2,
+        "revolv": 1,
+        "question": 1,
+        "covert": 1,
+        "bullet": 2,
+        "close": 1,
+        "8": 1,
+        "one": 2,
+        "usual": 1,
+        "side": 1,
+        "scene": 3,
+        "appear": 1,
+        "hillari": 3,
+        "land": 1,
+        "stage": 2,
+        "underp": 1,
+        "scalic": 1,
+        "despit": 1,
+        "polit": 2,
+        "911": 1,
+        "harsh": 1,
+        "rock": 1,
+        "exit": 1,
+        "follow": 1,
+        "arkansa": 1,
+        "old": 2,
+        "cia": 1,
+        "includ": 1,
+        "war": 1,
+        "face": 2,
+        "advanc": 1,
+        "could": 1,
+        "action": 2,
+        "reflex": 1,
+        "expect": 1,
+        "structur": 1,
+        "mclean": 1,
+        "car": 1,
+        "heard": 1,
+        "presenc": 1,
+        "highest": 1,
+        "6": 1,
+        "slope": 1,
+        "journal": 1,
+        "strong": 1,
+        "may": 1,
+        "small": 1,
+        "feet": 2,
+        "initi": 1,
+        "call": 1,
+        "week": 1,
+        "detect": 1,
+        "homicid": 1,
+        "front": 1,
+        "firm": 1,
+        "cannon": 1,
+        "jump": 1,
+        "peopl": 1,
+        "chip": 1,
+        "suppos": 2,
+        "1": 1,
+        "polic": 2,
+        "media": 1,
+        "santucci": 1,
+        "lunch": 1,
+        "seen": 2,
+        "tongu": 1,
+        "death": 3,
+        "fort": 1,
+        "victim": 1,
+        "mouth": 3,
+        "marci": 1,
+        "minut": 1,
+        "seclud": 1,
+        "wound": 1,
+        "also": 3,
+        "would": 1,
+        "order": 1,
+        "contradict": 1,
+        "evid": 2,
+        "thumb": 1,
+        "saw": 1,
+        "shoe": 3,
+        "head": 2,
+        "sampl": 1,
+        "experi": 1,
+        "thunder": 1,
+        "suicid": 2,
+        "combin": 1,
+        "view": 1,
+        "fire": 1,
+        "day": 1,
+        "cam": 1,
+        "two": 1,
+        "counsel": 1,
+        "find": 2,
+        "entranc": 1,
+        "reopen": 1,
+        "hire": 1,
+        "shirt": 1,
+        "suspici": 1,
+        "explain": 1,
+        "beyond": 1,
+        "law": 1,
+        "found": 5,
+        "eat": 1,
+        "got": 1,
+        "disfigur": 1,
+        "vincent": 2,
+        "juli": 1,
+        "next": 1,
+        "shot": 2,
+        "wine": 1,
+        "time": 2,
+        "key": 1,
+        "rule": 1,
+        "famili": 1,
+        "away": 2,
+        "person": 2,
+        "strang": 1,
+        "eyeglass": 1,
+        "colt": 1,
+        "washington": 1,
+        "york": 1,
+        "case": 2,
+        "gunshot": 2,
+        "though": 1,
+        "citi": 1,
+        "west": 2,
+        "dirt": 1,
+        "justic": 1,
+        "short": 1,
+        "left": 2,
+        "1993": 1,
+        "vinc": 2,
+        "sever": 1,
+        "19": 1,
+        "along": 1,
+        "continu": 2,
+        "articl": 2,
+        "work": 1,
+        "stori": 1,
+        "locat": 1,
+        "year": 1,
+        "autopsi": 1,
+        "new": 1,
+        "polici": 1,
+        "die": 1,
+        "howev": 1,
+        "discredit": 1,
+        "western": 1,
+        "first": 1,
+        "wit": 1,
+        "26": 1,
+        "lie": 1,
+        "platform": 1,
+        "trickl": 1,
+        "foster": 16,
+        "white": 2,
+        "rose": 1,
+        "jfk": 1,
+        "brand": 1,
+        "trigger": 1,
+        "huge": 1,
+        "civil": 1,
+        "feder": 1,
+        "center": 1,
+        "blood": 1,
+        "13": 1,
+        "hand": 1,
+        "suggest": 1,
+        "implic": 1,
+        "path": 2,
+        "place": 2,
+        "walk": 2,
+        "crime": 2,
+        "career": 1,
+        "rais": 1,
+        "indic": 2,
+        "semen": 1,
+        "gun": 7,
+        "assassin": 1,
+        "50": 1,
+        "murder": 1,
+        "fingerprint": 1,
+        "never": 2,
+        "bill": 2,
+        "steep": 1,
+        "stain": 1
+      },
+      "token_positions": {
+        "crimin": [
+          44
+        ],
+        "littl": [
+          77
+        ],
+        "20": [
+          53
+        ],
+        "hous": [
+          62,
+          119
+        ],
+        "honda": [
+          127
+        ],
+        "gash": [
+          287
+        ],
+        "audac": [
+          41
+        ],
+        "circumst": [
+          188
+        ],
+        "moment": [
+          137
+        ],
+        "fred": [
+          162
+        ],
+        "lawyer": [
+          68
+        ],
+        "neck": [
+          289
+        ],
+        "park": [
+          91,
+          131,
+          159
+        ],
+        "offici": [
+          13,
+          224
+        ],
+        "inquiri": [
+          28
+        ],
+        "nois": [
+          148
+        ],
+        "pool": [
+          204
+        ],
+        "teeth": [
+          267
+        ],
+        "run": [
+          209
+        ],
+        "sinc": [
+          15
+        ],
+        "investig": [
+          8,
+          151,
+          177
+        ],
+        "come": [
+          69
+        ],
+        "soil": [
+          227,
+          235
+        ],
+        "none": [
+          243
+        ],
+        "wipe": [
+          213
+        ],
+        "corner": [
+          130
+        ],
+        "said": [
+          179
+        ],
+        "thing": [
+          220
+        ],
+        "clinton": [
+          1,
+          40,
+          66
+        ],
+        "bodi": [
+          81,
+          142,
+          248
+        ],
+        "trap": [
+          111
+        ],
+        "offic": [
+          117,
+          302
+        ],
+        "gunpowd": [
+          259
+        ],
+        "kill": [
+          132,
+          239,
+          256
+        ],
+        "report": [
+          304
+        ],
+        "ordinari": [
+          187
+        ],
+        "alleg": [
+          232,
+          255
+        ],
+        "independ": [
+          314
+        ],
+        "manner": [
+          186
+        ],
+        "wing": [
+          121,
+          140
+        ],
+        "revolv": [
+          107
+        ],
+        "question": [
+          157
+        ],
+        "covert": [
+          48
+        ],
+        "bullet": [
+          238,
+          254
+        ],
+        "close": [
+          72
+        ],
+        "8": [
+          97
+        ],
+        "one": [
+          134,
+          145
+        ],
+        "usual": [
+          268
+        ],
+        "side": [
+          86
+        ],
+        "scene": [
+          216,
+          286,
+          303
+        ],
+        "appear": [
+          212
+        ],
+        "hillari": [
+          39,
+          65,
+          73
+        ],
+        "land": [
+          193
+        ],
+        "stage": [
+          217,
+          285
+        ],
+        "underp": [
+          298
+        ],
+        "scalic": [
+          161
+        ],
+        "despit": [
+          231
+        ],
+        "polit": [
+          29,
+          31
+        ],
+        "911": [
+          57
+        ],
+        "harsh": [
+          43
+        ],
+        "rock": [
+          78
+        ],
+        "exit": [
+          252
+        ],
+        "follow": [
+          55
+        ],
+        "arkansa": [
+          79
+        ],
+        "old": [
+          92,
+          104
+        ],
+        "cia": [
+          100
+        ],
+        "includ": [
+          226
+        ],
+        "war": [
+          94
+        ],
+        "face": [
+          84,
+          144
+        ],
+        "advanc": [
+          42
+        ],
+        "could": [
+          241
+        ],
+        "action": [
+          49,
+          196
+        ],
+        "reflex": [
+          195
+        ],
+        "expect": [
+          202
+        ],
+        "structur": [
+          95
+        ],
+        "mclean": [
+          96
+        ],
+        "car": [
+          154
+        ],
+        "heard": [
+          146
+        ],
+        "presenc": [
+          296
+        ],
+        "highest": [
+          11
+        ],
+        "6": [
+          51
+        ],
+        "slope": [
+          88
+        ],
+        "journal": [
+          175
+        ],
+        "strong": [
+          21
+        ],
+        "may": [
+          311
+        ],
+        "small": [
+          205
+        ],
+        "feet": [
+          278,
+          281
+        ],
+        "initi": [
+          152
+        ],
+        "call": [
+          58
+        ],
+        "week": [
+          35
+        ],
+        "detect": [
+          168
+        ],
+        "homicid": [
+          167
+        ],
+        "front": [
+          103
+        ],
+        "firm": [
+          76
+        ],
+        "cannon": [
+          105
+        ],
+        "jump": [
+          126
+        ],
+        "peopl": [
+          245
+        ],
+        "chip": [
+          266
+        ],
+        "suppos": [
+          108,
+          125
+        ],
+        "1": [
+          122
+        ],
+        "polic": [
+          150,
+          301
+        ],
+        "media": [
+          315
+        ],
+        "santucci": [
+          163
+        ],
+        "lunch": [
+          124
+        ],
+        "seen": [
+          135,
+          181
+        ],
+        "tongu": [
+          262
+        ],
+        "death": [
+          17,
+          114,
+          222
+        ],
+        "fort": [
+          89
+        ],
+        "victim": [
+          197
+        ],
+        "mouth": [
+          210,
+          265,
+          271
+        ],
+        "marci": [
+          90
+        ],
+        "minut": [
+          98
+        ],
+        "seclud": [
+          129
+        ],
+        "wound": [
+          253
+        ],
+        "also": [
+          33,
+          200,
+          263
+        ],
+        "would": [
+          201
+        ],
+        "order": [
+          185
+        ],
+        "contradict": [
+          223
+        ],
+        "evid": [
+          22,
+          214
+        ],
+        "thumb": [
+          110
+        ],
+        "saw": [
+          250
+        ],
+        "shoe": [
+          230,
+          237,
+          283
+        ],
+        "head": [
+          85,
+          279
+        ],
+        "sampl": [
+          236
+        ],
+        "experi": [
+          172
+        ],
+        "thunder": [
+          147
+        ],
+        "suicid": [
+          19,
+          183
+        ],
+        "combin": [
+          171
+        ],
+        "view": [
+          246
+        ],
+        "fire": [
+          192
+        ],
+        "day": [
+          113
+        ],
+        "cam": [
+          27
+        ],
+        "two": [
+          56
+        ],
+        "counsel": [
+          63
+        ],
+        "find": [
+          153,
+          305
+        ],
+        "entranc": [
+          251
+        ],
+        "reopen": [
+          5
+        ],
+        "hire": [
+          173
+        ],
+        "shirt": [
+          292
+        ],
+        "suspici": [
+          219
+        ],
+        "explain": [
+          294
+        ],
+        "beyond": [
+          282
+        ],
+        "law": [
+          75
+        ],
+        "found": [
+          82,
+          208,
+          228,
+          260,
+          276
+        ],
+        "eat": [
+          123
+        ],
+        "got": [
+          158
+        ],
+        "disfigur": [
+          264
+        ],
+        "vincent": [
+          59,
+          160
+        ],
+        "juli": [
+          52
+        ],
+        "next": [
+          313
+        ],
+        "shot": [
+          109,
+          270
+        ],
+        "wine": [
+          290
+        ],
+        "time": [
+          4,
+          141
+        ],
+        "key": [
+          155
+        ],
+        "rule": [
+          18
+        ],
+        "famili": [
+          273
+        ],
+        "away": [
+          99,
+          190
+        ],
+        "person": [
+          67,
+          191
+        ],
+        "strang": [
+          133
+        ],
+        "eyeglass": [
+          275
+        ],
+        "colt": [
+          106
+        ],
+        "washington": [
+          70
+        ],
+        "york": [
+          165
+        ],
+        "case": [
+          178,
+          199
+        ],
+        "gunshot": [
+          149,
+          194
+        ],
+        "though": [
+          143
+        ],
+        "citi": [
+          166
+        ],
+        "west": [
+          120,
+          139
+        ],
+        "dirt": [
+          101
+        ],
+        "justic": [
+          45
+        ],
+        "short": [
+          50
+        ],
+        "left": [
+          116,
+          138
+        ],
+        "1993": [
+          54
+        ],
+        "vinc": [
+          6,
+          9
+        ],
+        "sever": [
+          218
+        ],
+        "19": [
+          277
+        ],
+        "along": [
+          295
+        ],
+        "continu": [
+          26,
+          34
+        ],
+        "articl": [
+          25,
+          36
+        ],
+        "work": [
+          71
+        ],
+        "stori": [
+          225
+        ],
+        "locat": [
+          242
+        ],
+        "year": [
+          170
+        ],
+        "autopsi": [
+          249
+        ],
+        "new": [
+          164
+        ],
+        "polici": [
+          46
+        ],
+        "die": [
+          14
+        ],
+        "howev": [
+          20
+        ],
+        "discredit": [
+          3
+        ],
+        "western": [
+          174
+        ],
+        "first": [
+          299
+        ],
+        "wit": [
+          300
+        ],
+        "26": [
+          244
+        ],
+        "lie": [
+          83
+        ],
+        "platform": [
+          316
+        ],
+        "trickl": [
+          206
+        ],
+        "foster": [
+          7,
+          10,
+          60,
+          80,
+          115,
+          136,
+          198,
+          221,
+          229,
+          240,
+          247,
+          261,
+          272,
+          274,
+          288,
+          307
+        ],
+        "white": [
+          61,
+          118
+        ],
+        "rose": [
+          74
+        ],
+        "jfk": [
+          16
+        ],
+        "brand": [
+          2
+        ],
+        "trigger": [
+          112
+        ],
+        "huge": [
+          203
+        ],
+        "civil": [
+          93
+        ],
+        "feder": [
+          12
+        ],
+        "center": [
+          176
+        ],
+        "blood": [
+          207
+        ],
+        "13": [
+          280
+        ],
+        "hand": [
+          308
+        ],
+        "suggest": [
+          23
+        ],
+        "implic": [
+          32
+        ],
+        "path": [
+          102,
+          234
+        ],
+        "place": [
+          184,
+          312
+        ],
+        "walk": [
+          128,
+          233
+        ],
+        "crime": [
+          37,
+          215
+        ],
+        "career": [
+          47
+        ],
+        "rais": [
+          156
+        ],
+        "indic": [
+          284,
+          309
+        ],
+        "semen": [
+          297
+        ],
+        "gun": [
+          182,
+          189,
+          211,
+          258,
+          269,
+          306,
+          310
+        ],
+        "assassin": [
+          30
+        ],
+        "50": [
+          169
+        ],
+        "murder": [
+          24
+        ],
+        "fingerprint": [
+          257
+        ],
+        "never": [
+          180,
+          293
+        ],
+        "bill": [
+          38,
+          64
+        ],
+        "steep": [
+          87
+        ],
+        "stain": [
+          291
+        ]
+      },
+      "url": "https://21stcenturywire.com/2022/01/06/with-the-clinton-brand-now-discredited-is-it-time-to-reopen-vince-foster-investigation/",
+      "date": "2022-01-06",
+      "published_utc": 1641503312,
+      "collection_utc": 1641510006
+    },
+    {
+      "doc_id": 14961308690266016546236124244767741216242845742219655587503311886273865427019,
+      "stemmed_tokens": [
+        "martin",
+        "armstrong",
+        "schwab",
+        "great",
+        "reset",
+        "may",
+        "end",
+        "tear",
+        "martin",
+        "armstrong",
+        "world",
+        "renown",
+        "economist",
+        "geopolit",
+        "trend",
+        "spotter",
+        "correct",
+        "predict",
+        "numer",
+        "financi",
+        "collaps",
+        "major",
+        "interview",
+        "zee",
+        "media",
+        "expos",
+        "motiv",
+        "intent",
+        "world",
+        "well",
+        "wef",
+        "broader",
+        "involv",
+        "could",
+        "histori",
+        "also",
+        "look",
+        "great",
+        "reset",
+        "may",
+        "ultim",
+        "end",
+        "peopl",
+        "money",
+        "ahead",
+        "econom",
+        "calam",
+        "watch",
+        "websit",
+        "https",
+        "read",
+        "financi",
+        "news",
+        "21st",
+        "centuri",
+        "wire",
+        "financi",
+        "independ",
+        "media",
+        "platform"
+      ],
+      "token_frequency": {
+        "websit": 1,
+        "involv": 1,
+        "calam": 1,
+        "major": 1,
+        "renown": 1,
+        "collaps": 1,
+        "geopolit": 1,
+        "could": 1,
+        "schwab": 1,
+        "trend": 1,
+        "look": 1,
+        "intent": 1,
+        "world": 2,
+        "great": 2,
+        "ultim": 1,
+        "wire": 1,
+        "reset": 2,
+        "economist": 1,
+        "predict": 1,
+        "wef": 1,
+        "end": 2,
+        "motiv": 1,
+        "platform": 1,
+        "may": 2,
+        "https": 1,
+        "21st": 1,
+        "martin": 2,
+        "expos": 1,
+        "zee": 1,
+        "peopl": 1,
+        "econom": 1,
+        "independ": 1,
+        "watch": 1,
+        "news": 1,
+        "centuri": 1,
+        "read": 1,
+        "broader": 1,
+        "media": 2,
+        "spotter": 1,
+        "histori": 1,
+        "ahead": 1,
+        "correct": 1,
+        "well": 1,
+        "numer": 1,
+        "interview": 1,
+        "also": 1,
+        "armstrong": 2,
+        "tear": 1,
+        "money": 1,
+        "financi": 3
+      },
+      "token_positions": {
+        "websit": [
+          49
+        ],
+        "involv": [
+          33
+        ],
+        "calam": [
+          47
+        ],
+        "major": [
+          22
+        ],
+        "renown": [
+          12
+        ],
+        "collaps": [
+          21
+        ],
+        "geopolit": [
+          14
+        ],
+        "could": [
+          34
+        ],
+        "schwab": [
+          3
+        ],
+        "trend": [
+          15
+        ],
+        "look": [
+          37
+        ],
+        "intent": [
+          28
+        ],
+        "world": [
+          11,
+          29
+        ],
+        "great": [
+          4,
+          38
+        ],
+        "ultim": [
+          41
+        ],
+        "wire": [
+          56
+        ],
+        "reset": [
+          5,
+          39
+        ],
+        "economist": [
+          13
+        ],
+        "predict": [
+          18
+        ],
+        "wef": [
+          31
+        ],
+        "end": [
+          7,
+          42
+        ],
+        "motiv": [
+          27
+        ],
+        "platform": [
+          60
+        ],
+        "may": [
+          6,
+          40
+        ],
+        "https": [
+          50
+        ],
+        "21st": [
+          54
+        ],
+        "martin": [
+          1,
+          9
+        ],
+        "expos": [
+          26
+        ],
+        "zee": [
+          24
+        ],
+        "peopl": [
+          43
+        ],
+        "econom": [
+          46
+        ],
+        "independ": [
+          58
+        ],
+        "watch": [
+          48
+        ],
+        "news": [
+          53
+        ],
+        "centuri": [
+          55
+        ],
+        "read": [
+          51
+        ],
+        "broader": [
+          32
+        ],
+        "media": [
+          25,
+          59
+        ],
+        "spotter": [
+          16
+        ],
+        "histori": [
+          35
+        ],
+        "ahead": [
+          45
+        ],
+        "correct": [
+          17
+        ],
+        "well": [
+          30
+        ],
+        "numer": [
+          19
+        ],
+        "interview": [
+          23
+        ],
+        "also": [
+          36
+        ],
+        "armstrong": [
+          2,
+          10
+        ],
+        "tear": [
+          8
+        ],
+        "money": [
+          44
+        ],
+        "financi": [
+          20,
+          52,
+          57
+        ]
+      },
+      "url": "https://21stcenturywire.com/2022/01/13/martin-armstrong-why-schwabs-great-reset-may-end-in-tears/",
+      "date": "2022-01-13",
+      "published_utc": 1642097313,
+      "collection_utc": 1642114805
+    }
+]
