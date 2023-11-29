@@ -37,7 +37,7 @@ for test_entry in data:
             inverted_index[token]["positions"][doc_id].append(position)
 
         if doc_id not in inverted_index[token]["frequency"]:
-            inverted_index[token]["frequency"][doc_id] = [frequency]
+            inverted_index[token]["frequency"][doc_id] = frequency
         
 
 inverted_index_test_file = "C:\\Users\\Ghouri\\Desktop\\Git\\DSA-SearchEngine\\inverted_index_test_file.json"
