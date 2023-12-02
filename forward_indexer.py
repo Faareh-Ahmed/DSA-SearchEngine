@@ -20,14 +20,27 @@ stop_words = set(stopwords.words("english"))
 # Specify the path to the folder containing JSON files
 folder_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\newsdata"
 
+# Create a folder to store forward index files
+output_folder = "forward_index_files"
+os.makedirs(output_folder, exist_ok=True)
+
 # List all files in the specified folder
 json_files = [f for f in os.listdir(folder_path) if f.endswith(".json")]
 
-# Initializing a list to store forward index data
-forward_index_data = []
+# Maximum file size in bytes
+max_file_size = 1024 * 1024  # 1 MB
 
 # Initializing a dictionary to store tokens
 tokens_dict = {}
+
+# Set to keep track of existing doc_ids
+existing_doc_ids = set()
+existing_doc_ids_file = "existing_doc_ids.txt"
+
+# Load existing doc_ids from the file if it exists
+if os.path.exists(existing_doc_ids_file):
+    with open(existing_doc_ids_file, "r") as file:
+        existing_doc_ids = set(file.read().splitlines())
 
 # Counter to track the number of documents read
 documents_read = 0
@@ -43,14 +56,14 @@ def generate_doc_id(content):
     doc_id = int(doc_id, 16) 
     return doc_id
 
-def hash_forwardindex(doc_id_hash):
-    # Perform modulo 10 to split the forward index into 10 files
-    result = doc_id_hash % 10
-    return result
+# def hash_forwardindex(doc_id_hash):
+#     # Perform modulo 10 to split the forward index into 10 files
+#     result = doc_id_hash % 10
+#     return result
 
 # Example usage:
 print("Trying Forward Index")
-
+count=0
 # Iterate through each JSON file
 for json_file in json_files:
     # Construct the full path to the JSON file
@@ -72,19 +85,29 @@ for json_file in json_files:
 
         document_title = article["url"]
         doc_id = generate_doc_id(document_title)
-        file_index = hash_forwardindex(doc_id)
+        # file_index = hash_forwardindex(doc_id)
+        # Check if the doc_id already exists
+        if doc_id in existing_doc_ids:
+            print("DocID already exists")
+            continue
 
+            # Update the set of existing doc_ids
+        existing_doc_ids.add(doc_id)
         # Check if that DocID is already present in that File_index
-        forward_index_file = f"forward_index_{file_index}.json"
+        forward_index_file = f"{output_folder}\\forward_index_{count}.json"
 
         try:
+            # Read existing forward index data
             with open(forward_index_file, "r") as file:
                 forward_index_data = json.load(file)
-
-            # Check if the doc_id is already present in the file
-            if any(doc["doc_id"] == doc_id for doc in forward_index_data):
-                print("\nThis DocID already exists\n")
-                continue
+            # Check if the document with the same doc_id already exists in the file
+            
+            # Check if the file size exceeds the threshold
+            if os.path.exists(forward_index_file) and os.path.getsize(forward_index_file) > max_file_size:
+                # If so, create a new file with an incremented index
+                count+=1
+                forward_index_file = f"{output_folder}\\forward_index_{count}.json"
+                forward_index_data = []
 
         except FileNotFoundError:
             forward_index_data = []
@@ -137,5 +160,7 @@ for json_file in json_files:
 
         documents_read += 1
 
-print("Forward index Stored in Multiple Files")
- 
+# Save the updated set of existing doc_ids to the file
+with open(existing_doc_ids_file, "w") as file:
+    file.write("\n".join(map(str, existing_doc_ids)))
+print("Forward index Stored in Multiple Files with Size Limit and Organized in a Folder")

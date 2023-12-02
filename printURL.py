@@ -1,11 +1,26 @@
 import json
 import hashlib
 import nltk
+from nltk.stem import SnowballStemmer
+from nltk.corpus import stopwords
+import os
 
+nltk.download("stopwords")
 nltk.download("punkt")
+
 # nltk is a library to process natural language data for understandable by computer
 from nltk.tokenize import word_tokenize, sent_tokenize
 
+# Initialize the SnowballStemmer
+stemmer = SnowballStemmer(language="english")
+
+# Get the set of English stop words
+stop_words = set(stopwords.words("english"))
+
+forward_index_data = []
+
+# Initializing a dictionary to store tokens
+tokens_dict = {}
 
 # ******************* Printing the URLs from the documents *******************
 
@@ -20,8 +35,9 @@ with open(json_file_path, "r") as file:
 data = json.loads(json_data)
 
 # Extract and print URL's of the first 10 documents
-for i, article in enumerate(data[:10], 1):
+for i, article in enumerate(data[:1], 1):
     print(f"{i}. {article['url']}")
+
 print("Hello")
 
 
@@ -58,43 +74,54 @@ print("Trying Forward INdex")
 
 for i, article in enumerate(data[:1], 1):
     print(f" {i}.{article['title']}")
-    document_title = article["id"]
+    document_title = article["url"]
     doc_id = generate_doc_id(document_title)
     # Tokenize the content
-    content = article["content"]
-    sentences = sent_tokenize(content)
-    tokens = [word_tokenize(sentence) for sentence in sentences]
+    content = article["title"] + " " + article["content"]
+    tokens = [word_tokenize(content)]
 
-    # Store tokens in the dictionary
-    tokens_dict[i] = tokens
-    # Calculate token frequency
-    # Flatten the list of lists (tokens)
+        # Remove stop words and punctuation, and stem the remaining words
+    stemmed_words = [
+            stemmer.stem(token)
+            for sentence_tokens in tokens
+            for token in sentence_tokens
+            if token.isalnum() and token.lower() not in stop_words
+        ]
+
+        # Store tokens in the dictionary
+    tokens_dict[i] = stemmed_words
+
+        # Calculate token frequency
+        # Flatten the list of lists (tokens)
     flat_tokens = [token for sentence_tokens in tokens for token in sentence_tokens]
 
-    # Calculate token frequency
-    token_frequency = {token: flat_tokens.count(token) for token in set(flat_tokens)}
-    # Calculate token positions
-    token_positions = {
-        token: [i + 1 for i, word in enumerate(flat_tokens) if word == token]
-        for token in set(flat_tokens)
-    }
+        # Calculate token frequency using stemmed tokens
+    token_frequency = {
+            token: stemmed_words.count(token) for token in set(stemmed_words)
+        }
 
-    # Create the forward index entry for the document
-    forward_index[doc_id] = {
-        "doc_id": doc_id,
-        "tokens": tokens,
-        "token_frequency": token_frequency,
-        "token_positions": token_positions,
-        "url": article["url"],
-        "date": article["date"],
-        "published_utc": article["published_utc"],
-        "collection_utc": article["collection_utc"],
-    }
+        # Calculate token positions using stemmed tokens
+    token_positions = {
+            token: [i + 1 for i, word in enumerate(stemmed_words) if word == token]
+            for token in set(stemmed_words)
+        }
+
+        # Create the forward index entry for the document
+    forward_index_data.append({
+            "doc_id": doc_id,
+            "stemmed_tokens": tokens_dict[i],
+            "token_frequency": token_frequency,
+            "token_positions": token_positions,
+            "url": article["url"],
+            "date": article["date"],
+            "published_utc": article["published_utc"],
+            "collection_utc": article["collection_utc"],
+        })
 
 # Write the forward index to a JSON file
 output_file_path = "forward_index.json"
 with open(output_file_path, "w") as output_file:
-    json.dump(forward_index, output_file, indent=2)
+    json.dump(forward_index_data, output_file, indent=2)
 
 print(f"Original Content: {document_title}")
 print(f"Generated DocID: {doc_id}")

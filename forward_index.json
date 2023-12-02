@@ -1,111 +1,77 @@
-{
-  "18398968685311950134373704650783839206374653791676472625545178337466126861638": {
-    "doc_id": 18398968685311950134373704650783839206374653791676472625545178337466126861638,
-    "tokens": [
-      [
-        "Pub\u00adlic",
-        "asked",
-        "whether",
-        "to",
-        "ban",
-        "im\u00adports",
-        "of",
-        "pork",
-        "con\u00adtain\u00ading",
-        "rac\u00adtopamine",
-        "and",
-        "whether",
-        "to",
-        "al\u00adter",
-        "LNG",
-        "ter\u00admi\u00adnal",
-        "site",
-        ",",
-        "among",
-        "oth\u00aders",
-        "@"
-      ]
+[
+  {
+    "doc_id": 16271264986237012813912829232198269778660327576540688813756974471729282165579,
+    "stemmed_tokens": [
+      "taiwan",
+      "urg",
+      "china",
+      "curb",
+      "militari",
+      "adventur",
+      "ask",
+      "whether",
+      "ban",
+      "pork",
+      "whether",
+      "lng",
+      "site",
+      "among"
     ],
     "token_frequency": {
-      "and": 1,
-      "to": 2,
-      "rac\u00adtopamine": 1,
-      "LNG": 1,
-      "oth\u00aders": 1,
-      "@": 1,
-      "whether": 2,
-      "al\u00adter": 1,
-      "site": 1,
-      "im\u00adports": 1,
-      "ban": 1,
-      ",": 1,
-      "of": 1,
-      "ter\u00admi\u00adnal": 1,
-      "asked": 1,
-      "Pub\u00adlic": 1,
       "among": 1,
+      "site": 1,
+      "curb": 1,
       "pork": 1,
-      "con\u00adtain\u00ading": 1
+      "whether": 2,
+      "lng": 1,
+      "taiwan": 1,
+      "adventur": 1,
+      "china": 1,
+      "militari": 1,
+      "ask": 1,
+      "ban": 1,
+      "urg": 1
     },
     "token_positions": {
-      "and": [
-        11
-      ],
-      "to": [
-        4,
-        13
-      ],
-      "rac\u00adtopamine": [
-        10
-      ],
-      "LNG": [
-        15
-      ],
-      "oth\u00aders": [
-        20
-      ],
-      "@": [
-        21
-      ],
-      "whether": [
-        3,
-        12
-      ],
-      "al\u00adter": [
+      "among": [
         14
       ],
       "site": [
-        17
+        13
       ],
-      "im\u00adports": [
-        6
-      ],
-      "ban": [
-        5
-      ],
-      ",": [
-        18
-      ],
-      "of": [
-        7
-      ],
-      "ter\u00admi\u00adnal": [
-        16
-      ],
-      "asked": [
-        2
-      ],
-      "Pub\u00adlic": [
-        1
-      ],
-      "among": [
-        19
+      "curb": [
+        4
       ],
       "pork": [
-        8
+        10
       ],
-      "con\u00adtain\u00ading": [
+      "whether": [
+        8,
+        11
+      ],
+      "lng": [
+        12
+      ],
+      "taiwan": [
+        1
+      ],
+      "adventur": [
+        6
+      ],
+      "china": [
+        3
+      ],
+      "militari": [
+        5
+      ],
+      "ask": [
+        7
+      ],
+      "ban": [
         9
+      ],
+      "urg": [
+        2
       ]
     },
     "url": "https://www.aljazeera.com/news/2022/1/1/taiwan-leader-calls-on-china-to-curb-military-adventurism",
@@ -113,4 +79,4 @@
     "published_utc": 1641052272,
     "collection_utc": 1641034881
   }
-}
+]
