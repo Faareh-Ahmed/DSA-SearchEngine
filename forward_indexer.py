@@ -21,49 +21,60 @@ stop_words = set(stopwords.words("english"))
 folder_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\newsdata"
 
 # Create a folder to store forward index files
-output_folder = "forward_index_files"
+output_folder = "test_forward_index_files"
 os.makedirs(output_folder, exist_ok=True)
 
 # List all files in the specified folder
 json_files = [f for f in os.listdir(folder_path) if f.endswith(".json")]
 
-# Maximum file size in bytes
+# Maximum file size in bytes to make the speed faster 
 max_file_size = 1024 * 1024  # 1 MB
 
 # Initializing a dictionary to store tokens
 tokens_dict = {}
+glb_doc_id = 0
 
-# Set to keep track of existing doc_ids
-existing_doc_ids = set()
-existing_doc_ids_file = "existing_doc_ids.txt"
 
-# Load existing doc_ids from the file if it exists
-if os.path.exists(existing_doc_ids_file):
-    with open(existing_doc_ids_file, "r") as file:
-        existing_doc_ids = set(file.read().splitlines())
+# Load checksums and docIDs from the checksum file if it exists
+checksum_file = "checksum.json"
+checksum_data = {}
+# check if the file exists
+if os.path.exists(checksum_file):
+    # If it exists, load the existing data
+    with open(checksum_file, "r") as file:
+        checksum_data = json.load(file)
+    # Find the maximum doc_id among existing entries
+    max_existing_doc_id = max(checksum_data.values(), default=0)
+    glb_doc_id = max_existing_doc_id + 1
+else:
+    # If it doesn't exist, initialize with an empty dictionary
+    # glb_doc_id = 1
+    with open(checksum_file, "w") as file:
+        json.dump({}, file)
 
 # Counter to track the number of documents read
 documents_read = 0
 
 # Maximum number of documents to read
-max_documents = 100000
+max_documents = 1000
 
-def generate_doc_id(content):
-    # Use SHA-256 hash function to generate a unique identifier
-    hash_object = hashlib.sha256(content.encode("UTF-8"))
-    doc_id = hash_object.hexdigest()
-    # Convert the hexadecimal string to a long integer
-    doc_id = int(doc_id, 16) 
-    return doc_id
 
-# def hash_forwardindex(doc_id_hash):
-#     # Perform modulo 10 to split the forward index into 10 files
-#     result = doc_id_hash % 10
-#     return result
+def get_doc_id_from_checksum(checksum):
+    global glb_doc_id  # Declare glb_doc_id as a global variable
+    if checksum in checksum_data:
+        # If checksum is already present, retrieve the associated doc_id
+        return 0
+    else:
+        # If checksum is not present, add it to the checksum file along with its associated doc_id
+        glb_doc_id += 1
+        checksum_data[checksum] = glb_doc_id
+        with open(checksum_file, "w") as file:
+            json.dump(checksum_data, file, indent=2)
+        return glb_doc_id
 
 # Example usage:
 print("Trying Forward Index")
-count=0
+count = 0
 # Iterate through each JSON file
 for json_file in json_files:
     # Construct the full path to the JSON file
@@ -84,28 +95,25 @@ for json_file in json_files:
         print(f"{documents_read}.{article['title']}")
 
         document_title = article["url"]
-        doc_id = generate_doc_id(document_title)
-        # file_index = hash_forwardindex(doc_id)
+        checksum = hashlib.sha256(document_title.encode("UTF-8")).hexdigest()
+        doc_id = get_doc_id_from_checksum(checksum)
+
         # Check if the doc_id already exists
-        if doc_id in existing_doc_ids:
+        if doc_id == 0:
             print("DocID already exists")
             continue
 
-            # Update the set of existing doc_ids
-        existing_doc_ids.add(doc_id)
-        # Check if that DocID is already present in that File_index
         forward_index_file = f"{output_folder}\\forward_index_{count}.json"
 
         try:
             # Read existing forward index data
             with open(forward_index_file, "r") as file:
                 forward_index_data = json.load(file)
-            # Check if the document with the same doc_id already exists in the file
-            
+
             # Check if the file size exceeds the threshold
             if os.path.exists(forward_index_file) and os.path.getsize(forward_index_file) > max_file_size:
                 # If so, create a new file with an incremented index
-                count+=1
+                count += 1
                 forward_index_file = f"{output_folder}\\forward_index_{count}.json"
                 forward_index_data = []
 
@@ -160,7 +168,4 @@ for json_file in json_files:
 
         documents_read += 1
 
-# Save the updated set of existing doc_ids to the file
-with open(existing_doc_ids_file, "w") as file:
-    file.write("\n".join(map(str, existing_doc_ids)))
 print("Forward index Stored in Multiple Files with Size Limit and Organized in a Folder")
