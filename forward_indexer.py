@@ -56,7 +56,7 @@ else:
 documents_read = 0
 
 # Maximum number of documents to read
-max_documents = 10
+max_documents = 1000
 
 
 def get_doc_id_from_checksum(checksum):
@@ -75,6 +75,14 @@ def get_doc_id_from_checksum(checksum):
 # Example usage:
 print("Trying Forward Index")
 count = 0
+forward_index_file = f"{output_folder}\\forward_index_{count}.json"
+try:
+            # Read existing forward index data
+    with open(forward_index_file, "r") as file:
+        forward_index_data = json.load(file)
+
+except FileNotFoundError:
+    forward_index_data = []
 # Iterate through each JSON file
 for json_file in json_files:
     if documents_read >= max_documents:
@@ -105,22 +113,8 @@ for json_file in json_files:
             print("DocID already exists")
             continue
 
-        forward_index_file = f"{output_folder}\\forward_index_{count}.json"
 
-        try:
-            # Read existing forward index data
-            with open(forward_index_file, "r") as file:
-                forward_index_data = json.load(file)
 
-            # Check if the file size exceeds the threshold
-            if os.path.exists(forward_index_file) and os.path.getsize(forward_index_file) > max_file_size:
-                # If so, create a new file with an incremented index
-                count += 1
-                forward_index_file = f"{output_folder}\\forward_index_{count}.json"
-                forward_index_data = []
-
-        except FileNotFoundError:
-            forward_index_data = []
 
         # Tokenize the content
         content = article["title"] + " " + article["content"]
