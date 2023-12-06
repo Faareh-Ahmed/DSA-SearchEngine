@@ -18,7 +18,7 @@ stemmer = SnowballStemmer(language="english")
 stop_words = set(stopwords.words("english"))
 
 # Specify the path to the folder containing JSON files
-folder_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\newsdata"
+folder_path = "C:\\Users\\Ghouri\\Desktop\\DSA_Project\\nela-gt-2022\\newsdata"
 
 # Create a folder to store forward index files
 output_folder = "test_forward_index_files"
