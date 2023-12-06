@@ -18,7 +18,7 @@ stemmer = SnowballStemmer(language="english")
 stop_words = set(stopwords.words("english"))
 
 # Specify the path to the folder containing JSON files
-folder_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\newsdata"
+folder_path = "C:\\Users\\Ghouri\\Desktop\\DSA_Project\\nela-gt-2022\\newsdata"
 
 # Create a folder to store forward index files
 output_folder = "test_forward_index_files"
@@ -56,7 +56,7 @@ else:
 documents_read = 0
 
 # Maximum number of documents to read
-max_documents = 100
+max_documents = 1000
 
 
 def get_doc_id_from_checksum(checksum):
@@ -77,6 +77,10 @@ print("Trying Forward Index")
 count = 0
 # Iterate through each JSON file
 for json_file in json_files:
+
+    # Break Case
+    if documents_read >= max_documents:
+            break
     # Construct the full path to the JSON file
     json_file_path = os.path.join(folder_path, json_file)
 
@@ -91,8 +95,6 @@ for json_file in json_files:
         # Stop reading once the maximum number of documents is reached
         if documents_read >= max_documents:
             break
-
-        print(f"{documents_read}.{article['title']}")
 
         document_title = article["url"]
         checksum = hashlib.sha256(document_title.encode("UTF-8")).hexdigest()
@@ -162,10 +164,15 @@ for json_file in json_files:
             "collection_utc": article["collection_utc"],
         })
 
-        # Write the forward index to a JSON file
-        with open(forward_index_file, "w") as file:
-            json.dump(forward_index_data, file, indent=2)
 
         documents_read += 1
+
+        
+# Write the forward index to a JSON file
+with open(forward_index_file, "w") as file:
+    json.dump(forward_index_data, file, indent=2)
+    file.close()
+
+        
 
 print("Forward index Stored in Multiple Files with Size Limit and Organized in a Folder")
