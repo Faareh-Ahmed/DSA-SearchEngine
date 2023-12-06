@@ -56,7 +56,7 @@ else:
 documents_read = 0
 
 # Maximum number of documents to read
-max_documents = 100
+max_documents = 10
 
 
 def get_doc_id_from_checksum(checksum):
@@ -77,6 +77,8 @@ print("Trying Forward Index")
 count = 0
 # Iterate through each JSON file
 for json_file in json_files:
+    if documents_read >= max_documents:
+        break
     # Construct the full path to the JSON file
     json_file_path = os.path.join(folder_path, json_file)
 
@@ -92,7 +94,7 @@ for json_file in json_files:
         if documents_read >= max_documents:
             break
 
-        print(f"{documents_read}.{article['title']}")
+        # print(f"{documents_read}.{article['title']}")
 
         document_title = article["url"]
         checksum = hashlib.sha256(document_title.encode("UTF-8")).hexdigest()
@@ -162,10 +164,14 @@ for json_file in json_files:
             "collection_utc": article["collection_utc"],
         })
 
-        # Write the forward index to a JSON file
-        with open(forward_index_file, "w") as file:
-            json.dump(forward_index_data, file, indent=2)
-
         documents_read += 1
+        
+try:
+    # Write the forward index to a JSON file
+    with open(forward_index_file, "w") as file:
+        json.dump(forward_index_data, file, indent=2)
+except Exception as e:
+    print(f"Error writing to the file: {e}")
 
-print("Forward index Stored in Multiple Files with Size Limit and Organized in a Folder")
+
+print("Forward index Stored ")
