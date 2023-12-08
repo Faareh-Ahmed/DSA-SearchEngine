@@ -18,7 +18,7 @@ stemmer = SnowballStemmer(language="english")
 stop_words = set(stopwords.words("english"))
 
 # Specify the path to the folder containing JSON files
-folder_path = "C:\\Users\\Ghouri\\Desktop\\DSA_Project\\nela-gt-2022\\newsdata"
+folder_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\newsdata"
 
 # Create a folder to store forward index files
 output_folder = "test_forward_index_files"
@@ -27,7 +27,7 @@ os.makedirs(output_folder, exist_ok=True)
 # List all files in the specified folder
 json_files = [f for f in os.listdir(folder_path) if f.endswith(".json")]
 
-# Maximum file size in bytes to make the speed faster 
+# Maximum file size in bytes to make the speed faster
 max_file_size = 1024 * 1024  # 1 MB
 
 # Initializing a dictionary to store tokens
@@ -37,12 +37,17 @@ glb_doc_id = 0
 
 # Load checksums and docIDs from the checksum file if it exists
 checksum_file = "checksum.json"
+urlfile="docURL.json"
+urlfile_data ={}
 checksum_data = {}
 # check if the file exists
 if os.path.exists(checksum_file):
     # If it exists, load the existing data
     with open(checksum_file, "r") as file:
         checksum_data = json.load(file)
+
+    with open(urlfile,"r") as file:
+        urlfile_data=json.load(file)
     # Find the maximum doc_id among existing entries
     max_existing_doc_id = max(checksum_data.values(), default=0)
     glb_doc_id = max_existing_doc_id + 1
@@ -52,14 +57,16 @@ else:
     with open(checksum_file, "w") as file:
         json.dump({}, file)
 
+
+
 # Counter to track the number of documents read
 documents_read = 0
 
 # Maximum number of documents to read
-max_documents = 1000
+max_documents = 100
 
 
-def get_doc_id_from_checksum(checksum):
+def get_doc_id_from_checksum(checksum,url):
     global glb_doc_id  # Declare glb_doc_id as a global variable
     if checksum in checksum_data:
         # If checksum is already present, retrieve the associated doc_id
@@ -68,16 +75,21 @@ def get_doc_id_from_checksum(checksum):
         # If checksum is not present, add it to the checksum file along with its associated doc_id
         glb_doc_id += 1
         checksum_data[checksum] = glb_doc_id
+        urlfile_data[glb_doc_id] = url  # Store the URL in the urlfile_data
+
         with open(checksum_file, "w") as file:
             json.dump(checksum_data, file, indent=2)
+        with open(urlfile, "w") as url_file:
+            json.dump(urlfile_data, url_file, indent=2)
         return glb_doc_id
+
 
 # Example usage:
 print("Trying Forward Index")
 count = 0
 forward_index_file = f"{output_folder}\\forward_index_{count}.json"
 try:
-            # Read existing forward index data
+    # Read existing forward index data
     with open(forward_index_file, "r") as file:
         forward_index_data = json.load(file)
 
@@ -106,15 +118,12 @@ for json_file in json_files:
 
         document_title = article["url"]
         checksum = hashlib.sha256(document_title.encode("UTF-8")).hexdigest()
-        doc_id = get_doc_id_from_checksum(checksum)
+        doc_id = get_doc_id_from_checksum(checksum,document_title)
 
         # Check if the doc_id already exists
         if doc_id == 0:
             print("DocID already exists")
             continue
-
-
-
 
         # Tokenize the content
         content = article["title"] + " " + article["content"]
@@ -147,19 +156,21 @@ for json_file in json_files:
         }
 
         # Create the forward index entry for the document
-        forward_index_data.append({
-            "doc_id": doc_id,
-            "stemmed_tokens": tokens_dict[i],
-            "token_frequency": token_frequency,
-            "token_positions": token_positions,
-            "url": article["url"],
-            "date": article["date"],
-            "published_utc": article["published_utc"],
-            "collection_utc": article["collection_utc"],
-        })
+        forward_index_data.append(
+            {
+                "doc_id": doc_id,
+                "stemmed_tokens": tokens_dict[i],
+                "token_frequency": token_frequency,
+                "token_positions": token_positions,
+                "url": article["url"],
+                "date": article["date"],
+                "published_utc": article["published_utc"],
+                "collection_utc": article["collection_utc"],
+            }
+        )
 
         documents_read += 1
-        
+
 try:
     # Write the forward index to a JSON file
     with open(forward_index_file, "w") as file:
