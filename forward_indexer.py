@@ -34,6 +34,7 @@ max_file_size = 1024 * 1024  # 1 MB
 tokens_dict = {}
 glb_doc_id = 0
 
+documents_read = 0
 
 # Load checksums and docIDs from the checksum file if it exists
 checksum_file = "checksum.json"
@@ -50,6 +51,7 @@ if os.path.exists(checksum_file):
         urlfile_data=json.load(file)
     # Find the maximum doc_id among existing entries
     max_existing_doc_id = max(checksum_data.values(), default=0)
+    documents_read=max_existing_doc_id
     glb_doc_id = max_existing_doc_id + 1
 else:
     # If it doesn't exist, initialize with an empty dictionary
@@ -60,10 +62,9 @@ else:
 
 
 # Counter to track the number of documents read
-documents_read = 0
 
 # Maximum number of documents to read
-max_documents = 100
+max_documents = 100000
 
 
 def get_doc_id_from_checksum(checksum,url):
@@ -77,10 +78,10 @@ def get_doc_id_from_checksum(checksum,url):
         checksum_data[checksum] = glb_doc_id
         urlfile_data[glb_doc_id] = url  # Store the URL in the urlfile_data
 
-        with open(checksum_file, "w") as file:
-            json.dump(checksum_data, file, indent=2)
-        with open(urlfile, "w") as url_file:
-            json.dump(urlfile_data, url_file, indent=2)
+        # with open(checksum_file, "w") as file:
+        #     json.dump(checksum_data, file, indent=2)
+        # with open(urlfile, "w") as url_file:
+        #     json.dump(urlfile_data, url_file, indent=2)
         return glb_doc_id
 
 
@@ -175,8 +176,13 @@ try:
     # Write the forward index to a JSON file
     with open(forward_index_file, "w") as file:
         json.dump(forward_index_data, file, indent=2)
+    with open(checksum_file, "w") as file:
+        json.dump(checksum_data, file, indent=2)
+    with open(urlfile, "w") as url_file:
+        json.dump(urlfile_data, url_file, indent=2)
 except Exception as e:
     print(f"Error writing to the file: {e}")
+
 
 
 print("Forward index Stored ")
