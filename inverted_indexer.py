@@ -5,16 +5,35 @@ import os
 nltk.download("punkt")
 
 # Initialize the inverted index dictionaries for each barrel
-barrels = {chr(i): {} for i in range(ord('a'), ord('z') + 1)}
-barrels.update({str(i): {} for i in range(10)})  # Include numeric characters 0-9
-barrels['other'] = {}  # Barrel for other characters
+# barrels = {chr(i): {} for i in range(ord('a'), ord('z') + 1)}
+# barrels.update({str(i): {} for i in range(10)})  # Include numeric characters 0-9
+# barrels['other'] = {}  # Barrel for other characters
 
-print(barrels)
 
 # Path to the folder for inverted index files
 output_folder = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_inverted_index_files"
 os.makedirs(output_folder, exist_ok=True)  # Create the folder if it doesn't exist
 
+# Load existing inverted index barrels if they exist
+barrels = {}
+for char in range(ord('a'), ord('z') + 1):
+    barrel_file = os.path.join(output_folder, f"inverted_index_{chr(char)}.json")
+    if os.path.exists(barrel_file):
+        with open(barrel_file, "r") as file:
+            barrels[chr(char)] = json.load(file)
+
+for char in range(10):
+    barrel_file = os.path.join(output_folder, f"inverted_index_{char}.json")
+    if os.path.exists(barrel_file):
+        with open(barrel_file, "r") as file:
+            barrels[str(char)] = json.load(file)
+
+barrel_file_other = os.path.join(output_folder, "inverted_index_other.json")
+if os.path.exists(barrel_file_other):
+    with open(barrel_file_other, "r") as file:
+        barrels['other'] = json.load(file)
+
+# print(barrels)
 
 # Path to test file
 json_file_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_forward_index_files\\forward_index_0.json"
