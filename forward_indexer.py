@@ -21,7 +21,7 @@ stop_words = set(stopwords.words("english"))
 folder_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\newsdata"
 
 # Create a folder to store forward index files
-output_folder = "test_forward_index_files"
+output_folder = "faareh_forward_index"
 os.makedirs(output_folder, exist_ok=True)
 
 # List all files in the specified folder
@@ -64,7 +64,7 @@ else:
 # Counter to track the number of documents read
 
 # Maximum number of documents to read
-max_documents = 100000
+max_documents = 10000
 
 
 def get_doc_id_from_checksum(checksum,url):
