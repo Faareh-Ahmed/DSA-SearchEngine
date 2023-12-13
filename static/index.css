@@ -1,0 +1,44 @@
+body {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.formdiv {
+    background-color: brown;
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centering the forms within .formdiv */
+    justify-content: center; /* Centering vertically within .formdiv */
+}
+
+form {
+    display: flex;
+    flex-direction: row;  /* Change to column to stack input and button vertically */
+    align-items: center;  /* Centering the form items horizontally */
+    margin-top: 10px;  /* Add some margin between the forms */
+    height: 50%;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+input {
+    height: 25%;  /* Set a fixed height for the input */
+    width: 40%;  /* Adjust the width */
+    border-radius: 5px;
+    border-color: blue;
+}
+
+button {
+    padding: 5px 10px;  /* Adjust padding for the button */
+    margin: 20px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+    <h1>Search Engine</h1>
+
+    <div class="formdiv">
+        <form action="/search" method="post">
+            <input type="text" name="query" placeholder="Enter your query">
+            <button type="submit">Search</button>
+        </form>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="files" multiple>
+            <button type="submit">Add Documents</button>
+        </form>
+    </div>
+</body>
+
+</html>
