@@ -19,13 +19,14 @@ os.makedirs(output_folder, exist_ok=True)  # Create the folder if it doesn't exi
 barrels = {}
 for char1 in range(ord('a'), ord('z') + 1):
     for char2 in range(ord('a'), ord('z') + 1):
-        char = str(chr(char1) + chr(char2))
-        barrel_file = os.path.join(output_folder, f"inverted_index_{char}.json")
-        if os.path.exists(barrel_file):
-            with open(barrel_file, "r") as file:
-                barrels[char] = json.load(file)
-        else:
-            barrels[char] = {}
+        for char3 in range(ord('a'), ord('z') + 1):
+            char = str(chr(char1) + chr(char2)+ chr(char3))
+            barrel_file = os.path.join(output_folder, f"inverted_index_{char}.json")
+            if os.path.exists(barrel_file):
+                with open(barrel_file, "r") as file:
+                    barrels[char] = json.load(file)
+            else:
+                barrels[char] = {}
 
 # Include combinations where the second character is from '0' to '9'
 for char1 in range(ord('a'), ord('z') + 1):
@@ -66,8 +67,8 @@ with open(json_file_path, "r") as file:
 for test_entry in data:
     count+=1
     print(count)
-    if(count>100000):
-        break
+    # if(count>10000):
+    #     break
     doc_id = test_entry["doc_id"]
     stemmed_tokens = test_entry["stemmed_tokens"]
     frequency = test_entry["token_frequency"]
@@ -94,20 +95,38 @@ for test_entry in data:
                 # print(token)
                 if(len(token)<2):
                     second_char=first_char
-                    char=str(first_char+second_char)
+                    third_char=first_char
+                    char=str(first_char+second_char+third_char)
                     barrel=char
                 else:
                     second_char = str(token)[1].lower() if str(token) else None
+                    if('0' <= second_char <= '9'):
+                        char = str(first_char+second_char)
+                        barrel=char
                     # Check if the second_char is not a lowercase letter or a digit
-                    if('0' <= second_char <= '9') or ('a' <= second_char <= 'z'):
-                        char=str(first_char+second_char)
-                        barrel = char
+                    elif('a' <= second_char <= 'z'):
+                        if(len(token)<3):
+                            third_char=second_char
+                            char=str(first_char+second_char+third_char)
+                            barrel=char
+                        else:
+                            third_char = str(token)[2].lower() if str(token) else None
+                            
+                            if('0' <= third_char <= '9'):
+                                third_char=second_char
+                                char=str(first_char+second_char+third_char)
+                                barrel=char
+                            elif('a' <= third_char <= 'z'):
+                                char=str(first_char+second_char+third_char)
+                                barrel = char
+                            else:
+                                barrel='other'
                     else:
                         barrel = 'other'
             else:
                 barrel = 'other'
 
-
+            # print(f"{token}going to barrel {barrel}")
         # Create the inverted index entry for the token if not present in the barrel
             if token not in barrels[barrel]:
                 barrels[barrel][token] ={}
