@@ -66,7 +66,7 @@ with open(json_file_path, "r") as file:
 for test_entry in data:
     count+=1
     print(count)
-    if(count>10000):
+    if(count>100000):
         break
     doc_id = test_entry["doc_id"]
     stemmed_tokens = test_entry["stemmed_tokens"]
