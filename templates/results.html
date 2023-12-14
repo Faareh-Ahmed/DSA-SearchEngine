@@ -9,7 +9,10 @@
     <h1>Search Results for "{{ query }}"</h1>
     <ul>
         {% for result in results %}
-            <li>{{ result }}</li>
+            <li>
+                <p>Document ID: {{ result.document_id }}</p>
+                <p>URL: {{ result.url }}</p>
+            </li>
         {% endfor %}
     </ul>
 </body>

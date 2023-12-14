@@ -7,6 +7,12 @@ body {
     margin: 0;
 }
 
+img{
+    width: 15vw;
+    height: 30vh;
+    padding: 5px;
+}
+
 h1 {
     margin-bottom: 20px;
 }
