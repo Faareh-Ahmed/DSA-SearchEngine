@@ -69,13 +69,13 @@ for test_entry in data:
     print(count)
     # if(count>10000):
     #     break
-    doc_id = test_entry["doc_id"]
-    stemmed_tokens = test_entry["stemmed_tokens"]
-    frequency = test_entry["token_frequency"]
+    doc_id = test_entry["di"]
+    stemmed_tokens = test_entry["st"]
+    frequency = test_entry["tf"]
 
     for position, token in enumerate(stemmed_tokens, start=1):
-        frequency = test_entry["token_frequency"][token]
-        position = test_entry["token_positions"].get(token, [])
+        frequency = test_entry["f"][token]
+        position = test_entry["tp"].get(token, [])
 
         # Calculate TF-IDF rank
         tf = frequency / len(stemmed_tokens)
