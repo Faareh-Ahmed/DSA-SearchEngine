@@ -159,14 +159,14 @@ for json_file in json_files:
         # Create the forward index entry for the document
         forward_index_data.append(
             {
-                "doc_id": doc_id,
-                "stemmed_tokens": tokens_dict[i],
-                "token_frequency": token_frequency,
-                "token_positions": token_positions,
-                "url": article["url"],
-                "date": article["date"],
-                "published_utc": article["published_utc"],
-                "collection_utc": article["collection_utc"],
+                "di": doc_id,
+                "st": tokens_dict[i],
+                "tf": token_frequency,
+                "tp": token_positions,
+                "u": article["url"],
+                "d": article["date"],
+                "pu": article["published_utc"],
+                "cu": article["collection_utc"],
             }
         )
 
@@ -175,11 +175,11 @@ for json_file in json_files:
 try:
     # Write the forward index to a JSON file
     with open(forward_index_file, "w") as file:
-        json.dump(forward_index_data, file, indent=2)
+        json.dump(forward_index_data, file)
     with open(checksum_file, "w") as file:
-        json.dump(checksum_data, file, indent=2)
+        json.dump(checksum_data, file)
     with open(urlfile, "w") as url_file:
-        json.dump(urlfile_data, url_file, indent=2)
+        json.dump(urlfile_data, url_file)
 except Exception as e:
     print(f"Error writing to the file: {e}")
 
