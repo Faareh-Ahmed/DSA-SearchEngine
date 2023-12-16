@@ -159,14 +159,14 @@ for json_file in json_files:
         # Create the forward index entry for the document
         forward_index_data.append(
             {
-                "doc_id": doc_id,
-                "stemmed_tokens": tokens_dict[i],
-                "token_frequency": token_frequency,
-                "token_positions": token_positions,
-                "url": article["url"],
-                "date": article["date"],
-                "published_utc": article["published_utc"],
-                "collection_utc": article["collection_utc"],
+                "di": doc_id,
+                "st": tokens_dict[i],
+                "tf": token_frequency,
+                "tp": token_positions,
+                "u": article["url"],
+                "d": article["date"],
+                "p": article["published_utc"],
+                "c": article["collection_utc"],
             }
         )
 
