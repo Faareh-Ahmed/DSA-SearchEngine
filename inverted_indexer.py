@@ -5,16 +5,14 @@ from math import log
 
 nltk.download("punkt")
 
-# Initialize the inverted index dictionaries for each barrel
-# barrels = {chr(i): {} for i in range(ord('a'), ord('z') + 1)}
-# barrels.update({str(i): {} for i in range(10)})  # Include numeric characters 0-9
-# barrels['other'] = {}  # Barrel for other characters
+
 
 
 # Path to the folder for inverted index files
 output_folder = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_inverted_index_files"
 os.makedirs(output_folder, exist_ok=True)  # Create the folder if it doesn't exist
 
+# Initialize the inverted index dictionaries for each barrel
 # Load existing inverted index barrels if they exist
 barrels = {}
 for char1 in range(ord('a'), ord('z') + 1):
@@ -74,7 +72,7 @@ for test_entry in data:
     frequency = test_entry["tf"]
 
     for position, token in enumerate(stemmed_tokens, start=1):
-        frequency = test_entry["f"][token]
+        frequency = test_entry["tf"][token]
         position = test_entry["tp"].get(token, [])
 
         # Calculate TF-IDF rank
@@ -142,13 +140,6 @@ for test_entry in data:
 
                 
 
-            # if doc_id not in barrels[barrel][token]["positions"]:
-            #     barrels[barrel][token]["positions"][doc_id] = [position]
-            # else:
-            #     barrels[barrel][token]["positions"][doc_id].append(position)
-
-            # if doc_id not in barrels[barrel][token]["frequency"]:
-            #     barrels[barrel][token]["frequency"][doc_id] = frequency
 
 # Save inverted index barrels to separate files
 print("Starting Writing to FIle\n")
