@@ -175,11 +175,11 @@ for json_file in json_files:
 try:
     # Write the forward index to a JSON file
     with open(forward_index_file, "w") as file:
-        json.dump(forward_index_data, file, indent=2)
+        json.dump(forward_index_data, file)
     with open(checksum_file, "w") as file:
-        json.dump(checksum_data, file, indent=2)
+        json.dump(checksum_data, file)
     with open(urlfile, "w") as url_file:
-        json.dump(urlfile_data, url_file, indent=2)
+        json.dump(urlfile_data, url_file)
 except Exception as e:
     print(f"Error writing to the file: {e}")
 
