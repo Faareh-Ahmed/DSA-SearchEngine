@@ -165,8 +165,8 @@ for json_file in json_files:
                 "tp": token_positions,
                 "u": article["url"],
                 "d": article["date"],
-                "p": article["published_utc"],
-                "c": article["collection_utc"],
+                "pu": article["published_utc"],
+                "cu": article["collection_utc"],
             }
         )
 
