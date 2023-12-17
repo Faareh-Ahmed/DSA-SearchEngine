@@ -50,12 +50,12 @@ def search_inverted_index(query_word):
 
     for word in stemmed_words:
 
-        # stemmed_query_word = stemmer.stem(query_word)
-        # print(word)
+        stemmed_query_word = stemmer.stem(query_word)
+        print(word)
 
         # Get the first character of the stemmed query word
         first_char = word[0].lower() if word else None
-        # print(first_char)
+        print(first_char)
         # Ensure first_char is not None (empty or not a string)
         if first_char is not None:
             # Check if the first_char is numeric and update the inverted index entry in the 'numeric' barrel
@@ -99,7 +99,7 @@ def search_inverted_index(query_word):
 
         # Load the inverted index for the specific barrel
         inverted_index_file_path = os.path.join(inverted_index_folder, f"inverted_index_{barrel}.json")
-        # print(f"Inverted Index for '{barrel}':")
+        print(f"Inverted Index for '{barrel}':")
         #load the DocURL file
 
         try:
@@ -109,21 +109,21 @@ def search_inverted_index(query_word):
             print(f"Inverted index file for '{query_word}' not found.")
             return
 
-        # print("File Barrel Loaded Successfully")
+        print("File Barrel Loaded Successfully")
         # # Load the DocURL file
-        # try:
-        #     with open(docurl_file_path, "r") as docurl_file:
-        #         docurls = json.load(docurl_file)
-        # except FileNotFoundError:
-        #     print("DocURL file not found.")
-        #     docurls = {}  # Empty dictionary if file not found
+        try:
+            with open(docurl_file_path, "r") as docurl_file:
+                docurls = json.load(docurl_file)
+        except FileNotFoundError:
+            print("DocURL file not found.")
+            docurls = {}  # Empty dictionary if file not found
 
         # Check if the stemmed query word is in the inverted index
         if word in inverted_index:
         
 
             documents=list(inverted_index[word].keys())
-            # print(documents)
+            print(documents)
 
             for document in documents:
                 if document not in common_docs:
@@ -132,39 +132,39 @@ def search_inverted_index(query_word):
                     common_docs[document]=common_docs[document]+inverted_index[word][document]["r"]
 
              # If common_docs is empty, initialize it with the document IDs from the first word
-            # if not common_docs:
-            #     common_docs.update(documents)
-            # else:
-            #     # Intersect the current document_ids with common_document_ids
-            #     common_docs.intersection_update(documents)
+            if not common_docs:
+                common_docs.update(documents)
+            else:
+                # Intersect the current document_ids with common_document_ids
+                common_docs.intersection_update(documents)
 
-            # print(documents)
-            # print("Common DOc:\n",common_docs)
+            print(documents)
+            print("Common DOc:\n",common_docs)
 
-            # print("ooo\n")
+            print("ooo\n")
             for doc_id in common_docs.keys():
-                # print(doc_id)
+                print(doc_id)
                 rank.append(common_docs[doc_id])
-            # print(rank)
+            print(rank)
 
         else:
             print(f"Stemmed Query Word '{word}' not found in the inverted index.")
     # Sort documents by rank
-    # sorted_documents = sorted(rank, reverse=True)
+    sorted_documents = sorted(rank, reverse=True)
     # Sort documents by rank
     sorted_documents = sorted(common_docs.keys(), key=lambda doc_id: common_docs[doc_id], reverse=True)
     
-    # print("sorted Doc:\n",sorted_documents)
+    print("sorted Doc:\n",sorted_documents)
 
     # Select the top 10 documents
     top_documents = sorted_documents[:10]
-    # print("Top document:\n",top_documents)
+    print("Top document:\n",top_documents)
 
     # Output the results
     print(f"Stemmed Query Word: {query_word}")
     print("Top 10 Documents:")
     for doc_id in top_documents:
-        # print(f"  Document ID: {doc_id}")
+        print(f"  Document ID: {doc_id}")
 
         if str(doc_id) in docurls:
             print(f"  URL : {docurls[str(doc_id)]}")
