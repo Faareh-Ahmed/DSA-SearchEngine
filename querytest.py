@@ -127,9 +127,9 @@ def search_inverted_index(query_word):
 
             for document in documents:
                 if document not in common_docs:
-                    common_docs[document]=inverted_index[word][document]["rank"]
+                    common_docs[document]=inverted_index[word][document]["r"]
                 else:
-                    common_docs[document]=common_docs[document]+inverted_index[word][document]["rank"]
+                    common_docs[document]=common_docs[document]+inverted_index[word][document]["r"]
 
              # If common_docs is empty, initialize it with the document IDs from the first word
             # if not common_docs:
