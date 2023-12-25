@@ -161,8 +161,6 @@ def search_inverted_index(query_word):
         if str(doc_id) in docurls:
             document_data[doc_id] = docurls[str(doc_id)]
     
+    # Data will be used in backend.py
     return document_data
 
-# Example usage
-query_word = input("Enter a word to search: ")
-search_inverted_index(query_word)
