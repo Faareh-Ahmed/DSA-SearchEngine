@@ -153,18 +153,15 @@ def search_inverted_index(query_word):
     top_documents = sorted_documents[:10]
     print("Top document:\n",top_documents)
 
+    document_data = {}
+
     # Output the results
     print(f"Stemmed Query Word: {query_word}")
-    print("Top 10 Documents:")
     for doc_id in top_documents:
-        print(f"  Document ID: {doc_id}")
-
         if str(doc_id) in docurls:
-            print(f"  URL : {docurls[str(doc_id)]}")
-        print("")
-
-
-
+            document_data[doc_id] = docurls[str(doc_id)]
+    
+    return document_data
 
 # Example usage
 query_word = input("Enter a word to search: ")
