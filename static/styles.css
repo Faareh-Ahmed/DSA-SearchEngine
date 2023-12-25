@@ -1,0 +1,107 @@
+/* static/styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+h1 {
+    color: #4285f4;
+    margin-bottom: 5px;
+    margin-top: 130px;
+}
+
+/* form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+#results {
+    
+    margin-top: 20px;
+    /* text-align: center; */
+}
+
+h2 {
+    color: #4285f4;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.li {
+    margin-bottom: 20px; /* Increased margin between results */
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+strong {
+    display: block; /* Ensure the title appears on a new line */
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+form {
+    position: relative;
+    width: 300px; /* Adjust the width of the search bar */
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px; /* Adjust this value for roundness */
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+button {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    height: 100%;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 0 25px 25px 0; /* Match the radius of the input */
+    cursor: pointer;
+}
+
+/* Add a hover effect to the button */
+button:hover {
+    background-color: #3a77c0;
+}
