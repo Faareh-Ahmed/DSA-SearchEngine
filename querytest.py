@@ -5,10 +5,10 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 
 # Path to the folder for inverted index files
-inverted_index_folder = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_inverted_index_files"
+inverted_index_folder = "D:\\3rd Semester\\DSA\\inv"
 
 # Path to the DocURL file
-docurl_file_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_forward_index_files\\docURL.json"  # Replace with the actual path
+docurl_file_path = "D:\\3rd Semester\\DSA\\test_forward_index_files\\docURL.json"  # Replace with the actual path
 
 # Initialize the SnowballStemmer
 stemmer = SnowballStemmer(language="english")
@@ -33,7 +33,7 @@ except FileNotFoundError:
 
 # Function to search for a word in the inverted index
 def search_inverted_index(query_word):
-
+    common_docs = {}
         #tokenizing the combined words
     tokens = [word_tokenize(query_word)]
 
@@ -63,7 +63,6 @@ def search_inverted_index(query_word):
                 barrel = first_char
 
             elif 'a' <= first_char <= 'z':
-                # print(token)
                 if(len(word)<2):
                     second_char=first_char
                     third_char=first_char
@@ -123,7 +122,6 @@ def search_inverted_index(query_word):
         
 
             documents=list(inverted_index[word].keys())
-            print(documents)
 
             for document in documents:
                 if document not in common_docs:
@@ -136,16 +134,11 @@ def search_inverted_index(query_word):
                 common_docs.update(documents)
             else:
                 # Intersect the current document_ids with common_document_ids
-                common_docs.intersection_update(documents)
+                common_docs = {doc_id: common_docs[doc_id] for doc_id in common_docs if doc_id in documents}
 
-            print(documents)
-            print("Common DOc:\n",common_docs)
 
-            print("ooo\n")
             for doc_id in common_docs.keys():
-                print(doc_id)
                 rank.append(common_docs[doc_id])
-            print(rank)
 
         else:
             print(f"Stemmed Query Word '{word}' not found in the inverted index.")
