@@ -17,8 +17,8 @@ stemmer = SnowballStemmer(language="english")
 # Get the set of English stop words
 stop_words = set(stopwords.words("english"))
 
-# Specify the path to the folder containing JSON files
-folder_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\newsdata"
+# Specify the path to the folder containing JSON files on which forward and inverted index is implemented
+folder_path = "D:\\3rd Semester\\DSA\\newFiles"
 
 # Create a folder to store forward index files
 output_folder = "faareh_forward_index"
@@ -174,12 +174,15 @@ for json_file in json_files:
 
 try:
     # Write the forward index to a JSON file
-    with open(forward_index_file, "w") as file:
-        json.dump(forward_index_data, file)
+    # with open(forward_index_file, "w") as file:
+    #     json.dump(forward_index_data, file)
     with open(checksum_file, "w") as file: #write this 
         json.dump(checksum_data, file)
     with open(urlfile, "w") as url_file: # write this
         json.dump(urlfile_data, url_file)
+    # forward_index_data ko kia krna hy?
+    def send_data():
+        return forward_index_data
 except Exception as e:
     print(f"Error writing to the file: {e}")
 
