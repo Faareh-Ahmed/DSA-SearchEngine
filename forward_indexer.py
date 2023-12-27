@@ -176,9 +176,9 @@ try:
     # Write the forward index to a JSON file
     with open(forward_index_file, "w") as file:
         json.dump(forward_index_data, file)
-    with open(checksum_file, "w") as file:
+    with open(checksum_file, "w") as file: #write this 
         json.dump(checksum_data, file)
-    with open(urlfile, "w") as url_file:
+    with open(urlfile, "w") as url_file: # write this
         json.dump(urlfile_data, url_file)
 except Exception as e:
     print(f"Error writing to the file: {e}")
