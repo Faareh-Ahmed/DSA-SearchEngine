@@ -5,11 +5,12 @@ from math import log
 
 nltk.download("punkt")
 
-
+import forward_indexer
 
 
 # Path to the folder for inverted index files
-output_folder = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_inverted_index_files"
+# output_folder = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_inverted_index_files"
+output_folder = "D:\\3rd Semester\\DSA\\new_inverted_index_files"
 os.makedirs(output_folder, exist_ok=True)  # Create the folder if it doesn't exist
 
 # Initialize the inverted index dictionaries for each barrel
@@ -56,11 +57,13 @@ else:
 # print(barrels)
 
 # Path to test file
-json_file_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_forward_index_files\\forward_index_0.json"
+# json_file_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_forward_index_files\\forward_index_0.json"
+# json_file_path = "D:\\3rd Semester\\DSA\\newFiles" 
+# importing forward_index_file from another file and then make barrels of that file
+json_file = forward_indexer.send_data()
+data = json_file
 count=0
 # Opening the file of forward index
-with open(json_file_path, "r") as file:
-    data = json.load(file)
 
 for test_entry in data:
     count+=1
