@@ -5,10 +5,10 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 
 # Path to the folder for inverted index files
-inverted_index_folder = "D:\\3rd Semester\\DSA\\inv"
+inverted_index_folder = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_inverted_index_files"
 
 # Path to the DocURL file
-docurl_file_path = "D:\\3rd Semester\\DSA\\test_forward_index_files\\docURL.json"  # Replace with the actual path
+docurl_file_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_forward_index_files\\docURL.json"  # Replace with the actual path
 
 # Initialize the SnowballStemmer
 stemmer = SnowballStemmer(language="english")
