@@ -4,16 +4,18 @@ from nltk.stem import SnowballStemmer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 
-# Path to the folder for inverted index files
+# Path to the folder containing inverted index files in form of Barrels
 inverted_index_folder = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_inverted_index_files"
 
 # Path to the DocURL file
-docurl_file_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_forward_index_files\\docURL.json"  # Replace with the actual path
+docurl_file_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_forward_index_files\\docURL.json"  
 
-# Initialize the SnowballStemmer
+# Initializing the SnowballStemmer
 stemmer = SnowballStemmer(language="english")
 
 # nltk is a library to process natural language data for understandable by computer
+# We can use many methods like tokenizer and stemmer to clean the data and 
+# reduce it to its root form
 from nltk.tokenize import word_tokenize, sent_tokenize
 
 # Get the set of English stop words
@@ -22,7 +24,7 @@ stop_words = set(stopwords.words("english"))
 common_docs={}
 rank=[]
 
- # Load the DocURL file
+ # Load the DocURL file where URL are stored corresponding to each docID
 try:
     with open(docurl_file_path, "r") as docurl_file:
         docurls = json.load(docurl_file)
@@ -34,11 +36,11 @@ except FileNotFoundError:
 # Function to search for a word in the inverted index
 def search_inverted_index(query_word):
     common_docs = {}
-        #tokenizing the combined words
+    #tokenizing the Query that the user Entered in the search bar
     tokens = [word_tokenize(query_word)]
 
 
-# Remove stop words and punctuation, and stem the remaining words
+    # Remove stop words and punctuation, and stem each token in the tokens
     stemmed_words = [
         stemmer.stem(token)
         for sentence_tokens in tokens
@@ -47,12 +49,13 @@ def search_inverted_index(query_word):
     ]
 
 
-
+    # Now we will Loop through each of the words individually
     for word in stemmed_words:
 
         stemmed_query_word = stemmer.stem(query_word)
         print(word)
 
+        # Selecting the correct barrel in which that word exists
         # Get the first character of the stemmed query word
         first_char = word[0].lower() if word else None
         print(first_char)
@@ -96,11 +99,11 @@ def search_inverted_index(query_word):
             else:
                 barrel = 'other'
 
-        # Load the inverted index for the specific barrel
+        # Getting the correct path for that specific Barrel
         inverted_index_file_path = os.path.join(inverted_index_folder, f"inverted_index_{barrel}.json")
         print(f"Inverted Index for '{barrel}':")
-        #load the DocURL file
 
+        # Load the inverted index for that specific barrel
         try:
             with open(inverted_index_file_path, "r") as file:
                 inverted_index = json.load(file)
@@ -117,13 +120,18 @@ def search_inverted_index(query_word):
             print("DocURL file not found.")
             docurls = {}  # Empty dictionary if file not found
 
-        # Check if the stemmed query word is in the inverted index
+        # Check if the query word is in the inverted index
         if word in inverted_index:
         
-
+            # Retrieve the List of docID where the word occured
             documents=list(inverted_index[word].keys())
 
+            # Loop through each Document
             for document in documents:
+                # Check if that Document is already present in the common Documents
+                # then update its rank by adding the current word rank
+                # If that Document is not present in the common documents then
+                # Add it into the common document with its rank 
                 if document not in common_docs:
                     common_docs[document]=inverted_index[word][document]["r"]
                 else:

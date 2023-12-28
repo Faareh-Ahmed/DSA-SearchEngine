@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request
 from flask_socketio import SocketIO
-from querytest import search_inverted_index  # Import the function from the other file
+from querytest import search_inverted_index  
 import subprocess
 import os
-from werkzeug.utils import secure_filename
+import time
+
 
 app = Flask(__name__)
 socketio = SocketIO(app)
@@ -15,9 +16,17 @@ def index():
 @app.route('/search', methods=['POST'])
 def search():
     query = request.form.get('query')
+    start_time = time.time()
 
     # Call the search_inverted_index function with the user's query
     results = search_inverted_index(query)
+    # Measure the end time
+    end_time = time.time()
+
+    # Calculate the elapsed time
+    elapsed_time = end_time - start_time
+    # Emit a message to the client indicating the search time
+    socketio.emit('search_time', {'message': f'Search completed in {elapsed_time:.4f} seconds.'})
 
     return render_template('index.html', results=results)
 
@@ -29,7 +38,6 @@ def upload_page():
 
 @app.route('/upload', methods=['POST'])
 def upload():
-    # upload_folder = "D:\\3rd Semester\\DSA\\newFiles"
     upload_folder = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\newAdd_files"
     os.makedirs(upload_folder, exist_ok=True)
     print("API CALLED TO UPLOAD")
@@ -37,8 +45,7 @@ def upload():
         document = request.files['document']
         print("Folder Path")
         print(document)
-        # Process the document as needed (save, analyze, etc.)
-        # Example: document.save('uploads/' + document.filename)
+
 
         # Save the document
         print("Entered IF")
@@ -57,14 +64,12 @@ def upload():
         subprocess.run(["python", "forward_indexer.py", upload_folder])
 
         print("FORWARD INDEX DONE\nINVERTED INDEX DONE")
-        # Call inverted_indexer.py
-        # subprocess.run(["python", "inverted_indexer.py"])
+
 
         # Emit a message to the client indicating the completion of processing
         socketio.emit('processing_completed', {'message': 'Document processing completed.'})
 
         return f'Document "{document.filename}" uploaded successfully!'
-        # Add code to delete the document after processing
     else:
         return 'No document provided.'
 

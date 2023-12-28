@@ -5,21 +5,24 @@ from math import log
 
 nltk.download("punkt")
 
-# import forward_indexer
-
 def inverted_indexer(forwardindex):
-    # Check if forwardindex is empty or None
+
+    # Check if forwardindex Data structure is empty then simply return
     print("STARTING INVERTED INDEX")
     if not forwardindex:
         print("Already Made Inverted Index for this Documents")
         return
-    # Path to the folder for inverted index files
+    
+    # Path to the folder for inverted index files containing the Barreling
     output_folder = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_inverted_index_files"
-    # output_folder = "D:\\3rd Semester\\DSA\\new_inverted_index_files"
     os.makedirs(output_folder, exist_ok=True)  # Create the folder if it doesn't exist
 
     # Initialize the inverted index dictionaries for each barrel
     # Load existing inverted index barrels if they exist
+    # Barreling is done based on the first 3 characters of the word and 
+    # for numeric characters starting from (0 to 9). Another Barrel is made that stores the
+    # words containing the Special Characters
+
     barrels = {}
     for char1 in range(ord('a'), ord('z') + 1):
         for char2 in range(ord('a'), ord('z') + 1):
@@ -59,38 +62,38 @@ def inverted_indexer(forwardindex):
     else:
             barrels['other']={}
 
-    # print(barrels)
 
-    # Path to test file
-    # json_file_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_forward_index_files\\forward_index_0.json"
-    # json_file_path = "D:\\3rd Semester\\DSA\\newFiles" 
-    # importing forward_index_file from another file and then make barrels of that file
-    json_file = forwardindex
-    data = json_file
-    # print(data)
+
+    data = forwardindex
     count=0
-    # Opening the file of forward index
+
+    # reading each entry of the Forward Index Data Structure
 
     for test_entry in data:
         count+=1
         print(count)
-        # if(count>10000):
-        #     break
+
+        # Retrieving the necessary data from the Forward index Data structure
         doc_id = test_entry["di"]
         stemmed_tokens = test_entry["st"]
         frequency = test_entry["tf"]
 
         for position, token in enumerate(stemmed_tokens, start=1):
+            # Get the frequency and Position of the currect word
             frequency = test_entry["tf"][token]
             position = test_entry["tp"].get(token, [])
 
-            # Calculate TF-IDF rank
+            # Calculate the rank of each word in the document and storing them in the Inverted Index
+            # We have primarily referred the TF-IDF ranking algorithm and made changes according to our
+            # current project scenario
+
             tf = frequency / len(stemmed_tokens)
             idf = log(len(stemmed_tokens) / (frequency + 1))  # Adding 1 to avoid division by zero
             rank = tf * idf
-            # Get the first character of the token
-            first_char = str(token)[0].lower() if str(token) else None
 
+            # Selecting the appropriate Barrel for the Word
+            # Get the first character of the token 
+            first_char = str(token)[0].lower() if str(token) else None
 
             # Ensure first_char is not None (empty or not a string)
             if first_char is not None:
@@ -99,7 +102,6 @@ def inverted_indexer(forwardindex):
                     barrel = first_char
 
                 elif 'a' <= first_char <= 'z':
-                    # print(token)
                     if(len(token)<2):
                         second_char=first_char
                         third_char=first_char
@@ -133,12 +135,11 @@ def inverted_indexer(forwardindex):
                 else:
                     barrel = 'other'
 
-                # print(f"{token}going to barrel {barrel}")
-            # Create the inverted index entry for the token if not present in the barrel
+            # Create the inverted index entry for the token if it is not present in the barrel
                 if token not in barrels[barrel]:
                     barrels[barrel][token] ={}
 
-                # Update the inverted index entry
+                # Update the inverted index entry by adding the desired information about the word
                 if doc_id not in barrels[barrel][token]:
                     word_details={
                         "f":frequency,
