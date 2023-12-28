@@ -9,6 +9,7 @@ nltk.download("punkt")
 
 def inverted_indexer(forwardindex):
     # Check if forwardindex is empty or None
+    print("STARTING INVERTED INDEX")
     if not forwardindex:
         print("Already Made Inverted Index for this Documents")
         return
@@ -66,7 +67,7 @@ def inverted_indexer(forwardindex):
     # importing forward_index_file from another file and then make barrels of that file
     json_file = forwardindex
     data = json_file
-    print(data)
+    # print(data)
     count=0
     # Opening the file of forward index
 

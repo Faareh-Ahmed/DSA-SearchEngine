@@ -53,6 +53,7 @@ def upload():
 
 
         return f'Document "{document.filename}" uploaded successfully!'
+        # Add code to delete the document after processing
     else:
         return 'No document provided.'
 

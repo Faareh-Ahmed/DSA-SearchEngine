@@ -183,7 +183,7 @@ try:
     # Write the forward index to a JSON file
     # with open(forward_index_file, "w") as file:
     #     json.dump(forward_index_data, file)
-    print(forward_index_data)
+    # print(forward_index_data)
     with open(checksum_file, "w") as file: #write this 
         json.dump(checksum_data, file)
     with open(urlfile, "w") as url_file: # write this
@@ -195,7 +195,7 @@ except Exception as e:
 
 
 print("Forward index Stored ")
-print(forward_index_data)
+# print(forward_index_data)
 inverted_indexer(forward_index_data)
 # # forward_index_data ko kia krna hy?
 # def send_data():
