@@ -19,21 +19,26 @@ def search():
 
     return render_template('index.html', results=results)
 
-# upload_folder = "D:\\3rd Semester\\DSA\\newFiles"
-upload_folder = "C:\\Users\\hbrsa\\OneDrive\\Desktop"
-os.makedirs(upload_folder, exist_ok=True)
+
 
 
 @app.route('/upload', methods=['POST'])
 def upload():
+    # upload_folder = "D:\\3rd Semester\\DSA\\newFiles"
+    upload_folder = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\newAdd_files"
+    os.makedirs(upload_folder, exist_ok=True)
+    print("API CALLED TO UPLOAD")
     if 'document' in request.files:
         document = request.files['document']
         # Process the document as needed (save, analyze, etc.)
         # Example: document.save('uploads/' + document.filename)
 
         # Save the document
-        document_path = os.path.join(upload_folder)
+        print("Entered IF")
+        document_path = os.path.join(upload_folder,document.filename)
+        print("Path Entered")
         document.save(document_path)
+        print("Doc Saved")
 
         # Call the function to process the document using forward_indexer.py
         subprocess.run(["python", "forward_indexer.py", document_path])
