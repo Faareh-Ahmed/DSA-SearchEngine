@@ -6,6 +6,8 @@ from nltk.corpus import stopwords
 import os
 import sys
 
+from inverted_indexer import inverted_indexer
+
 nltk.download("stopwords")
 nltk.download("punkt")
 
@@ -42,8 +44,8 @@ glb_doc_id = 0
 documents_read = 0
 
 # Load checksums and docIDs from the checksum file if it exists
-checksum_file = "checksum.json"
-urlfile="docURL.json"
+checksum_file = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_forward_index_files\\checksum.json"
+urlfile="C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_forward_index_files\\docURL.json"
 urlfile_data ={}
 checksum_data = {}
 # check if the file exists
@@ -69,7 +71,7 @@ else:
 # Counter to track the number of documents read
 
 # Maximum number of documents to read
-max_documents = 10000
+# max_documents = 10000
 
 
 def get_doc_id_from_checksum(checksum,url):
@@ -103,8 +105,8 @@ except FileNotFoundError:
     forward_index_data = []
 # Iterate through each JSON file
 for json_file in json_files:
-    if documents_read >= max_documents:
-        break
+    # if documents_read >= max_documents:
+    #     break
     # Construct the full path to the JSON file
     json_file_path = os.path.join(folder_path, json_file)
 
@@ -117,8 +119,8 @@ for json_file in json_files:
 
     for i, article in enumerate(data, 1):
         # Stop reading once the maximum number of documents is reached
-        if documents_read >= max_documents:
-            break
+        # if documents_read >= max_documents:
+        #     break
 
         # print(f"{documents_read}.{article['title']}")
 
@@ -175,22 +177,26 @@ for json_file in json_files:
             }
         )
 
-        documents_read += 1
+        # documents_read += 1
 
 try:
     # Write the forward index to a JSON file
     # with open(forward_index_file, "w") as file:
     #     json.dump(forward_index_data, file)
+    print(forward_index_data)
     with open(checksum_file, "w") as file: #write this 
         json.dump(checksum_data, file)
     with open(urlfile, "w") as url_file: # write this
         json.dump(urlfile_data, url_file)
-    # forward_index_data ko kia krna hy?
-    def send_data():
-        return forward_index_data
+    
 except Exception as e:
     print(f"Error writing to the file: {e}")
 
 
 
 print("Forward index Stored ")
+print(forward_index_data)
+inverted_indexer(forward_index_data)
+# # forward_index_data ko kia krna hy?
+# def send_data():
+#     return forward_index_data

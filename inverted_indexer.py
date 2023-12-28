@@ -5,21 +5,36 @@ from math import log
 
 nltk.download("punkt")
 
-import forward_indexer
+# import forward_indexer
 
+def inverted_indexer(forwardindex):
+    # Check if forwardindex is empty or None
+    if not forwardindex:
+        print("Already Made Inverted Index for this Documents")
+        return
+    # Path to the folder for inverted index files
+    output_folder = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_inverted_index_files"
+    # output_folder = "D:\\3rd Semester\\DSA\\new_inverted_index_files"
+    os.makedirs(output_folder, exist_ok=True)  # Create the folder if it doesn't exist
 
-# Path to the folder for inverted index files
-# output_folder = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_inverted_index_files"
-output_folder = "D:\\3rd Semester\\DSA\\new_inverted_index_files"
-os.makedirs(output_folder, exist_ok=True)  # Create the folder if it doesn't exist
+    # Initialize the inverted index dictionaries for each barrel
+    # Load existing inverted index barrels if they exist
+    barrels = {}
+    for char1 in range(ord('a'), ord('z') + 1):
+        for char2 in range(ord('a'), ord('z') + 1):
+            for char3 in range(ord('a'), ord('z') + 1):
+                char = str(chr(char1) + chr(char2)+ chr(char3))
+                barrel_file = os.path.join(output_folder, f"inverted_index_{char}.json")
+                if os.path.exists(barrel_file):
+                    with open(barrel_file, "r") as file:
+                        barrels[char] = json.load(file)
+                else:
+                    barrels[char] = {}
 
-# Initialize the inverted index dictionaries for each barrel
-# Load existing inverted index barrels if they exist
-barrels = {}
-for char1 in range(ord('a'), ord('z') + 1):
-    for char2 in range(ord('a'), ord('z') + 1):
-        for char3 in range(ord('a'), ord('z') + 1):
-            char = str(chr(char1) + chr(char2)+ chr(char3))
+    # Include combinations where the second character is from '0' to '9'
+    for char1 in range(ord('a'), ord('z') + 1):
+        for char2 in range(ord('0'), ord('9') + 1):
+            char = str(chr(char1) + chr(char2))
             barrel_file = os.path.join(output_folder, f"inverted_index_{char}.json")
             if os.path.exists(barrel_file):
                 with open(barrel_file, "r") as file:
@@ -27,128 +42,118 @@ for char1 in range(ord('a'), ord('z') + 1):
             else:
                 barrels[char] = {}
 
-# Include combinations where the second character is from '0' to '9'
-for char1 in range(ord('a'), ord('z') + 1):
-    for char2 in range(ord('0'), ord('9') + 1):
-        char = str(chr(char1) + chr(char2))
+
+    for char in range(10):
         barrel_file = os.path.join(output_folder, f"inverted_index_{char}.json")
         if os.path.exists(barrel_file):
             with open(barrel_file, "r") as file:
-                barrels[char] = json.load(file)
+                barrels[str(char)] = json.load(file)
         else:
-            barrels[char] = {}
+            barrels[str(char)]={}
 
-
-for char in range(10):
-    barrel_file = os.path.join(output_folder, f"inverted_index_{char}.json")
-    if os.path.exists(barrel_file):
-        with open(barrel_file, "r") as file:
-            barrels[str(char)] = json.load(file)
+    barrel_file_other = os.path.join(output_folder, "inverted_index_other.json")
+    if os.path.exists(barrel_file_other):
+        with open(barrel_file_other, "r") as file:
+            barrels['other'] = json.load(file)
     else:
-        barrels[str(char)]={}
+            barrels['other']={}
 
-barrel_file_other = os.path.join(output_folder, "inverted_index_other.json")
-if os.path.exists(barrel_file_other):
-    with open(barrel_file_other, "r") as file:
-        barrels['other'] = json.load(file)
-else:
-        barrels['other']={}
+    # print(barrels)
 
-# print(barrels)
+    # Path to test file
+    # json_file_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_forward_index_files\\forward_index_0.json"
+    # json_file_path = "D:\\3rd Semester\\DSA\\newFiles" 
+    # importing forward_index_file from another file and then make barrels of that file
+    json_file = forwardindex
+    data = json_file
+    print(data)
+    count=0
+    # Opening the file of forward index
 
-# Path to test file
-# json_file_path = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_forward_index_files\\forward_index_0.json"
-# json_file_path = "D:\\3rd Semester\\DSA\\newFiles" 
-# importing forward_index_file from another file and then make barrels of that file
-json_file = forward_indexer.send_data()
-data = json_file
-count=0
-# Opening the file of forward index
+    for test_entry in data:
+        count+=1
+        print(count)
+        # if(count>10000):
+        #     break
+        doc_id = test_entry["di"]
+        stemmed_tokens = test_entry["st"]
+        frequency = test_entry["tf"]
 
-for test_entry in data:
-    count+=1
-    print(count)
-    # if(count>10000):
-    #     break
-    doc_id = test_entry["di"]
-    stemmed_tokens = test_entry["st"]
-    frequency = test_entry["tf"]
+        for position, token in enumerate(stemmed_tokens, start=1):
+            frequency = test_entry["tf"][token]
+            position = test_entry["tp"].get(token, [])
 
-    for position, token in enumerate(stemmed_tokens, start=1):
-        frequency = test_entry["tf"][token]
-        position = test_entry["tp"].get(token, [])
-
-        # Calculate TF-IDF rank
-        tf = frequency / len(stemmed_tokens)
-        idf = log(len(stemmed_tokens) / (frequency + 1))  # Adding 1 to avoid division by zero
-        rank = tf * idf
-        # Get the first character of the token
-        first_char = str(token)[0].lower() if str(token) else None
+            # Calculate TF-IDF rank
+            tf = frequency / len(stemmed_tokens)
+            idf = log(len(stemmed_tokens) / (frequency + 1))  # Adding 1 to avoid division by zero
+            rank = tf * idf
+            # Get the first character of the token
+            first_char = str(token)[0].lower() if str(token) else None
 
 
-        # Ensure first_char is not None (empty or not a string)
-        if first_char is not None:
-            # Check if the first_char is numeric and update the inverted index entry in the 'numeric' barrel
-            if '0' <= first_char <= '9':
-                barrel = first_char
+            # Ensure first_char is not None (empty or not a string)
+            if first_char is not None:
+                # Check if the first_char is numeric and update the inverted index entry in the 'numeric' barrel
+                if '0' <= first_char <= '9':
+                    barrel = first_char
 
-            elif 'a' <= first_char <= 'z':
-                # print(token)
-                if(len(token)<2):
-                    second_char=first_char
-                    third_char=first_char
-                    char=str(first_char+second_char+third_char)
-                    barrel=char
-                else:
-                    second_char = str(token)[1].lower() if str(token) else None
-                    if('0' <= second_char <= '9'):
-                        char = str(first_char+second_char)
+                elif 'a' <= first_char <= 'z':
+                    # print(token)
+                    if(len(token)<2):
+                        second_char=first_char
+                        third_char=first_char
+                        char=str(first_char+second_char+third_char)
                         barrel=char
-                    # Check if the second_char is not a lowercase letter or a digit
-                    elif('a' <= second_char <= 'z'):
-                        if(len(token)<3):
-                            third_char=second_char
-                            char=str(first_char+second_char+third_char)
+                    else:
+                        second_char = str(token)[1].lower() if str(token) else None
+                        if('0' <= second_char <= '9'):
+                            char = str(first_char+second_char)
                             barrel=char
-                        else:
-                            third_char = str(token)[2].lower() if str(token) else None
-                            
-                            if('0' <= third_char <= '9'):
+                        # Check if the second_char is not a lowercase letter or a digit
+                        elif('a' <= second_char <= 'z'):
+                            if(len(token)<3):
                                 third_char=second_char
                                 char=str(first_char+second_char+third_char)
                                 barrel=char
-                            elif('a' <= third_char <= 'z'):
-                                char=str(first_char+second_char+third_char)
-                                barrel = char
                             else:
-                                barrel='other'
-                    else:
-                        barrel = 'other'
-            else:
-                barrel = 'other'
+                                third_char = str(token)[2].lower() if str(token) else None
+                                
+                                if('0' <= third_char <= '9'):
+                                    third_char=second_char
+                                    char=str(first_char+second_char+third_char)
+                                    barrel=char
+                                elif('a' <= third_char <= 'z'):
+                                    char=str(first_char+second_char+third_char)
+                                    barrel = char
+                                else:
+                                    barrel='other'
+                        else:
+                            barrel = 'other'
+                else:
+                    barrel = 'other'
 
-            # print(f"{token}going to barrel {barrel}")
-        # Create the inverted index entry for the token if not present in the barrel
-            if token not in barrels[barrel]:
-                barrels[barrel][token] ={}
+                # print(f"{token}going to barrel {barrel}")
+            # Create the inverted index entry for the token if not present in the barrel
+                if token not in barrels[barrel]:
+                    barrels[barrel][token] ={}
 
-            # Update the inverted index entry
-            if doc_id not in barrels[barrel][token]:
-                word_details={
-                    "f":frequency,
-                    "p":position,
-                    "r":rank
-                }
-                barrels[barrel][token][doc_id]=word_details
+                # Update the inverted index entry
+                if doc_id not in barrels[barrel][token]:
+                    word_details={
+                        "f":frequency,
+                        "p":position,
+                        "r":rank
+                    }
+                    barrels[barrel][token][doc_id]=word_details
 
-                
+                    
 
 
-# Save inverted index barrels to separate files
-print("Starting Writing to FIle\n")
-for char, inverted_index in barrels.items():
-    inverted_index_file = os.path.join(output_folder, f"inverted_index_{char}.json")
-    with open(inverted_index_file, "w") as file:
-        json.dump(inverted_index, file)
+    # Save inverted index barrels to separate files
+    print("Starting Writing to FIle\n")
+    for char, inverted_index in barrels.items():
+        inverted_index_file = os.path.join(output_folder, f"inverted_index_{char}.json")
+        with open(inverted_index_file, "w") as file:
+            json.dump(inverted_index, file)
 
-print("Inverted Index barrels stored in files.")
+    print("Inverted Index barrels stored in files.")

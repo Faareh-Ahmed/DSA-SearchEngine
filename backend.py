@@ -47,8 +47,9 @@ def upload():
         print(document_path)
         subprocess.run(["python", "forward_indexer.py", upload_folder])
 
+        print("FORWARD INDEX DONE\nINVERTED INDEX DONE")
         # Call inverted_indexer.py
-        subprocess.run(["python", "inverted_indexer.py"])
+        # subprocess.run(["python", "inverted_indexer.py"])
 
 
         return f'Document "{document.filename}" uploaded successfully!'

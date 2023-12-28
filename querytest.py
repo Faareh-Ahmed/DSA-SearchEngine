@@ -150,7 +150,7 @@ def search_inverted_index(query_word):
     print("sorted Doc:\n",sorted_documents)
 
     # Select the top 10 documents
-    top_documents = sorted_documents[:10]
+    top_documents = sorted_documents[:20]
     print("Top document:\n",top_documents)
 
     document_data = {}
