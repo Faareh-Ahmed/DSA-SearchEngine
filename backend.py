@@ -1,10 +1,12 @@
 from flask import Flask, render_template, request
+from flask_socketio import SocketIO
 from querytest import search_inverted_index  # Import the function from the other file
 import subprocess
 import os
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
+socketio = SocketIO(app)
 
 @app.route('/')
 def index():
@@ -20,6 +22,9 @@ def search():
     return render_template('index.html', results=results)
 
 
+@app.route('/upload_page')
+def upload_page():
+    return render_template('upload.html')
 
 
 @app.route('/upload', methods=['POST'])
@@ -42,6 +47,10 @@ def upload():
         document.save(document_path)
         print("Doc Saved")
 
+
+        # Emit a message to the client indicating the start of processing
+        socketio.emit('processing_started', {'message': 'Processing started for document...'})
+
         # Call the function to process the document using forward_indexer.py
         print("Printing the DOC PATH")
         print(document_path)
@@ -51,6 +60,8 @@ def upload():
         # Call inverted_indexer.py
         # subprocess.run(["python", "inverted_indexer.py"])
 
+        # Emit a message to the client indicating the completion of processing
+        socketio.emit('processing_completed', {'message': 'Document processing completed.'})
 
         return f'Document "{document.filename}" uploaded successfully!'
         # Add code to delete the document after processing
@@ -59,4 +70,4 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    socketio.run(app, debug=True)

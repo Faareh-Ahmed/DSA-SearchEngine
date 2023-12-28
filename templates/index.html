@@ -18,10 +18,12 @@
         <input type="text" name="query" placeholder="Search">
         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
-    <form action="/upload" method="post" enctype="multipart/form-data">
+    <!-- <form action="/upload" method="post" enctype="multipart/form-data">
         <input type="file" name="document" accept=".pdf, .doc, .docx, .json">
         <button class="upload-btn" type="submit"><i class="fa-solid fa-upload"></i></button>
-    </form>
+    </form> -->
+    <!-- Add a link to the upload page -->
+    <a href="{{ url_for('upload_page') }}">Upload Document</a>
     <div id="results">
         {% if results %}
         <h2>Search Results:</h2>
