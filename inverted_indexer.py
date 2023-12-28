@@ -9,6 +9,8 @@ def inverted_indexer(forwardindex):
 
     # Check if forwardindex Data structure is empty then simply return
     print("STARTING INVERTED INDEX")
+
+
     if not forwardindex:
         print("Already Made Inverted Index for this Documents")
         return

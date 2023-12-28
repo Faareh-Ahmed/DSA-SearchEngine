@@ -3,7 +3,6 @@ from flask_socketio import SocketIO
 from querytest import search_inverted_index  
 import subprocess
 import os
-import time
 
 
 app = Flask(__name__)
@@ -16,18 +15,10 @@ def index():
 @app.route('/search', methods=['POST'])
 def search():
     query = request.form.get('query')
-    start_time = time.time()
-
+    
     # Call the search_inverted_index function with the user's query
     results = search_inverted_index(query)
-    # Measure the end time
-    end_time = time.time()
-
-    # Calculate the elapsed time
-    elapsed_time = end_time - start_time
-    # Emit a message to the client indicating the search time
-    socketio.emit('search_time', {'message': f'Search completed in {elapsed_time:.4f} seconds.'})
-
+   
     return render_template('index.html', results=results)
 
 

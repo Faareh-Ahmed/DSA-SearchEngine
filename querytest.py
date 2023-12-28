@@ -3,6 +3,7 @@ import os
 from nltk.stem import SnowballStemmer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
+import time
 
 # Path to the folder containing inverted index files in form of Barrels
 inverted_index_folder = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_inverted_index_files"
@@ -35,6 +36,9 @@ except FileNotFoundError:
 
 # Function to search for a word in the inverted index
 def search_inverted_index(query_word):
+
+    start_time = time.time()
+
     common_docs = {}
     #tokenizing the Query that the user Entered in the search bar
     tokens = [word_tokenize(query_word)]
@@ -155,6 +159,12 @@ def search_inverted_index(query_word):
     # Sort documents by rank
     sorted_documents = sorted(common_docs.keys(), key=lambda doc_id: common_docs[doc_id], reverse=True)
     
+     # Measure the end time
+    end_time = time.time()
+
+    # Calculate the elapsed time
+    elapsed_time = end_time - start_time
+
     print("sorted Doc:\n",sorted_documents)
 
     # Select the top 10 documents
@@ -169,6 +179,8 @@ def search_inverted_index(query_word):
         if str(doc_id) in docurls:
             document_data[doc_id] = docurls[str(doc_id)]
     
+    print(f"Code took {elapsed_time} to Run the Query")
+
     # Data will be used in backend.py
     return document_data
 
