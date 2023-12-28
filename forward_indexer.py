@@ -20,8 +20,11 @@ stop_words = set(stopwords.words("english"))
 
 # Specify the path to the folder containing JSON files on which forward and inverted index is implemented
 # folder_path = "D:\\3rd Semester\\DSA\\newFiles"
-folder_path = sys.argv[1]
-
+try:
+    folder_path = sys.argv[1]
+except IndexError:
+    folder_path = "default_folder_path"
+    
 # Create a folder to store forward index files
 output_folder = "faareh_forward_index"
 os.makedirs(output_folder, exist_ok=True)

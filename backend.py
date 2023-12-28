@@ -30,6 +30,8 @@ def upload():
     print("API CALLED TO UPLOAD")
     if 'document' in request.files:
         document = request.files['document']
+        print("Folder Path")
+        print(document)
         # Process the document as needed (save, analyze, etc.)
         # Example: document.save('uploads/' + document.filename)
 
@@ -41,7 +43,9 @@ def upload():
         print("Doc Saved")
 
         # Call the function to process the document using forward_indexer.py
-        subprocess.run(["python", "forward_indexer.py", document_path])
+        print("Printing the DOC PATH")
+        print(document_path)
+        subprocess.run(["python", "forward_indexer.py", upload_folder])
 
         # Call inverted_indexer.py
         subprocess.run(["python", "inverted_indexer.py"])
