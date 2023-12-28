@@ -4,6 +4,7 @@ import nltk
 from nltk.stem import SnowballStemmer
 from nltk.corpus import stopwords
 import os
+import sys
 
 nltk.download("stopwords")
 nltk.download("punkt")
@@ -18,7 +19,8 @@ stemmer = SnowballStemmer(language="english")
 stop_words = set(stopwords.words("english"))
 
 # Specify the path to the folder containing JSON files on which forward and inverted index is implemented
-folder_path = "D:\\3rd Semester\\DSA\\newFiles"
+# folder_path = "D:\\3rd Semester\\DSA\\newFiles"
+folder_path = sys.argv[1]
 
 # Create a folder to store forward index files
 output_folder = "faareh_forward_index"
