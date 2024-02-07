@@ -1,163 +1,100 @@
+
+
+
 import json
-import nltk
 import os
-from math import log
 
-nltk.download("punkt")
 
-def inverted_indexer(forwardindex):
+# Function to load the forward index file
+def load_forward_index():
+    forward_index_path = 'C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_forward_index_files\\forwardindex.json'
+    try:
+        with open(forward_index_path, 'r') as f:
+            data = json.load(f)
+            print("Forward Index Loaded")
+            return data
+    except FileNotFoundError:
+        print("No file for forward index exists..!!")
+
+# Function to save each barrel data in the corresponding barrel file
+def save_inverted_index_file(index,path):
+   # Write inverted index to a JSON file
+    with open(path, 'w') as json_file:
+        json.dump(index, json_file)
+
+# Function that calls each barrel file one by one and then saves them
+def save_all_inverted_index_files(inverted_indices, inverted_index_file_paths):
+    for index, path in zip(inverted_indices, inverted_index_file_paths):
+        save_inverted_index_file(index, path)
+
+# Function to load the inverted index file if already exists, else creates a dictionary for inverted index
+def load_inverted_index(path):
+    try:
+        with open(path, 'r') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return {}
+
+# Function to create the structure to be inserted into the inverted index file
+def create_inverted_index(forward_index, inverted_indices, number_of_inverted_index_barrels,inverted_index_file_paths):
+    count=0
+    for doc_id, document in forward_index.items():
+        if count==20000:
+            print("20K reached")
+            save_all_inverted_index_files(inverted_indices, inverted_index_file_paths)
+            count=0
+
+        words = document.get("words", [])
+        doc_id = str(doc_id)
+
+        for word in words:
+            word_id = str(word.get("word_id"))
+            int_word_id = int(word_id)
+            word_id = str(word_id)
+
+            frequency = word.get("fr")
+            positions = word.get("ps")
+
+            barrel = int_word_id % number_of_inverted_index_barrels
+
+            if word_id is not None:
+                # if "word_ID" not in inverted_indices[barrel]:
+                #     inverted_indices[barrel]["word_ID"] = {}
+                if word_id not in inverted_indices[barrel]:
+                    inverted_indices[barrel][word_id] = {}
+                if doc_id not in inverted_indices[barrel][word_id]:
+                    word_info = {"fr": frequency, "ps": positions}
+                    inverted_indices[barrel][word_id][doc_id] = word_info
+        count+=1
+
+# Main function to load the forward index and then generate the inverted index
+def generate_inverted_index(forward_index):
+    number_of_inverted_index_barrels = 2000
+    print("Started Loading Barrels")
+    inverted_index_file_paths = [
+        f'C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_inverted_index_files\\inverted_index.json_{i}.json' for i in range(1, number_of_inverted_index_barrels + 1)
+    ]
+    inverted_indices = [load_inverted_index(path) for path in inverted_index_file_paths]
+    print("Barrels Loaded")
+    # json_forward_index_dir = "./Forward_Index/Forward_index_files"
+    # json_forward_index_files = [file for file in os.listdir(json_forward_index_dir) if file.endswith(".json")]
+
+    # for file_path in json_forward_index_files:
+    # forward_index = load_forward_index()
+    create_inverted_index(forward_index, inverted_indices, number_of_inverted_index_barrels,inverted_index_file_paths)
+
+    save_all_inverted_index_files(inverted_indices, inverted_index_file_paths)
+
+# Call the main function to generate the inverted index
+def inverted_indexer(forward_index):
 
     # Check if forwardindex Data structure is empty then simply return
     print("STARTING INVERTED INDEX")
 
 
-    if not forwardindex:
+    if not forward_index:
         print("Already Made Inverted Index for this Documents")
         return
-    
-    # Path to the folder for inverted index files containing the Barreling
-    output_folder = "C:\\Users\\user\\OneDrive\\Desktop\\3rd Semester\\DSA\\Project\\nela-gt-2022.json\\nela-gt-2022\\test_inverted_index_files"
-    os.makedirs(output_folder, exist_ok=True)  # Create the folder if it doesn't exist
-
-    # Initialize the inverted index dictionaries for each barrel
-    # Load existing inverted index barrels if they exist
-    # Barreling is done based on the first 3 characters of the word and 
-    # for numeric characters starting from (0 to 9). Another Barrel is made that stores the
-    # words containing the Special Characters
-
-    barrels = {}
-    for char1 in range(ord('a'), ord('z') + 1):
-        for char2 in range(ord('a'), ord('z') + 1):
-            for char3 in range(ord('a'), ord('z') + 1):
-                char = str(chr(char1) + chr(char2)+ chr(char3))
-                barrel_file = os.path.join(output_folder, f"inverted_index_{char}.json")
-                if os.path.exists(barrel_file):
-                    with open(barrel_file, "r") as file:
-                        barrels[char] = json.load(file)
-                else:
-                    barrels[char] = {}
-
-    # Include combinations where the second character is from '0' to '9'
-    for char1 in range(ord('a'), ord('z') + 1):
-        for char2 in range(ord('0'), ord('9') + 1):
-            char = str(chr(char1) + chr(char2))
-            barrel_file = os.path.join(output_folder, f"inverted_index_{char}.json")
-            if os.path.exists(barrel_file):
-                with open(barrel_file, "r") as file:
-                    barrels[char] = json.load(file)
-            else:
-                barrels[char] = {}
-
-
-    for char in range(10):
-        barrel_file = os.path.join(output_folder, f"inverted_index_{char}.json")
-        if os.path.exists(barrel_file):
-            with open(barrel_file, "r") as file:
-                barrels[str(char)] = json.load(file)
-        else:
-            barrels[str(char)]={}
-
-    barrel_file_other = os.path.join(output_folder, "inverted_index_other.json")
-    if os.path.exists(barrel_file_other):
-        with open(barrel_file_other, "r") as file:
-            barrels['other'] = json.load(file)
     else:
-            barrels['other']={}
-
-
-
-    data = forwardindex
-    count=0
-
-    # reading each entry of the Forward Index Data Structure
-
-    for test_entry in data:
-        count+=1
-        print(count)
-
-        # Retrieving the necessary data from the Forward index Data structure
-        doc_id = test_entry["di"]
-        stemmed_tokens = test_entry["st"]
-        frequency = test_entry["tf"]
-
-        for position, token in enumerate(stemmed_tokens, start=1):
-            # Get the frequency and Position of the currect word
-            frequency = test_entry["tf"][token]
-            position = test_entry["tp"].get(token, [])
-
-            # Calculate the rank of each word in the document and storing them in the Inverted Index
-            # We have primarily referred the TF-IDF ranking algorithm and made changes according to our
-            # current project scenario
-
-            tf = frequency / len(stemmed_tokens)
-            idf = log(len(stemmed_tokens) / (frequency + 1))  # Adding 1 to avoid division by zero
-            rank = tf * idf
-
-            # Selecting the appropriate Barrel for the Word
-            # Get the first character of the token 
-            first_char = str(token)[0].lower() if str(token) else None
-
-            # Ensure first_char is not None (empty or not a string)
-            if first_char is not None:
-                # Check if the first_char is numeric and update the inverted index entry in the 'numeric' barrel
-                if '0' <= first_char <= '9':
-                    barrel = first_char
-
-                elif 'a' <= first_char <= 'z':
-                    if(len(token)<2):
-                        second_char=first_char
-                        third_char=first_char
-                        char=str(first_char+second_char+third_char)
-                        barrel=char
-                    else:
-                        second_char = str(token)[1].lower() if str(token) else None
-                        if('0' <= second_char <= '9'):
-                            char = str(first_char+second_char)
-                            barrel=char
-                        # Check if the second_char is not a lowercase letter or a digit
-                        elif('a' <= second_char <= 'z'):
-                            if(len(token)<3):
-                                third_char=second_char
-                                char=str(first_char+second_char+third_char)
-                                barrel=char
-                            else:
-                                third_char = str(token)[2].lower() if str(token) else None
-                                
-                                if('0' <= third_char <= '9'):
-                                    third_char=second_char
-                                    char=str(first_char+second_char+third_char)
-                                    barrel=char
-                                elif('a' <= third_char <= 'z'):
-                                    char=str(first_char+second_char+third_char)
-                                    barrel = char
-                                else:
-                                    barrel='other'
-                        else:
-                            barrel = 'other'
-                else:
-                    barrel = 'other'
-
-            # Create the inverted index entry for the token if it is not present in the barrel
-                if token not in barrels[barrel]:
-                    barrels[barrel][token] ={}
-
-                # Update the inverted index entry by adding the desired information about the word
-                if doc_id not in barrels[barrel][token]:
-                    word_details={
-                        "f":frequency,
-                        "p":position,
-                        "r":rank
-                    }
-                    barrels[barrel][token][doc_id]=word_details
-
-                    
-
-
-    # Save inverted index barrels to separate files
-    print("Starting Writing to FIle\n")
-    for char, inverted_index in barrels.items():
-        inverted_index_file = os.path.join(output_folder, f"inverted_index_{char}.json")
-        with open(inverted_index_file, "w") as file:
-            json.dump(inverted_index, file)
-
-    print("Inverted Index barrels stored in files.")
+        generate_inverted_index(forward_index)
+        

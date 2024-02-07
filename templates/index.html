@@ -28,7 +28,8 @@
         <ul>
             {% for doc_id,doc_url in results.items() %}
             <div class="li">
-                <p><a href="{{ doc_url }}" target="_blank">{{ doc_url }}</a></p> <!-- docURL -->
+                <h1 class="title">{{ doc_url.title }}</h1>
+                <p><a href="{{ doc_url.url }}" target="_blank">{{ doc_url.url }}</a></p> <!-- docURL -->
             </div>
             {% endfor %}
         </ul>

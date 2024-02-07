@@ -44,7 +44,7 @@ button {
 
 #results {
     
-    margin-top: 20px;
+    margin-top: 5px;
     /* text-align: center; */
 }
 
@@ -54,17 +54,21 @@ h2 {
 
 ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0px;
 }
 
 .li {
     margin-bottom: 20px; /* Increased margin between results */
-    padding: 10px;
+    padding: 5px;
     /* border: 1px solid #ccc; */
     border-radius: 5px;
     background-color: #fff;
 }
 
+.title{
+    font-size:large;
+    color: black;
+}
 strong {
     display: block; /* Ensure the title appears on a new line */
     color: #333;
